@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- Static distribution -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#4b1016">
+  <title>Atlas de Parasitología</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">⌁</span><span>Atlas de<br><strong>Parasitología</strong></span></div>
+    <nav aria-label="Secciones principales">
+      <button class="nav-link active" data-view="atlas">⌂ <span>Atlas</span></button>
+      <button class="nav-link" data-view="table">▦ <span>Tabla taxonómica</span></button>
+      <button class="nav-link" data-view="gallery">▧ <span>Galería</span></button>
+      <button class="nav-link" data-view="review">◎ <span>Revisión de fuentes</span></button>
+      <button class="nav-link" data-view="settings">⚙ <span>Configuración</span></button>
+    </nav>
+    <div class="sidebar-foot">Datos de cátedra<br><span id="sidebarCount">—</span> fichas</div>
+  </aside>
+  <main class="app-shell">
+    <header class="topbar">
+      <label class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Buscar parásitos, hospedadores, morfología, ciclo…" autocomplete="off"><kbd>Ctrl K</kbd></label>
+      <div class="mode-control"><span id="modeLabel">Modo consulta</span><label class="switch"><input id="editMode" type="checkbox"><span></span></label></div>
+    </header>
+    <section id="atlas" class="view active-view"></section>
+    <section id="table" class="view"></section>
+    <section id="gallery" class="view"></section>
+    <section id="review" class="view"></section>
+    <section id="settings" class="view"></section>
+  </main>
+  <div id="modalRoot"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input id="filePicker" type="file" accept="image/*" multiple hidden>
+  <input id="importPicker" type="file" accept=".json,.xlsx" hidden>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
