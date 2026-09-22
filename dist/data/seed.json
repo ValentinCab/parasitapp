@@ -1,0 +1,5805 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-21T21:05:26.666574+00:00",
+  "source": {
+    "workbook": "PARÁSITOS.xlsx",
+    "worksheet": "TODOS",
+    "courseMaterials": [
+      "Guía práctica Cátedra 2025",
+      "Transcritos Parasitología"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "granGroup:artropodo",
+      "level": "granGroup",
+      "name": "ARTRÓPODO",
+      "parentId": null,
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "initialColor": "FF0B5394",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto",
+      "level": "granGroup",
+      "name": "HELMINTO",
+      "parentId": null,
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "initialColor": "FFA61C00",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios",
+      "level": "granGroup",
+      "name": "PROTOZOARIOS",
+      "parentId": null,
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "initialColor": "FF741B47",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina",
+      "level": "group",
+      "name": "ACARINA",
+      "parentId": "granGroup:artropodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69
+      ],
+      "initialColor": "FF235131",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera",
+      "level": "group",
+      "name": "DIPTERA",
+      "parentId": "granGroup:artropodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "initialColor": "FF378CE5",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:hemiptera",
+      "level": "group",
+      "name": "HEMIPTERA",
+      "parentId": "granGroup:artropodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "HEMIPTERA"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        70,
+        71,
+        72
+      ],
+      "initialColor": "",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:phthiraptera",
+      "level": "group",
+      "name": "PHTHIRAPTERA",
+      "parentId": "granGroup:artropodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "PHTHIRAPTERA"
+        }
+      ],
+      "fields": {
+        "commonName": "Piojos"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        73
+      ],
+      "initialColor": "FF00A6A6",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:siphonaptera",
+      "level": "group",
+      "name": "SIPHONAPTERA",
+      "parentId": "granGroup:artropodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "SIPHONAPTERA"
+        }
+      ],
+      "fields": {
+        "commonName": "Pulgas"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        74
+      ],
+      "initialColor": "FF00D7D7",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:acantocephala",
+      "level": "group",
+      "name": "ACANTOCEPHALA",
+      "parentId": "granGroup:helminto",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "ACANTOCEPHALA"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        51
+      ],
+      "initialColor": "FFBF9000",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo",
+      "level": "group",
+      "name": "CESTODO",
+      "parentId": "granGroup:helminto",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "initialColor": "FFCC5B23",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo",
+      "level": "group",
+      "name": "NEMATODO",
+      "parentId": "granGroup:helminto",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "initialColor": "FFCC4125",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:trematodo",
+      "level": "group",
+      "name": "TREMATODO",
+      "parentId": "granGroup:helminto",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "TREMATODO"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        40,
+        41
+      ],
+      "initialColor": "FFCC0000",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:diplomonadidae",
+      "level": "group",
+      "name": "DIPLOMONADIDAE",
+      "parentId": "granGroup:protozoarios",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "DIPLOMONADIDAE"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        94
+      ],
+      "initialColor": "FFA94774",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae",
+      "level": "group",
+      "name": "EUCOCCIDAE",
+      "parentId": "granGroup:protozoarios",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "initialColor": "FFCB6995",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:kinetoplastidae",
+      "level": "group",
+      "name": "KINETOPLASTIDAE",
+      "parentId": "granGroup:protozoarios",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "KINETOPLASTIDAE"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        91,
+        92
+      ],
+      "initialColor": "FF902D5B",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:trichomonadidae",
+      "level": "group",
+      "name": "TRICHOMONADIDAE",
+      "parentId": "granGroup:protozoarios",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "TRICHOMONADIDAE"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        93
+      ],
+      "initialColor": "FF9E3968",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:argasidae",
+      "level": "family",
+      "name": "Argasidae",
+      "parentId": "granGroup:artropodo/group:acarina",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Argasidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        57,
+        58,
+        59
+      ],
+      "initialColor": "FF316B3E",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:cheyletidae",
+      "level": "family",
+      "name": "Cheyletidae",
+      "parentId": "granGroup:artropodo/group:acarina",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Cheyletidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        68,
+        69
+      ],
+      "initialColor": "FF68B774",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:demodicidae",
+      "level": "family",
+      "name": "Demodicidae",
+      "parentId": "granGroup:artropodo/group:acarina",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Demodicidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        66
+      ],
+      "initialColor": "FF529E61",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:dermanyssidae",
+      "level": "family",
+      "name": "Dermanyssidae",
+      "parentId": "granGroup:artropodo/group:acarina",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Dermanyssidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        67
+      ],
+      "initialColor": "FF5CAA6B",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:epidermoptidae",
+      "level": "family",
+      "name": "Epidermoptidae",
+      "parentId": "granGroup:artropodo/group:acarina",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Epidermoptidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        65
+      ],
+      "initialColor": "FF499156",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:ixodidae",
+      "level": "family",
+      "name": "Ixodidae",
+      "parentId": "granGroup:artropodo/group:acarina",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Ixodidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "initialColor": "FF2A5F38",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:psoroptidae",
+      "level": "family",
+      "name": "Psoroptidae",
+      "parentId": "granGroup:artropodo/group:acarina",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Psoroptidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        60,
+        61,
+        62
+      ],
+      "initialColor": "FF397745",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:sarcoptidae",
+      "level": "family",
+      "name": "Sarcoptidae",
+      "parentId": "granGroup:artropodo/group:acarina",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Sarcoptidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        63,
+        64
+      ],
+      "initialColor": "FF40844E",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:brachycera",
+      "level": "subgroup",
+      "name": "BRACHYCERA",
+      "parentId": "granGroup:artropodo/group:diptera",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "BRACHYCERA"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        82
+      ],
+      "initialColor": "FFBADBFC",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha",
+      "level": "subgroup",
+      "name": "CYCLORRHAPHA",
+      "parentId": "granGroup:artropodo/group:diptera",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera",
+      "level": "subgroup",
+      "name": "NEMATOCERA",
+      "parentId": "granGroup:artropodo/group:diptera",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "initialColor": "FF9FCCF9",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:hemiptera/family:reduviidae",
+      "level": "family",
+      "name": "Reduviidae",
+      "parentId": "granGroup:artropodo/group:hemiptera",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "HEMIPTERA"
+        },
+        {
+          "level": "family",
+          "name": "Reduviidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        70,
+        71,
+        72
+      ],
+      "initialColor": "FF53D475",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:acantocephala/family:oligacanthorhynchidae",
+      "level": "family",
+      "name": "Oligacanthorhynchidae",
+      "parentId": "granGroup:helminto/group:acantocephala",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "ACANTOCEPHALA"
+        },
+        {
+          "level": "family",
+          "name": "Oligacanthorhynchidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        51
+      ],
+      "initialColor": "FFF1C232",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:anoplocephalidae",
+      "level": "family",
+      "name": "Anoplocephalidae",
+      "parentId": "granGroup:helminto/group:cestodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Anoplocephalidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        44
+      ],
+      "initialColor": "FFDE6B32",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:anoplocesphalidae",
+      "level": "family",
+      "name": "Anoplocesphalidae",
+      "parentId": "granGroup:helminto/group:cestodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Anoplocesphalidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        42,
+        43,
+        45
+      ],
+      "initialColor": "FFDE6B32",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:dilepididae",
+      "level": "family",
+      "name": "Dilepididae",
+      "parentId": "granGroup:helminto/group:cestodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Dilepididae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        48
+      ],
+      "initialColor": "FFEF8B5B",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:diphyllobothriidae",
+      "level": "family",
+      "name": "Diphyllobothriidae",
+      "parentId": "granGroup:helminto/group:cestodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Diphyllobothriidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        49,
+        50
+      ],
+      "initialColor": "FFF4A476",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:taeniidae",
+      "level": "family",
+      "name": "Taeniidae",
+      "parentId": "granGroup:helminto/group:cestodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Taeniidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        46,
+        47
+      ],
+      "initialColor": "FFEA7A46",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ancylostomatidae",
+      "level": "family",
+      "name": "Ancylostomatidae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ancylostomatidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "initialColor": "FFE7806D",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae",
+      "level": "family",
+      "name": "Ascarididae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "initialColor": "FFF1998C",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:dictyocaulidae",
+      "level": "family",
+      "name": "Dictyocaulidae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Dictyocaulidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        11,
+        12
+      ],
+      "initialColor": "FFD9694F",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:dioctophymatidae",
+      "level": "family",
+      "name": "Dioctophymatidae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Dioctophymatidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        34,
+        35
+      ],
+      "initialColor": "FFF8BAB3",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:onchocercidae",
+      "level": "family",
+      "name": "Onchocercidae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Onchocercidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        31,
+        32,
+        33
+      ],
+      "initialColor": "FFF5AEA4",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:oxyuridae",
+      "level": "family",
+      "name": "Oxyuridae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Oxyuridae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        29,
+        30
+      ],
+      "initialColor": "FFF3A499",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongylidae",
+      "level": "family",
+      "name": "Strongylidae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongylidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "initialColor": "FFE07058",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongyloididae",
+      "level": "family",
+      "name": "Strongyloididae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongyloididae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        21,
+        22
+      ],
+      "initialColor": "FFED8C7C",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichinellidae",
+      "level": "family",
+      "name": "Trichinellidae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichinellidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        38,
+        39
+      ],
+      "initialColor": "FFFBD4D1",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae",
+      "level": "family",
+      "name": "Trichostrongylidae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichostrongylidae"
+        }
+      ],
+      "fields": {
+        "egg": "Tamaño: 80x40 µm\nForma: ovoide\nMembrana: fina\nMórula: muy segmentada"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "initialColor": "FFD55A3F",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichuridae",
+      "level": "family",
+      "name": "Trichuridae",
+      "parentId": "granGroup:helminto/group:nematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichuridae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        36,
+        37
+      ],
+      "initialColor": "FFF9C8C4",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:trematodo/family:fasciolidae",
+      "level": "family",
+      "name": "Fasciolidae",
+      "parentId": "granGroup:helminto/group:trematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "TREMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Fasciolidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        40
+      ],
+      "initialColor": "FFE06666",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:trematodo/family:paramphistomidae",
+      "level": "family",
+      "name": "Paramphistomidae",
+      "parentId": "granGroup:helminto/group:trematodo",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "TREMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Paramphistomidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        41
+      ],
+      "initialColor": "FFEA9999",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:diplomonadidae/family:hexamitidae",
+      "level": "family",
+      "name": "Hexamitidae",
+      "parentId": "granGroup:protozoarios/group:diplomonadidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "DIPLOMONADIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Hexamitidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        94
+      ],
+      "initialColor": "FFA94774",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:cryptosporidae",
+      "level": "family",
+      "name": "Cryptosporidae",
+      "parentId": "granGroup:protozoarios/group:eucoccidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Cryptosporidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        97
+      ],
+      "initialColor": "FFBF5D89",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:eimeriidae",
+      "level": "family",
+      "name": "Eimeriidae",
+      "parentId": "granGroup:protozoarios/group:eucoccidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Eimeriidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        95,
+        96
+      ],
+      "initialColor": "FFB3507D",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:sarcocystidae",
+      "level": "family",
+      "name": "Sarcocystidae",
+      "parentId": "granGroup:protozoarios/group:eucoccidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Sarcocystidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        98,
+        99
+      ],
+      "initialColor": "FFCB6995",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:kinetoplastidae/family:trypanosomatidae",
+      "level": "family",
+      "name": "Trypanosomatidae",
+      "parentId": "granGroup:protozoarios/group:kinetoplastidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "KINETOPLASTIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Trypanosomatidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        91,
+        92
+      ],
+      "initialColor": "FF902D5B",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:trichomonadidae/family:trhichomonadidae",
+      "level": "family",
+      "name": "Trhichomonadidae",
+      "parentId": "granGroup:protozoarios/group:trichomonadidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "TRICHOMONADIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Trhichomonadidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        93
+      ],
+      "initialColor": "FF9E3968",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:argasidae/genus:argas",
+      "level": "genus",
+      "name": "Argas",
+      "parentId": "granGroup:artropodo/group:acarina/family:argasidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Argasidae"
+        },
+        {
+          "level": "genus",
+          "name": "Argas"
+        }
+      ],
+      "fields": {
+        "commonName": "Garrapata de las aves"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        57
+      ],
+      "initialColor": "FF316B3E",
+      "createdFrom": "excel",
+      "scientificName": "Argas"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:argasidae/genus:ornithodoros",
+      "level": "genus",
+      "name": "Ornithodoros",
+      "parentId": "granGroup:artropodo/group:acarina/family:argasidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Argasidae"
+        },
+        {
+          "level": "genus",
+          "name": "Ornithodoros"
+        }
+      ],
+      "fields": {
+        "commonName": "Garrapatas blandas"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        59
+      ],
+      "initialColor": "FF316B3E",
+      "createdFrom": "excel",
+      "scientificName": "Ornithodoros"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:argasidae/genus:otobius",
+      "level": "genus",
+      "name": "Otobius",
+      "parentId": "granGroup:artropodo/group:acarina/family:argasidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Argasidae"
+        },
+        {
+          "level": "genus",
+          "name": "Otobius"
+        }
+      ],
+      "fields": {
+        "commonName": "Garrapata espinosa del oído"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        58
+      ],
+      "initialColor": "FF316B3E",
+      "createdFrom": "excel",
+      "scientificName": "Otobius"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:cheyletidae/genus:cheyletiella",
+      "level": "genus",
+      "name": "Cheyletiella",
+      "parentId": "granGroup:artropodo/group:acarina/family:cheyletidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Cheyletidae"
+        },
+        {
+          "level": "genus",
+          "name": "Cheyletiella"
+        }
+      ],
+      "fields": {
+        "commonName": "Caspa andante"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        68
+      ],
+      "initialColor": "FF68B774",
+      "createdFrom": "excel",
+      "scientificName": "Cheyletiella"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:cheyletidae/genus:psorergates",
+      "level": "genus",
+      "name": "Psorergates",
+      "parentId": "granGroup:artropodo/group:acarina/family:cheyletidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Cheyletidae"
+        },
+        {
+          "level": "genus",
+          "name": "Psorergates"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaros de la sarna"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        69
+      ],
+      "initialColor": "FF68B774",
+      "createdFrom": "excel",
+      "scientificName": "Psorergates"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:demodicidae/genus:demodex",
+      "level": "genus",
+      "name": "Demodex",
+      "parentId": "granGroup:artropodo/group:acarina/family:demodicidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Demodicidae"
+        },
+        {
+          "level": "genus",
+          "name": "Demodex"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaros del folículo piloso"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        66
+      ],
+      "initialColor": "FF529E61",
+      "createdFrom": "excel",
+      "scientificName": "Demodex"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:dermanyssidae/genus:dermanyssus",
+      "level": "genus",
+      "name": "Dermanyssus",
+      "parentId": "granGroup:artropodo/group:acarina/family:dermanyssidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Dermanyssidae"
+        },
+        {
+          "level": "genus",
+          "name": "Dermanyssus"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaros de las aves"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        67
+      ],
+      "initialColor": "FF5CAA6B",
+      "createdFrom": "excel",
+      "scientificName": "Dermanyssus"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:epidermoptidae/genus:knemidocoptes",
+      "level": "genus",
+      "name": "Knemidocoptes",
+      "parentId": "granGroup:artropodo/group:acarina/family:epidermoptidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Epidermoptidae"
+        },
+        {
+          "level": "genus",
+          "name": "Knemidocoptes"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaros de la piel"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        65
+      ],
+      "initialColor": "FF499156",
+      "createdFrom": "excel",
+      "scientificName": "Knemidocoptes"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:ixodidae/genus:amblyomma",
+      "level": "genus",
+      "name": "Amblyomma",
+      "parentId": "granGroup:artropodo/group:acarina/family:ixodidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Ixodidae"
+        },
+        {
+          "level": "genus",
+          "name": "Amblyomma"
+        }
+      ],
+      "fields": {
+        "commonName": "Garrapatas duras"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        54
+      ],
+      "initialColor": "FF2A5F38",
+      "createdFrom": "excel",
+      "scientificName": "Amblyomma"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:ixodidae/genus:dermacentor",
+      "level": "genus",
+      "name": "Dermacentor",
+      "parentId": "granGroup:artropodo/group:acarina/family:ixodidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Ixodidae"
+        },
+        {
+          "level": "genus",
+          "name": "Dermacentor"
+        }
+      ],
+      "fields": {
+        "commonName": "Garrapata de la madera"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        53
+      ],
+      "initialColor": "FF2A5F38",
+      "createdFrom": "excel",
+      "scientificName": "Dermacentor"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:ixodidae/genus:haemaphysalis",
+      "level": "genus",
+      "name": "Haemaphysalis",
+      "parentId": "granGroup:artropodo/group:acarina/family:ixodidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Ixodidae"
+        },
+        {
+          "level": "genus",
+          "name": "Haemaphysalis"
+        }
+      ],
+      "fields": {
+        "commonName": "Garrapatas duras"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        56
+      ],
+      "initialColor": "FF2A5F38",
+      "createdFrom": "excel",
+      "scientificName": "Haemaphysalis"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:ixodidae/genus:ixodes",
+      "level": "genus",
+      "name": "Ixodes",
+      "parentId": "granGroup:artropodo/group:acarina/family:ixodidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Ixodidae"
+        },
+        {
+          "level": "genus",
+          "name": "Ixodes"
+        }
+      ],
+      "fields": {
+        "commonName": "Garrapatas duras"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        55
+      ],
+      "initialColor": "FF2A5F38",
+      "createdFrom": "excel",
+      "scientificName": "Ixodes"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:ixodidae/genus:rhipicephalus",
+      "level": "genus",
+      "name": "Rhipicephalus",
+      "parentId": "granGroup:artropodo/group:acarina/family:ixodidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Ixodidae"
+        },
+        {
+          "level": "genus",
+          "name": "Rhipicephalus"
+        }
+      ],
+      "fields": {
+        "commonName": "Garrapata del perro"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        52
+      ],
+      "initialColor": "FF2A5F38",
+      "createdFrom": "excel",
+      "scientificName": "Rhipicephalus"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:psoroptidae/genus:chorioptes",
+      "level": "genus",
+      "name": "Chorioptes",
+      "parentId": "granGroup:artropodo/group:acarina/family:psoroptidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Psoroptidae"
+        },
+        {
+          "level": "genus",
+          "name": "Chorioptes"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaros de la sarna"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        61
+      ],
+      "initialColor": "FF397745",
+      "createdFrom": "excel",
+      "scientificName": "Chorioptes"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:psoroptidae/genus:otodectes",
+      "level": "genus",
+      "name": "Otodectes",
+      "parentId": "granGroup:artropodo/group:acarina/family:psoroptidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Psoroptidae"
+        },
+        {
+          "level": "genus",
+          "name": "Otodectes"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaros del oído"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        62
+      ],
+      "initialColor": "FF397745",
+      "createdFrom": "excel",
+      "scientificName": "Otodectes"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:psoroptidae/genus:psoroptes",
+      "level": "genus",
+      "name": "Psoroptes",
+      "parentId": "granGroup:artropodo/group:acarina/family:psoroptidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Psoroptidae"
+        },
+        {
+          "level": "genus",
+          "name": "Psoroptes"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaros de la sarna"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        60
+      ],
+      "initialColor": "FF397745",
+      "createdFrom": "excel",
+      "scientificName": "Psoroptes"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:sarcoptidae/genus:notoedres",
+      "level": "genus",
+      "name": "Notoedres",
+      "parentId": "granGroup:artropodo/group:acarina/family:sarcoptidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Sarcoptidae"
+        },
+        {
+          "level": "genus",
+          "name": "Notoedres"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaros de la sarna"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        64
+      ],
+      "initialColor": "FF40844E",
+      "createdFrom": "excel",
+      "scientificName": "Notoedres"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:sarcoptidae/genus:sarcoptes",
+      "level": "genus",
+      "name": "Sarcoptes",
+      "parentId": "granGroup:artropodo/group:acarina/family:sarcoptidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Sarcoptidae"
+        },
+        {
+          "level": "genus",
+          "name": "Sarcoptes"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaros de la sarna"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        63
+      ],
+      "initialColor": "FF40844E",
+      "createdFrom": "excel",
+      "scientificName": "Sarcoptes"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:brachycera/family:tabanidae",
+      "level": "family",
+      "name": "Tabanidae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:brachycera",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "BRACHYCERA"
+        },
+        {
+          "level": "family",
+          "name": "Tabanidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        82
+      ],
+      "initialColor": "FFBADBFC",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:calliphoridae",
+      "level": "family",
+      "name": "Calliphoridae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Calliphoridae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        88,
+        89
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:gasterophilidae",
+      "level": "family",
+      "name": "Gasterophilidae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Gasterophilidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        90
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:hippoboscidae",
+      "level": "family",
+      "name": "Hippoboscidae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Hippoboscidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        85
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:muscidae",
+      "level": "family",
+      "name": "Muscidae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Muscidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        83,
+        84
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:oestridae",
+      "level": "family",
+      "name": "Oestridae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Oestridae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        86,
+        87
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:ceratopogonidae",
+      "level": "family",
+      "name": "Ceratopogonidae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Ceratopogonidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        79
+      ],
+      "initialColor": "FF84BDF7",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:culicidae",
+      "level": "family",
+      "name": "Culicidae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Culicidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        75,
+        76,
+        77
+      ],
+      "initialColor": "FF4B9BEC",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:psychodidae",
+      "level": "family",
+      "name": "Psychodidae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Psychodidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        80,
+        81
+      ],
+      "initialColor": "FF9FCCF9",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:simulidae",
+      "level": "family",
+      "name": "Simulidae",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Simulidae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        78
+      ],
+      "initialColor": "FF68AEF2",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:artropodo/group:hemiptera/family:reduviidae/genus:panstrongylus",
+      "level": "genus",
+      "name": "Panstrongylus",
+      "parentId": "granGroup:artropodo/group:hemiptera/family:reduviidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "HEMIPTERA"
+        },
+        {
+          "level": "family",
+          "name": "Reduviidae"
+        },
+        {
+          "level": "genus",
+          "name": "Panstrongylus"
+        }
+      ],
+      "fields": {
+        "commonName": "Vinchucas",
+        "importance": "Vector de Trypanosoma cruzi (Enfermedad de Chagas)"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        72
+      ],
+      "initialColor": "FF53D475",
+      "createdFrom": "excel",
+      "scientificName": "Panstrongylus"
+    },
+    {
+      "id": "granGroup:artropodo/group:hemiptera/family:reduviidae/genus:rhodnius",
+      "level": "genus",
+      "name": "Rhodnius",
+      "parentId": "granGroup:artropodo/group:hemiptera/family:reduviidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "HEMIPTERA"
+        },
+        {
+          "level": "family",
+          "name": "Reduviidae"
+        },
+        {
+          "level": "genus",
+          "name": "Rhodnius"
+        }
+      ],
+      "fields": {
+        "commonName": "Chipo / Pito",
+        "importance": "Vector de Trypanosoma cruzi (Enfermedad de Chagas)"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        71
+      ],
+      "initialColor": "FF53D475",
+      "createdFrom": "excel",
+      "scientificName": "Rhodnius"
+    },
+    {
+      "id": "granGroup:artropodo/group:hemiptera/family:reduviidae/genus:triatoma",
+      "level": "genus",
+      "name": "Triatoma",
+      "parentId": "granGroup:artropodo/group:hemiptera/family:reduviidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "HEMIPTERA"
+        },
+        {
+          "level": "family",
+          "name": "Reduviidae"
+        },
+        {
+          "level": "genus",
+          "name": "Triatoma"
+        }
+      ],
+      "fields": {
+        "commonName": "Vinchuca",
+        "importance": "Vector de Trypanosoma cruzi (Enfermedad de Chagas)"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        70
+      ],
+      "initialColor": "FF53D475",
+      "createdFrom": "excel",
+      "scientificName": "Triatoma"
+    },
+    {
+      "id": "granGroup:helminto/group:acantocephala/family:oligacanthorhynchidae/genus:macracanthorhynchus",
+      "level": "genus",
+      "name": "Macracanthorhynchus",
+      "parentId": "granGroup:helminto/group:acantocephala/family:oligacanthorhynchidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "ACANTOCEPHALA"
+        },
+        {
+          "level": "family",
+          "name": "Oligacanthorhynchidae"
+        },
+        {
+          "level": "genus",
+          "name": "Macracanthorhynchus"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano de cabeza espinosa"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        51
+      ],
+      "initialColor": "FFF1C232",
+      "createdFrom": "excel",
+      "scientificName": "Macracanthorhynchus"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:anoplocephalidae/genus:anoplocephala",
+      "level": "genus",
+      "name": "Anoplocephala",
+      "parentId": "granGroup:helminto/group:cestodo/family:anoplocephalidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Anoplocephalidae"
+        },
+        {
+          "level": "genus",
+          "name": "Anoplocephala"
+        }
+      ],
+      "fields": {
+        "commonName": "Tenia del caballo"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        44
+      ],
+      "initialColor": "FFDE6B32",
+      "createdFrom": "excel",
+      "scientificName": "Anoplocephala"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:anoplocesphalidae/genus:moniezia",
+      "level": "genus",
+      "name": "Moniezia",
+      "parentId": "granGroup:helminto/group:cestodo/family:anoplocesphalidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Anoplocesphalidae"
+        },
+        {
+          "level": "genus",
+          "name": "Moniezia"
+        }
+      ],
+      "fields": {
+        "commonName": "Tenia de los rumiantes"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        42
+      ],
+      "initialColor": "FFDE6B32",
+      "createdFrom": "excel",
+      "scientificName": "Moniezia"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:anoplocesphalidae/genus:paranoplocephala",
+      "level": "genus",
+      "name": "Paranoplocephala",
+      "parentId": "granGroup:helminto/group:cestodo/family:anoplocesphalidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Anoplocesphalidae"
+        },
+        {
+          "level": "genus",
+          "name": "Paranoplocephala"
+        }
+      ],
+      "fields": {
+        "commonName": "Tenia del caballo"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        45
+      ],
+      "initialColor": "FFDE6B32",
+      "createdFrom": "excel",
+      "scientificName": "Paranoplocephala"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:anoplocesphalidae/genus:thysanosoma",
+      "level": "genus",
+      "name": "Thysanosoma",
+      "parentId": "granGroup:helminto/group:cestodo/family:anoplocesphalidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Anoplocesphalidae"
+        },
+        {
+          "level": "genus",
+          "name": "Thysanosoma"
+        }
+      ],
+      "fields": {
+        "commonName": "Tenia festoneada"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        43
+      ],
+      "initialColor": "FFDE6B32",
+      "createdFrom": "excel",
+      "scientificName": "Thysanosoma"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:dilepididae/genus:dipylidium",
+      "level": "genus",
+      "name": "Dipylidium",
+      "parentId": "granGroup:helminto/group:cestodo/family:dilepididae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Dilepididae"
+        },
+        {
+          "level": "genus",
+          "name": "Dipylidium"
+        }
+      ],
+      "fields": {
+        "commonName": "Tenia del perro"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        48
+      ],
+      "initialColor": "FFEF8B5B",
+      "createdFrom": "excel",
+      "scientificName": "Dipylidium"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:diphyllobothriidae/genus:diphyllobothrium",
+      "level": "genus",
+      "name": "Diphyllobothrium",
+      "parentId": "granGroup:helminto/group:cestodo/family:diphyllobothriidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Diphyllobothriidae"
+        },
+        {
+          "level": "genus",
+          "name": "Diphyllobothrium"
+        }
+      ],
+      "fields": {
+        "commonName": "Tenia del pescado"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        49
+      ],
+      "initialColor": "FFF4A476",
+      "createdFrom": "excel",
+      "scientificName": "Diphyllobothrium"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:diphyllobothriidae/genus:spirometra",
+      "level": "genus",
+      "name": "Spirometra",
+      "parentId": "granGroup:helminto/group:cestodo/family:diphyllobothriidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Diphyllobothriidae"
+        },
+        {
+          "level": "genus",
+          "name": "Spirometra"
+        }
+      ],
+      "fields": {
+        "commonName": "Espárganos"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        50
+      ],
+      "initialColor": "FFF4A476",
+      "createdFrom": "excel",
+      "scientificName": "Spirometra"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:taeniidae/genus:echinococcus",
+      "level": "genus",
+      "name": "Echinococcus",
+      "parentId": "granGroup:helminto/group:cestodo/family:taeniidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Taeniidae"
+        },
+        {
+          "level": "genus",
+          "name": "Echinococcus"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano de la hidátide"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        47
+      ],
+      "initialColor": "FFEA7A46",
+      "createdFrom": "excel",
+      "scientificName": "Echinococcus"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:taeniidae/genus:taenia",
+      "level": "genus",
+      "name": "Taenia",
+      "parentId": "granGroup:helminto/group:cestodo/family:taeniidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Taeniidae"
+        },
+        {
+          "level": "genus",
+          "name": "Taenia"
+        }
+      ],
+      "fields": {
+        "commonName": "Tenias"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        46
+      ],
+      "initialColor": "FFEA7A46",
+      "createdFrom": "excel",
+      "scientificName": "Taenia"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae",
+      "level": "subfamily",
+      "name": "Ancylostominae",
+      "parentId": "granGroup:helminto/group:nematodo/family:ancylostomatidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ancylostomatidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Ancylostominae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        18,
+        19
+      ],
+      "initialColor": "FFE7806D",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:bunostominae",
+      "level": "subfamily",
+      "name": "Bunostominae",
+      "parentId": "granGroup:helminto/group:nematodo/family:ancylostomatidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ancylostomatidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Bunostominae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        20
+      ],
+      "initialColor": "FFE7806D",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:ascaris",
+      "level": "genus",
+      "name": "Ascaris",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Ascaris"
+        }
+      ],
+      "fields": {
+        "commonName": "Lombriz intestinal"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        25
+      ],
+      "initialColor": "FFF1998C",
+      "createdFrom": "excel",
+      "scientificName": "Ascaris"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:lagochilascaris",
+      "level": "genus",
+      "name": "Lagochilascaris",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Lagochilascaris"
+        }
+      ],
+      "fields": {
+        "commonName": "Ascáridos"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        28
+      ],
+      "initialColor": "FFF1998C",
+      "createdFrom": "excel",
+      "scientificName": "Lagochilascaris"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:parascaris",
+      "level": "genus",
+      "name": "Parascaris",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Parascaris"
+        }
+      ],
+      "fields": {
+        "commonName": "Lombriz del caballo"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        24
+      ],
+      "initialColor": "FFF1998C",
+      "createdFrom": "excel",
+      "scientificName": "Parascaris"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxascaris",
+      "level": "genus",
+      "name": "Toxascaris",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Toxascaris"
+        }
+      ],
+      "fields": {
+        "commonName": "Ascáridos"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        27
+      ],
+      "initialColor": "FFF1998C",
+      "createdFrom": "excel",
+      "scientificName": "Toxascaris"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxocara",
+      "level": "genus",
+      "name": "Toxocara",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Toxocara"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusanos redondos de perros y gatos"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        26
+      ],
+      "initialColor": "FFF1998C",
+      "createdFrom": "excel",
+      "scientificName": "Toxocara"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:dictyocaulidae/genus:dictyocaulus",
+      "level": "genus",
+      "name": "Dictyocaulus",
+      "parentId": "granGroup:helminto/group:nematodo/family:dictyocaulidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Dictyocaulidae"
+        },
+        {
+          "level": "genus",
+          "name": "Dictyocaulus"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusanos pulmonares"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        12
+      ],
+      "initialColor": "FFD9694F",
+      "createdFrom": "excel",
+      "scientificName": "Dictyocaulus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:dioctophymatidae/genus:dioctophyma",
+      "level": "genus",
+      "name": "Dioctophyma",
+      "parentId": "granGroup:helminto/group:nematodo/family:dioctophymatidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Dioctophymatidae"
+        },
+        {
+          "level": "genus",
+          "name": "Dioctophyma"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano gigante del riñón"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        35
+      ],
+      "initialColor": "FFF8BAB3",
+      "createdFrom": "excel",
+      "scientificName": "Dioctophyma"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:onchocercidae/genus:dipetalonema",
+      "level": "genus",
+      "name": "Dipetalonema",
+      "parentId": "granGroup:helminto/group:nematodo/family:onchocercidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Onchocercidae"
+        },
+        {
+          "level": "genus",
+          "name": "Dipetalonema"
+        }
+      ],
+      "fields": {
+        "commonName": "Filarias"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        33
+      ],
+      "initialColor": "FFF5AEA4",
+      "createdFrom": "excel",
+      "scientificName": "Dipetalonema"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:onchocercidae/genus:dirofilaria",
+      "level": "genus",
+      "name": "Dirofilaria",
+      "parentId": "granGroup:helminto/group:nematodo/family:onchocercidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Onchocercidae"
+        },
+        {
+          "level": "genus",
+          "name": "Dirofilaria"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano del corazón"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        32
+      ],
+      "initialColor": "FFF5AEA4",
+      "createdFrom": "excel",
+      "scientificName": "Dirofilaria"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:oxyuridae/genus:oxyuris",
+      "level": "genus",
+      "name": "Oxyuris",
+      "parentId": "granGroup:helminto/group:nematodo/family:oxyuridae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Oxyuridae"
+        },
+        {
+          "level": "genus",
+          "name": "Oxyuris"
+        }
+      ],
+      "fields": {
+        "commonName": "Oxiuros"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        30
+      ],
+      "initialColor": "FFF3A499",
+      "createdFrom": "excel",
+      "scientificName": "Oxyuris"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:cyathostominae",
+      "level": "subfamily",
+      "name": "Cyathostominae",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongylidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongylidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Cyathostominae"
+        }
+      ],
+      "fields": {
+        "commonName": "Pequeños estróngilos"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        16
+      ],
+      "initialColor": "FFE07058",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae",
+      "level": "subfamily",
+      "name": "Strongylinae",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongylidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongylidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Strongylinae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        14,
+        15
+      ],
+      "initialColor": "FFE07058",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongyloididae/genus:strongyloides",
+      "level": "genus",
+      "name": "Strongyloides",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongyloididae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongyloididae"
+        },
+        {
+          "level": "genus",
+          "name": "Strongyloides"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusanos del hilo"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        22
+      ],
+      "initialColor": "FFED8C7C",
+      "createdFrom": "excel",
+      "scientificName": "Strongyloides"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichinellidae/genus:trichinella",
+      "level": "genus",
+      "name": "Trichinella",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichinellidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichinellidae"
+        },
+        {
+          "level": "genus",
+          "name": "Trichinella"
+        }
+      ],
+      "fields": {
+        "commonName": "Triquina"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        39
+      ],
+      "initialColor": "FFFBD4D1",
+      "createdFrom": "excel",
+      "scientificName": "Trichinella"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:cooperia",
+      "level": "genus",
+      "name": "Cooperia",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichostrongylidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichostrongylidae"
+        },
+        {
+          "level": "genus",
+          "name": "Cooperia"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusanos intestinales"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        8
+      ],
+      "initialColor": "FFD55A3F",
+      "createdFrom": "excel",
+      "scientificName": "Cooperia"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:haemonchus",
+      "level": "genus",
+      "name": "Haemonchus",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichostrongylidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichostrongylidae"
+        },
+        {
+          "level": "genus",
+          "name": "Haemonchus"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano del peluquero",
+        "importance": "Hematófago",
+        "location": "Abomaso",
+        "definitiveHost": "Bovino; Ovino",
+        "morphologyMale": "Tamaño: 1 cm; Extremo anterior: ; Extremo posterior: bolsa copulatriz con lóbulo dorsal asimétrico y costilla en forma de Y; Cuerpo: ;",
+        "morphologyFemale": "Tamaño: 2 cm; Extremo anterior: ; Extremo posterior:  ; Cuerpo: aparato genital e intestino enroscados helicoidalmente;",
+        "infectiveForm": "L3"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        6,
+        7
+      ],
+      "initialColor": "FFD55A3F",
+      "createdFrom": "excel",
+      "scientificName": "Haemonchus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:hyostrongylus",
+      "level": "genus",
+      "name": "Hyostrongylus",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichostrongylidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichostrongylidae"
+        },
+        {
+          "level": "genus",
+          "name": "Hyostrongylus"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano rojo del estómago"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        10
+      ],
+      "initialColor": "FFD55A3F",
+      "createdFrom": "excel",
+      "scientificName": "Hyostrongylus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:marshallagia",
+      "level": "genus",
+      "name": "Marshallagia",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichostrongylidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichostrongylidae"
+        },
+        {
+          "level": "genus",
+          "name": "Marshallagia"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano estomacal",
+        "egg": "Tamaño: 160x70 µm\nForma: cápsula de bacteria\nMembrana: fina\nMórula: algo segmentada"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        5
+      ],
+      "initialColor": "FFD55A3F",
+      "createdFrom": "excel",
+      "scientificName": "Marshallagia"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:nematodirus",
+      "level": "genus",
+      "name": "Nematodirus",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichostrongylidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichostrongylidae"
+        },
+        {
+          "level": "genus",
+          "name": "Nematodirus"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusanos de cuello fino",
+        "egg": "\"Tamaño: 140x180µm\nForma: pelota de rugby\nMembrana: fina\nMórula: poco segmentada"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        9
+      ],
+      "initialColor": "FFD55A3F",
+      "createdFrom": "excel",
+      "scientificName": "Nematodirus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:ostertagia",
+      "level": "genus",
+      "name": "Ostertagia",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichostrongylidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichostrongylidae"
+        },
+        {
+          "level": "genus",
+          "name": "Ostertagia"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano marrón del estómago"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        4
+      ],
+      "initialColor": "FFD55A3F",
+      "createdFrom": "excel",
+      "scientificName": "Ostertagia"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:trychostrongylus",
+      "level": "genus",
+      "name": "Trychostrongylus",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichostrongylidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichostrongylidae"
+        },
+        {
+          "level": "genus",
+          "name": "Trychostrongylus"
+        }
+      ],
+      "fields": {
+        "commonName": "Tricostróngilos"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        3
+      ],
+      "initialColor": "FFD55A3F",
+      "createdFrom": "excel",
+      "scientificName": "Trychostrongylus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichuridae/genus:trichuris",
+      "level": "genus",
+      "name": "Trichuris",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichuridae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichuridae"
+        },
+        {
+          "level": "genus",
+          "name": "Trichuris"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusanos látigo"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        37
+      ],
+      "initialColor": "FFF9C8C4",
+      "createdFrom": "excel",
+      "scientificName": "Trichuris"
+    },
+    {
+      "id": "granGroup:helminto/group:trematodo/family:fasciolidae/genus:fasciola",
+      "level": "genus",
+      "name": "Fasciola",
+      "parentId": "granGroup:helminto/group:trematodo/family:fasciolidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "TREMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Fasciolidae"
+        },
+        {
+          "level": "genus",
+          "name": "Fasciola"
+        }
+      ],
+      "fields": {
+        "commonName": "Duela hepática"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        40
+      ],
+      "initialColor": "FFE06666",
+      "createdFrom": "excel",
+      "scientificName": "Fasciola"
+    },
+    {
+      "id": "granGroup:helminto/group:trematodo/family:paramphistomidae/genus:paramphistomum",
+      "level": "genus",
+      "name": "Paramphistomum",
+      "parentId": "granGroup:helminto/group:trematodo/family:paramphistomidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "TREMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Paramphistomidae"
+        },
+        {
+          "level": "genus",
+          "name": "Paramphistomum"
+        }
+      ],
+      "fields": {
+        "commonName": "Paramfistomas"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        41
+      ],
+      "initialColor": "FFEA9999",
+      "createdFrom": "excel",
+      "scientificName": "Paramphistomum"
+    },
+    {
+      "id": "granGroup:protozoarios/group:diplomonadidae/family:hexamitidae/genus:giardia",
+      "level": "genus",
+      "name": "Giardia",
+      "parentId": "granGroup:protozoarios/group:diplomonadidae/family:hexamitidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "DIPLOMONADIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Hexamitidae"
+        },
+        {
+          "level": "genus",
+          "name": "Giardia"
+        }
+      ],
+      "fields": {
+        "commonName": "Giardia"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        94
+      ],
+      "initialColor": "FFA94774",
+      "createdFrom": "excel",
+      "scientificName": "Giardia"
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:cryptosporidae/genus:cryptosporidium",
+      "level": "genus",
+      "name": "Cryptosporidium",
+      "parentId": "granGroup:protozoarios/group:eucoccidae/family:cryptosporidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Cryptosporidae"
+        },
+        {
+          "level": "genus",
+          "name": "Cryptosporidium"
+        }
+      ],
+      "fields": {
+        "commonName": "Criptosporidios"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        97
+      ],
+      "initialColor": "FFBF5D89",
+      "createdFrom": "excel",
+      "scientificName": "Cryptosporidium"
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:eimeriidae/genus:eimeria",
+      "level": "genus",
+      "name": "Eimeria",
+      "parentId": "granGroup:protozoarios/group:eucoccidae/family:eimeriidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Eimeriidae"
+        },
+        {
+          "level": "genus",
+          "name": "Eimeria"
+        }
+      ],
+      "fields": {
+        "commonName": "Coccidios"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        95
+      ],
+      "initialColor": "FFB3507D",
+      "createdFrom": "excel",
+      "scientificName": "Eimeria"
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:eimeriidae/genus:isospora",
+      "level": "genus",
+      "name": "Isospora",
+      "parentId": "granGroup:protozoarios/group:eucoccidae/family:eimeriidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Eimeriidae"
+        },
+        {
+          "level": "genus",
+          "name": "Isospora"
+        }
+      ],
+      "fields": {
+        "commonName": "Coccidios"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        96
+      ],
+      "initialColor": "FFB3507D",
+      "createdFrom": "excel",
+      "scientificName": "Isospora"
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:sarcocystidae/subfamily:sarcocystinae",
+      "level": "subfamily",
+      "name": "Sarcocystinae",
+      "parentId": "granGroup:protozoarios/group:eucoccidae/family:sarcocystidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Sarcocystidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Sarcocystinae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        98
+      ],
+      "initialColor": "FFCB6995",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:sarcocystidae/subfamily:toxoplasmatinae",
+      "level": "subfamily",
+      "name": "Toxoplasmatinae",
+      "parentId": "granGroup:protozoarios/group:eucoccidae/family:sarcocystidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Sarcocystidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Toxoplasmatinae"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        99
+      ],
+      "initialColor": "FFCB6995",
+      "createdFrom": "excel",
+      "scientificName": ""
+    },
+    {
+      "id": "granGroup:protozoarios/group:kinetoplastidae/family:trypanosomatidae/genus:leishmania",
+      "level": "genus",
+      "name": "Leishmania",
+      "parentId": "granGroup:protozoarios/group:kinetoplastidae/family:trypanosomatidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "KINETOPLASTIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Trypanosomatidae"
+        },
+        {
+          "level": "genus",
+          "name": "Leishmania"
+        }
+      ],
+      "fields": {
+        "commonName": "Leishmanias"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        92
+      ],
+      "initialColor": "FF902D5B",
+      "createdFrom": "excel",
+      "scientificName": "Leishmania"
+    },
+    {
+      "id": "granGroup:protozoarios/group:kinetoplastidae/family:trypanosomatidae/genus:trypanosoma",
+      "level": "genus",
+      "name": "Trypanosoma",
+      "parentId": "granGroup:protozoarios/group:kinetoplastidae/family:trypanosomatidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "KINETOPLASTIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Trypanosomatidae"
+        },
+        {
+          "level": "genus",
+          "name": "Trypanosoma"
+        }
+      ],
+      "fields": {
+        "commonName": "Tripanosomas"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        91
+      ],
+      "initialColor": "FF902D5B",
+      "createdFrom": "excel",
+      "scientificName": "Trypanosoma"
+    },
+    {
+      "id": "granGroup:protozoarios/group:trichomonadidae/family:trhichomonadidae/genus:tritrichomonas",
+      "level": "genus",
+      "name": "Tritrichomonas",
+      "parentId": "granGroup:protozoarios/group:trichomonadidae/family:trhichomonadidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "TRICHOMONADIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Trhichomonadidae"
+        },
+        {
+          "level": "genus",
+          "name": "Tritrichomonas"
+        }
+      ],
+      "fields": {
+        "commonName": "Tricomonas"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        93
+      ],
+      "initialColor": "FF9E3968",
+      "createdFrom": "excel",
+      "scientificName": "Tritrichomonas"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:ixodidae/genus:rhipicephalus/species:microplus",
+      "level": "species",
+      "name": "microplus",
+      "parentId": "granGroup:artropodo/group:acarina/family:ixodidae/genus:rhipicephalus",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Ixodidae"
+        },
+        {
+          "level": "genus",
+          "name": "Rhipicephalus"
+        },
+        {
+          "level": "species",
+          "name": "microplus"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Transcritos Parasitología; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Rhipicephalus microplus"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:ixodidae/genus:rhipicephalus/species:sanguineus",
+      "level": "species",
+      "name": "sanguineus",
+      "parentId": "granGroup:artropodo/group:acarina/family:ixodidae/genus:rhipicephalus",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Ixodidae"
+        },
+        {
+          "level": "genus",
+          "name": "Rhipicephalus"
+        },
+        {
+          "level": "species",
+          "name": "sanguineus"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Transcritos Parasitología; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Rhipicephalus sanguineus"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:sarcoptidae/genus:sarcoptes/species:scabiei",
+      "level": "species",
+      "name": "scabiei",
+      "parentId": "granGroup:artropodo/group:acarina/family:sarcoptidae/genus:sarcoptes",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Sarcoptidae"
+        },
+        {
+          "level": "genus",
+          "name": "Sarcoptes"
+        },
+        {
+          "level": "species",
+          "name": "scabiei"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Guía de preparados 2025; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Sarcoptes scabiei"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:brachycera/family:tabanidae/genus:tabanus",
+      "level": "genus",
+      "name": "Tabanus",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:brachycera/family:tabanidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "BRACHYCERA"
+        },
+        {
+          "level": "family",
+          "name": "Tabanidae"
+        },
+        {
+          "level": "genus",
+          "name": "Tabanus"
+        }
+      ],
+      "fields": {
+        "commonName": "Tábano"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        82
+      ],
+      "initialColor": "FFBADBFC",
+      "createdFrom": "excel",
+      "scientificName": "Tabanus"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:calliphoridae/genus:cocholiomyia",
+      "level": "genus",
+      "name": "Cocholiomyia",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:calliphoridae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Calliphoridae"
+        },
+        {
+          "level": "genus",
+          "name": "Cocholiomyia"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano barrenador del ganado",
+        "importance": "Productorora de miasis cuatáneo-ulcerosa"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        88
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": "Cocholiomyia"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:calliphoridae/genus:lucilia",
+      "level": "genus",
+      "name": "Lucilia",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:calliphoridae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Calliphoridae"
+        },
+        {
+          "level": "genus",
+          "name": "Lucilia"
+        }
+      ],
+      "fields": {
+        "commonName": "Mosca verde",
+        "importance": "Productorora de miasis cuatáneo-ulcerosa"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        89
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": "Lucilia"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:gasterophilidae/genus:gaserophilus",
+      "level": "genus",
+      "name": "Gaserophilus",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:gasterophilidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Gasterophilidae"
+        },
+        {
+          "level": "genus",
+          "name": "Gaserophilus"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusanos del estómago",
+        "importance": "Productora de miasis cavitaria;"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        90
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": "Gaserophilus"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:hippoboscidae/genus:mallophagus",
+      "level": "genus",
+      "name": "Mallophagus",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:hippoboscidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Hippoboscidae"
+        },
+        {
+          "level": "genus",
+          "name": "Mallophagus"
+        }
+      ],
+      "fields": {
+        "commonName": "Falsa garrapata del ovino",
+        "importance": "Suctopicadora hematófaga"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        85
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": "Mallophagus"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:muscidae/genus:haematobia",
+      "level": "genus",
+      "name": "Haematobia",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:muscidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Muscidae"
+        },
+        {
+          "level": "genus",
+          "name": "Haematobia"
+        }
+      ],
+      "fields": {
+        "commonName": "Mosca de los cuernos",
+        "importance": "Suctopicadora hematófaga; afecta a la producción"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        84
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": "Haematobia"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:muscidae/genus:stomoxys",
+      "level": "genus",
+      "name": "Stomoxys",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:muscidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Muscidae"
+        },
+        {
+          "level": "genus",
+          "name": "Stomoxys"
+        }
+      ],
+      "fields": {
+        "commonName": "Mosca de los establos",
+        "importance": "Suctopicadora hematófaga; vector de Trypanosoma evansi"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        83
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": "Stomoxys"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:oestridae/genus:dermatobia",
+      "level": "genus",
+      "name": "Dermatobia",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:oestridae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Oestridae"
+        },
+        {
+          "level": "genus",
+          "name": "Dermatobia"
+        }
+      ],
+      "fields": {
+        "commonName": "Tórsalo",
+        "importance": "Zoonótica; productora de miasis forunculosa; enfermedad URA"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        86
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": "Dermatobia"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:oestridae/genus:oestrus",
+      "level": "genus",
+      "name": "Oestrus",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:oestridae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "CYCLORRHAPHA"
+        },
+        {
+          "level": "family",
+          "name": "Oestridae"
+        },
+        {
+          "level": "genus",
+          "name": "Oestrus"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano de la nariz",
+        "importance": "Productora de miasis cavitaria;"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        87
+      ],
+      "initialColor": "FFD2E6FC",
+      "createdFrom": "excel",
+      "scientificName": "Oestrus"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:ceratopogonidae/genus:culicoides",
+      "level": "genus",
+      "name": "Culicoides",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:ceratopogonidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Ceratopogonidae"
+        },
+        {
+          "level": "genus",
+          "name": "Culicoides"
+        }
+      ],
+      "fields": {
+        "commonName": "Jejenes"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        79
+      ],
+      "initialColor": "FF84BDF7",
+      "createdFrom": "excel",
+      "scientificName": "Culicoides"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:culicidae/genus:aedes",
+      "level": "genus",
+      "name": "Aedes",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:culicidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Culicidae"
+        },
+        {
+          "level": "genus",
+          "name": "Aedes"
+        }
+      ],
+      "fields": {
+        "commonName": "Mosquito de la fiebre amarilla / tigre"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        77
+      ],
+      "initialColor": "FF4B9BEC",
+      "createdFrom": "excel",
+      "scientificName": "Aedes"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:culicidae/genus:anopheles",
+      "level": "genus",
+      "name": "Anopheles",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:culicidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Culicidae"
+        },
+        {
+          "level": "genus",
+          "name": "Anopheles"
+        }
+      ],
+      "fields": {
+        "commonName": "Mosquito de la malaria"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        75
+      ],
+      "initialColor": "FF4B9BEC",
+      "createdFrom": "excel",
+      "scientificName": "Anopheles"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:culicidae/genus:culex",
+      "level": "genus",
+      "name": "Culex",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:culicidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Culicidae"
+        },
+        {
+          "level": "genus",
+          "name": "Culex"
+        }
+      ],
+      "fields": {
+        "commonName": "Mosquito común"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        76
+      ],
+      "initialColor": "FF4B9BEC",
+      "createdFrom": "excel",
+      "scientificName": "Culex"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:psychodidae/genus:lutzomyia",
+      "level": "genus",
+      "name": "Lutzomyia",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:psychodidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Psychodidae"
+        },
+        {
+          "level": "genus",
+          "name": "Lutzomyia"
+        }
+      ],
+      "fields": {
+        "commonName": "Jejenes"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        81
+      ],
+      "initialColor": "FF9FCCF9",
+      "createdFrom": "excel",
+      "scientificName": "Lutzomyia"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:psychodidae/genus:phlebotomus",
+      "level": "genus",
+      "name": "Phlebotomus",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:psychodidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Psychodidae"
+        },
+        {
+          "level": "genus",
+          "name": "Phlebotomus"
+        }
+      ],
+      "fields": {
+        "commonName": "Jejenes"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        80
+      ],
+      "initialColor": "FF9FCCF9",
+      "createdFrom": "excel",
+      "scientificName": "Phlebotomus"
+    },
+    {
+      "id": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:simulidae/genus:simulium",
+      "level": "genus",
+      "name": "Simulium",
+      "parentId": "granGroup:artropodo/group:diptera/subgroup:nematocera/family:simulidae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "DIPTERA"
+        },
+        {
+          "level": "subgroup",
+          "name": "NEMATOCERA"
+        },
+        {
+          "level": "family",
+          "name": "Simulidae"
+        },
+        {
+          "level": "genus",
+          "name": "Simulium"
+        }
+      ],
+      "fields": {
+        "commonName": "Mosca negra"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        78
+      ],
+      "initialColor": "FF68AEF2",
+      "createdFrom": "excel",
+      "scientificName": "Simulium"
+    },
+    {
+      "id": "granGroup:helminto/group:acantocephala/family:oligacanthorhynchidae/genus:macracanthorhynchus/species:hirudinaceus",
+      "level": "species",
+      "name": "hirudinaceus",
+      "parentId": "granGroup:helminto/group:acantocephala/family:oligacanthorhynchidae/genus:macracanthorhynchus",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "ACANTOCEPHALA"
+        },
+        {
+          "level": "family",
+          "name": "Oligacanthorhynchidae"
+        },
+        {
+          "level": "genus",
+          "name": "Macracanthorhynchus"
+        },
+        {
+          "level": "species",
+          "name": "hirudinaceus"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Transcritos Parasitología; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Macracanthorhynchus hirudinaceus"
+    },
+    {
+      "id": "granGroup:helminto/group:cestodo/family:dilepididae/genus:dipylidium/species:caninum",
+      "level": "species",
+      "name": "caninum",
+      "parentId": "granGroup:helminto/group:cestodo/family:dilepididae/genus:dipylidium",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "CESTODO"
+        },
+        {
+          "level": "family",
+          "name": "Dilepididae"
+        },
+        {
+          "level": "genus",
+          "name": "Dipylidium"
+        },
+        {
+          "level": "species",
+          "name": "caninum"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Transcritos Parasitología; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Dipylidium caninum"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae/genus:ancylostoma",
+      "level": "genus",
+      "name": "Ancylostoma",
+      "parentId": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ancylostomatidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Ancylostominae"
+        },
+        {
+          "level": "genus",
+          "name": "Ancylostoma"
+        }
+      ],
+      "fields": {
+        "commonName": "Anquilostomas"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        18
+      ],
+      "initialColor": "FFE7806D",
+      "createdFrom": "excel",
+      "scientificName": "Ancylostoma"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae/genus:uncinaria",
+      "level": "genus",
+      "name": "Uncinaria",
+      "parentId": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ancylostomatidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Ancylostominae"
+        },
+        {
+          "level": "genus",
+          "name": "Uncinaria"
+        }
+      ],
+      "fields": {
+        "commonName": "Anquilostomas"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        19
+      ],
+      "initialColor": "FFE7806D",
+      "createdFrom": "excel",
+      "scientificName": "Uncinaria"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:bunostominae/genus:bunostomum",
+      "level": "genus",
+      "name": "Bunostomum",
+      "parentId": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:bunostominae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ancylostomatidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Bunostominae"
+        },
+        {
+          "level": "genus",
+          "name": "Bunostomum"
+        }
+      ],
+      "fields": {
+        "commonName": "Anquilostomas"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        20
+      ],
+      "initialColor": "FFE7806D",
+      "createdFrom": "excel",
+      "scientificName": "Bunostomum"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:onchocercidae/genus:dirofilaria/species:immitis",
+      "level": "species",
+      "name": "immitis",
+      "parentId": "granGroup:helminto/group:nematodo/family:onchocercidae/genus:dirofilaria",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Onchocercidae"
+        },
+        {
+          "level": "genus",
+          "name": "Dirofilaria"
+        },
+        {
+          "level": "species",
+          "name": "immitis"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Transcritos Parasitología; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Dirofilaria immitis"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:onchocercidae/genus:dirofilaria/species:repens",
+      "level": "species",
+      "name": "repens",
+      "parentId": "granGroup:helminto/group:nematodo/family:onchocercidae/genus:dirofilaria",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Onchocercidae"
+        },
+        {
+          "level": "genus",
+          "name": "Dirofilaria"
+        },
+        {
+          "level": "species",
+          "name": "repens"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Transcritos Parasitología; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Dirofilaria repens"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:strongylus",
+      "level": "genus",
+      "name": "Strongylus",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongylidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Strongylinae"
+        },
+        {
+          "level": "genus",
+          "name": "Strongylus"
+        }
+      ],
+      "fields": {
+        "commonName": "Grandes estróngilos"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        14
+      ],
+      "initialColor": "FFE07058",
+      "createdFrom": "excel",
+      "scientificName": "Strongylus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:triodontophorus",
+      "level": "genus",
+      "name": "Triodontophorus",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongylidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Strongylinae"
+        },
+        {
+          "level": "genus",
+          "name": "Triodontophorus"
+        }
+      ],
+      "fields": {
+        "commonName": "Grandes estróngilos"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        15
+      ],
+      "initialColor": "FFE07058",
+      "createdFrom": "excel",
+      "scientificName": "Triodontophorus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:haemonchus/species:contortus",
+      "level": "species",
+      "name": "contortus",
+      "parentId": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:haemonchus",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Trichostrongylidae"
+        },
+        {
+          "level": "genus",
+          "name": "Haemonchus"
+        },
+        {
+          "level": "species",
+          "name": "contortus"
+        }
+      ],
+      "fields": {
+        "commonName": "Gusano del peluquero"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        7
+      ],
+      "initialColor": "FFD55A3F",
+      "createdFrom": "excel",
+      "scientificName": "Haemonchus contortus"
+    },
+    {
+      "id": "granGroup:helminto/group:trematodo/family:fasciolidae/genus:fasciola/species:hepatica",
+      "level": "species",
+      "name": "hepatica",
+      "parentId": "granGroup:helminto/group:trematodo/family:fasciolidae/genus:fasciola",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "TREMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Fasciolidae"
+        },
+        {
+          "level": "genus",
+          "name": "Fasciola"
+        },
+        {
+          "level": "species",
+          "name": "hepatica"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Guía de preparados 2025; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Fasciola hepatica"
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:sarcocystidae/subfamily:sarcocystinae/genus:sarcocystis",
+      "level": "genus",
+      "name": "Sarcocystis",
+      "parentId": "granGroup:protozoarios/group:eucoccidae/family:sarcocystidae/subfamily:sarcocystinae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Sarcocystidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Sarcocystinae"
+        },
+        {
+          "level": "genus",
+          "name": "Sarcocystis"
+        }
+      ],
+      "fields": {
+        "commonName": "Sarcocistis"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        98
+      ],
+      "initialColor": "FFCB6995",
+      "createdFrom": "excel",
+      "scientificName": "Sarcocystis"
+    },
+    {
+      "id": "granGroup:protozoarios/group:eucoccidae/family:sarcocystidae/subfamily:toxoplasmatinae/genus:toxoplasma",
+      "level": "genus",
+      "name": "Toxoplasma",
+      "parentId": "granGroup:protozoarios/group:eucoccidae/family:sarcocystidae/subfamily:toxoplasmatinae",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "PROTOZOARIOS"
+        },
+        {
+          "level": "group",
+          "name": "EUCOCCIDAE"
+        },
+        {
+          "level": "family",
+          "name": "Sarcocystidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Toxoplasmatinae"
+        },
+        {
+          "level": "genus",
+          "name": "Toxoplasma"
+        }
+      ],
+      "fields": {
+        "commonName": "Toxoplasma"
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [
+        99
+      ],
+      "initialColor": "FFCB6995",
+      "createdFrom": "excel",
+      "scientificName": "Toxoplasma"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:strongylus/species:edentatus",
+      "level": "species",
+      "name": "edentatus",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:strongylus",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongylidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Strongylinae"
+        },
+        {
+          "level": "genus",
+          "name": "Strongylus"
+        },
+        {
+          "level": "species",
+          "name": "edentatus"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Guía de preparados 2025; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Strongylus edentatus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:strongylus/species:equinus",
+      "level": "species",
+      "name": "equinus",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:strongylus",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongylidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Strongylinae"
+        },
+        {
+          "level": "genus",
+          "name": "Strongylus"
+        },
+        {
+          "level": "species",
+          "name": "equinus"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Guía de preparados 2025; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Strongylus equinus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:strongylus/species:vulgaris",
+      "level": "species",
+      "name": "vulgaris",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:strongylus",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongylidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Strongylinae"
+        },
+        {
+          "level": "genus",
+          "name": "Strongylus"
+        },
+        {
+          "level": "species",
+          "name": "vulgaris"
+        }
+      ],
+      "fields": {},
+      "tags": [],
+      "notes": [
+        {
+          "type": "source-mention",
+          "message": "Nombre mencionado en Guía de preparados 2025; sin atributos inferidos."
+        }
+      ],
+      "sourceRows": [],
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Strongylus vulgaris"
+    }
+  ],
+  "issues": [
+    {
+      "kind": "review",
+      "message": "El Excel escribe “Trychostrongylus”; los apuntes contienen variantes de grafía. Revisar antes de normalizar.",
+      "nodeIds": [
+        "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:trychostrongylus"
+      ]
+    },
+    {
+      "kind": "review",
+      "message": "El Excel escribe “Trhichomonadidae”; conservar hasta revisión editorial.",
+      "nodeIds": [
+        "granGroup:protozoarios/group:trichomonadidae/family:trhichomonadidae",
+        "granGroup:protozoarios/group:trichomonadidae/family:trhichomonadidae/genus:tritrichomonas"
+      ]
+    },
+    {
+      "kind": "review",
+      "message": "El Excel escribe “Gaserophilus”; conservar hasta revisión editorial.",
+      "nodeIds": [
+        "granGroup:artropodo/group:diptera/subgroup:cyclorrhapha/family:gasterophilidae/genus:gaserophilus"
+      ]
+    },
+    {
+      "kind": "review",
+      "message": "El Excel incluye “Anoplocesphalidae” y “Anoplocephalidae” como familias distintas; revisar la clasificación antes de consolidar.",
+      "nodeIds": [
+        "granGroup:helminto/group:cestodo/family:anoplocesphalidae",
+        "granGroup:helminto/group:cestodo/family:anoplocesphalidae/genus:moniezia",
+        "granGroup:helminto/group:cestodo/family:anoplocesphalidae/genus:thysanosoma",
+        "granGroup:helminto/group:cestodo/family:anoplocesphalidae/genus:paranoplocephala"
+      ]
+    }
+  ],
+  "importSummary": {
+    "excelRows": 98,
+    "supplementalNameOnlyRecords": 11,
+    "noFactsInferred": true
+  }
+}
