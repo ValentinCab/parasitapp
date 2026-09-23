@@ -12,13 +12,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ui-v7.css">
 </head>
 <body>
   <aside class="sidebar">
     <div class="brand"><span class="brand-mark">⌁</span><span>Atlas de<br><strong>Parasitología</strong></span></div>
     <nav aria-label="Secciones principales">
-      <button class="nav-link active" data-view="atlas">⌂ <span>Atlas</span></button>
-      <button class="nav-link" data-view="table">▦ <span>Tabla taxonómica</span></button>
+      <button class="nav-link" data-view="atlas">⌂ <span>Ficha completa</span></button>
+      <button class="nav-link active" data-view="table">▦ <span>Tabla taxonómica</span></button>
       <button class="nav-link" data-view="gallery">▧ <span>Galería</span></button>
       <button class="nav-link" data-view="review">◎ <span>Revisión de fuentes</span></button>
       <button class="nav-link" data-view="settings">⚙ <span>Configuración</span></button>
@@ -42,5 +43,6 @@
   <input id="importPicker" type="file" accept=".json,.xlsx" hidden>
   <script type="module" src="app-v5.js"></script>
   <script type="module" src="table-quick-close-v1.js"></script>
+  <script src="ui-v7.js"></script>
 </body>
 </html>
