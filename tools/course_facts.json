@@ -1,0 +1,268 @@
+[
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichostrongylidae"]],
+    "fields": {
+      "morphologyGeneral": "Vermes filamentosos pequeños; los mayores no superan 4 cm. La cápsula bucal tiene pocas estructuras accesorias.",
+      "location": "Abomaso e intestino delgado, principalmente de rumiantes; el material menciona además equinos, aves y porcinos como hospedadores de representantes del grupo.",
+      "cycle": "Directo: los huevos salen con la materia fecal; en condiciones óptimas del ambiente evolucionan L1, L2 y L3. Luego de la ingestión, continúan a L4, L5 y adulto en el hospedador.",
+      "infectiveForm": "L3; ingresa por vía oral.",
+      "egg": "Tipo: elipsoidal, segmentado, con cámara de aire y doble membrana fina; aproximadamente 80 × 40 µm. Nematodirus y Marshallagia constituyen excepciones reconocidas en el material."
+    },
+    "source": {"document": "Transcritos Parasitología", "pages": [7], "locator": "Superfamilia Trichostrongylideos"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichostrongylidae"], ["genus", "Trychostrongylus"]],
+    "fields": {"location": "Rumiantes, equinos, aves y cerdos; zonas frías.", "ppp": "Aproximadamente 21 días.", "morphologyMale": "Espículas cortas y retorcidas.", "observations": "El material transcripto presenta la grafía «Trinchostrongylus»; el Excel conserva «Trychostrongylus»."},
+    "source": {"document": "Transcritos Parasitología", "pages": [8], "locator": "Primer género de los Trichostrongylideos"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichostrongylidae"], ["genus", "Ostertagia"]],
+    "fields": {"location": "Rumiantes; zonas frías.", "morphologyGeneral": "Papilas cervicales pequeñas.", "morphologyFemale": "Repliegue vulvar (flap vulvar) poco evidente.", "ppp": "Usualmente 21 días; puede superar 6 meses por hipobiosis en la mucosa del abomaso, según las circunstancias ambientales descriptas."},
+    "source": {"document": "Transcritos Parasitología", "pages": [8], "locator": "Segundo género: Ostertagia"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichostrongylidae"], ["genus", "Marshallagia"]],
+    "fields": {"location": "Ovinos y caprinos; zonas frías.", "egg": "Grande (aprox. 160 × 70–100 µm), bordes paralelos y curvaturas en ambos polos; se diferencia de Ostertagia por tamaño y forma."},
+    "source": {"document": "Transcritos Parasitología", "pages": [7, 8], "locator": "Huevos y género Marshallagia"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichostrongylidae"], ["genus", "Haemonchus"]],
+    "fields": {"location": "Rumiantes; zonas cálidas.", "importance": "Altamente hematófago.", "morphologyGeneral": "Adultos con lancetas bucales y papilas cervicales triangulares.", "morphologyFemale": "Intestino rojo enrollado alrededor del útero blanco, con aspecto de «palo de peluquero».", "ppp": "Aproximadamente 21 días.", "observations": "El material indica una puesta de 5.000 a 10.000 huevos por día."},
+    "source": {"document": "Transcritos Parasitología", "pages": [8], "locator": "Género Haemonchus"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichostrongylidae"], ["genus", "Haemonchus"], ["species", "contortus"]],
+    "fields": {"morphologyFemale": "Presenta flap vulvar; el intestino y el aparato genital se observan enrollados helicoidalmente, con el patrón rojo-blanco señalado en la guía."},
+    "source": {"document": "Guía práctica Cátedra", "pages": [2, 3], "locator": "Preparado C: hembra de Haemonchus contortus"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichostrongylidae"], ["genus", "Cooperia"]],
+    "fields": {"location": "Intestino delgado de rumiantes.", "morphologyGeneral": "Dilatación cefálica con estriaciones transversales (refuerzo quitinoso) en el extremo anterior.", "ppp": "21 días."},
+    "source": {"document": "Transcritos Parasitología", "pages": [8], "locator": "Género Cooperia"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichostrongylidae"], ["genus", "Hyostrongylus"]],
+    "fields": {"location": "Estómago de cerdos.", "importance": "Hematófago.", "ppp": "21 días."},
+    "source": {"document": "Transcritos Parasitología", "pages": [8], "locator": "Caso del género Hyostrongylus"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichostrongylidae"], ["genus", "Nematodirus"]],
+    "fields": {"location": "Intestino delgado de bovinos y ovinos; zonas frías.", "morphologyGeneral": "Dilatación cefálica en el extremo anterior.", "morphologyMale": "Espículas largas y delgadas que sobrepasan el parásito.", "morphologyFemale": "Extremo generalmente truncado con pequeño espolón.", "egg": "Forma de pelota de rugby, bordes puntiagudos y mórulas grandes en menor cantidad; 140–180 µm.", "ppp": "21 días."},
+    "source": {"document": "Transcritos Parasitología", "pages": [7, 8], "locator": "Huevos y género Nematodirus"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongylidae"]],
+    "fields": {"morphologyGeneral": "Cápsula bucal globosa con gotera esofágica, doble corona radiada y dientes en el fondo.", "morphologyMale": "Bolsa copulatriz con tres lóbulos, dos espículas y gubernáculo.", "morphologyFemale": "Vulva en el tercio posterior; extremo posterior romo.", "egg": "Ovalado, membrana fina, interior segmentado y cámara de aire evidente; aproximadamente 80 µm. El material indica cultivo de larvas para llegar al género."},
+    "source": {"document": "Transcritos Parasitología", "pages": [9, 10], "locator": "Familia Strongylidae"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongylidae"], ["subfamily", "Strongylinae"], ["genus", "Strongylus"]],
+    "fields": {"importance": "Las especies del género se describen como histiófagas.", "location": "Ciego y colon de equinos (según el apartado de ciclos de los estrongílidos)."},
+    "source": {"document": "Transcritos Parasitología", "pages": [9], "locator": "Strongylus"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongylidae"], ["subfamily", "Strongylinae"], ["genus", "Strongylus"], ["species", "vulgaris"]],
+    "fields": {"morphologyMale": "14–16 mm; dos dientes redondeados en forma de orejas de ratón en el fondo de la cápsula bucal.", "morphologyFemale": "20–24 mm.", "cycle": "Migración por sangre hacia arterias mesentérica anterior, ilíaca y cecocólica."},
+    "source": {"document": "Transcritos Parasitología", "pages": [9], "locator": "Strongylus vulgaris"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongylidae"], ["subfamily", "Strongylinae"], ["genus", "Strongylus"], ["species", "equinus"]],
+    "fields": {"morphologyMale": "26–35 mm; cuatro dientes en el fondo de la cápsula bucal.", "morphologyFemale": "38–47 mm.", "cycle": "Migración por peritoneo hacia hígado y páncreas."},
+    "source": {"document": "Transcritos Parasitología", "pages": [9], "locator": "Strongylus equinus"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongylidae"], ["subfamily", "Strongylinae"], ["genus", "Strongylus"], ["species", "edentatus"]],
+    "fields": {"morphologyGeneral": "Cápsula bucal en forma de copa; sin dientes.", "morphologyMale": "23–28 mm.", "morphologyFemale": "33–44 mm.", "cycle": "Migración por vía portal al hígado y luego por el ligamento hepático al peritoneo."},
+    "source": {"document": "Transcritos Parasitología", "pages": [9], "locator": "Strongylus edentatus"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongylidae"], ["subfamily", "Strongylinae"], ["genus", "Triodontophorus"]],
+    "fields": {"morphologyGeneral": "9–25 mm; cápsula bucal globosa de paredes gruesas con tres pares de dientes aserrados.", "morphologyMale": "Espículas iguales, largas y delgadas, terminadas en gancho.", "egg": "Segmentado, ovalado, de cubierta delgada; aproximadamente 80 µm.", "location": "Ciego y colon de equinos.", "cycle": "Directo. L3 infectante a los 6–7 días; permanece en pared intestinal y forma nódulos en la submucosa antes de llegar al ciego y colon. El material describe ciclos de 7 a 11 meses."},
+    "source": {"document": "Transcritos Parasitología", "pages": [9], "locator": "Género Triodontophorus"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongylidae"], ["subfamily", "Cyathostominae"]],
+    "fields": {"commonName": "Pequeños strongylus; ciatostomas.", "morphologyGeneral": "Más de 40 especies; cápsula bucal corta y cilíndrica, sin dientes ni placas; coronas radiadas externa e interna y gotera esofágica corta.", "morphologyMale": "7–10 mm; bolsa copulatriz desarrollada y costilla dorsal doble ramificada.", "morphologyFemale": "10–15 mm; vulva cerca del ano.", "location": "Equinos, mulos y asnos; distribución mundial y alta prevalencia en animales de campo y deportivos.", "ppp": "Aproximadamente 3 meses."},
+    "source": {"document": "Transcritos Parasitología", "pages": [10, 11], "locator": "Subfamilia Cyathostominae"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ancylostomatidae"], ["subfamily", "Ancylostominae"], ["genus", "Ancylostoma"]],
+    "fields": {"location": "Intestino delgado.", "morphologyGeneral": "Cápsula bucal bien desarrollada con dientes.", "morphologyMale": "Bolsa copulatriz desarrollada, costillas y dos espículas.", "morphologyFemale": "Extremo posterior recto y romo.", "importance": "Hematófagos e histiófagos.", "cycle": "Directo; la L3 ingresa por ingestión o penetración activa por piel. Se describe migración pulmonar y posibilidad de infección neonatal por vía galactógena.", "infectiveForm": "L3.", "egg": "Ovoide, con cámara de aire, segmentado, membrana fina y lisa; aproximadamente 65 µm.", "ppp": "2–3 semanas por vía oral y 4–5 semanas por vía percutánea.", "observations": "El material menciona zoonosis: larva migrans cutánea."},
+    "source": {"document": "Transcritos Parasitología", "pages": [12, 13], "locator": "Familia Ancylostomatidae / género Ancylostoma"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ancylostomatidae"], ["subfamily", "Ancylostominae"], ["genus", "Ancylostoma"], ["species", "caninum"]],
+    "fields": {"morphologyGeneral": "Tres pares de dientes ventrales y dos dientes en el fondo de la cápsula bucal.", "morphologyMale": "11–13 mm; con espículas.", "morphologyFemale": "14–21 mm.", "egg": "55–70 µm.", "definitiveHost": "Perros, zorros, lobos, gatos y otros cánidos silvestres.", "location": "Intestino delgado."},
+    "source": {"document": "Transcritos Parasitología", "pages": [12], "locator": "Ancylostoma caninum"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ancylostomatidae"], ["subfamily", "Ancylostominae"], ["genus", "Ancylostoma"], ["species", "braziliense"]],
+    "fields": {"morphologyGeneral": "Cápsula bucal larga, con dos pares de dientes medianos a grandes.", "morphologyMale": "Aproximadamente 8 mm; espículas delgadas.", "morphologyFemale": "9–10 mm.", "egg": "75–90 µm.", "definitiveHost": "Perros y gatos.", "location": "Intestino delgado."},
+    "source": {"document": "Transcritos Parasitología", "pages": [12], "locator": "Ancylostoma braziliense"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ancylostomatidae"], ["subfamily", "Ancylostominae"], ["genus", "Ancylostoma"], ["species", "tubaeforme"]],
+    "fields": {"morphologyGeneral": "Similar a A. caninum, de menor tamaño.", "morphologyMale": "9–10 mm.", "morphologyFemale": "12–15 mm.", "egg": "55–70 µm.", "definitiveHost": "Gato.", "location": "Intestino delgado.", "importance": "Descripto como el más común del gato."},
+    "source": {"document": "Transcritos Parasitología", "pages": [12], "locator": "Ancylostoma tubaeforme"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongyloididae"], ["genus", "Strongyloides"]],
+    "fields": {"morphologyGeneral": "Tiene una generación adulta de vida libre. En el hospedador, sólo las hembras integran la etapa parasitaria; presentan esófago alargado y cilíndrico. Larvas y generación libre presentan esófago rabditiforme.", "cycle": "Directo; puede haber desarrollo heterogónico con adultos de vida libre. Los huevos eclosionan y la L3 filariforme es infectante. Se describe migración sanguínea-pulmonar, traqueal y deglución hacia el intestino delgado.", "infectiveForm": "L3 filariforme; vía oral o cutánea."},
+    "source": {"document": "Transcritos Parasitología", "pages": [14, 15], "locator": "Género Strongyloides"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongyloididae"], ["genus", "Strongyloides"], ["species", "stercoralis"]],
+    "fields": {"importance": "Zoonótica.", "definitiveHost": "Caninos, felinos y primates.", "location": "Intestino delgado; regiones tropicales y subtropicales.", "morphologyFemale": "Hembra partenogenética de hasta 2,2 mm."},
+    "source": {"document": "Transcritos Parasitología", "pages": [14], "locator": "Strongyloides stercoralis"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongyloididae"], ["genus", "Strongyloides"], ["species", "ransomi"]],
+    "fields": {"definitiveHost": "Cerdos.", "morphologyFemale": "Aproximadamente 4,5 mm.", "observations": "El material menciona evidencia de transmisión transmamaria en esta especie."},
+    "source": {"document": "Transcritos Parasitología", "pages": [14, 16], "locator": "Especies de importancia veterinaria / hipobiosis"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongyloididae"], ["genus", "Strongyloides"], ["species", "papillosus"]],
+    "fields": {"definitiveHost": "Rumiantes, conejos y roedores.", "morphologyFemale": "Aproximadamente 6 mm.", "observations": "El material menciona evidencia de transmisión transmamaria en especies que afectan al ganado."},
+    "source": {"document": "Transcritos Parasitología", "pages": [14, 16], "locator": "Especies de importancia veterinaria / hipobiosis"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Strongyloididae"], ["genus", "Strongyloides"], ["species", "westeri"]],
+    "fields": {"definitiveHost": "Equinos.", "morphologyFemale": "Aproximadamente 9 mm.", "observations": "El material menciona evidencia de transmisión transmamaria."},
+    "source": {"document": "Transcritos Parasitología", "pages": [14, 16], "locator": "Especies de importancia veterinaria / hipobiosis"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ascarididae"]],
+    "fields": {"morphologyGeneral": "Nematodes grandes, filariformes, redondos y cilíndricos, con tres labios en el extremo anterior. Los adultos están sueltos en la luz del intestino delgado; los machos tienen extremo posterior incurvado, sin bolsa copulatriz y con dos espículas; las hembras terminan romas.", "location": "Intestino delgado; afectan principalmente animales jóvenes. El material menciona equinos, bovinos, porcinos, caninos, felinos y seres humanos entre los hospedadores de representantes de la familia.", "egg": "Ovoide, no segmentado (una blastómera), con membrana gruesa y rugosa y cámara de aire pequeña a moderada; habitualmente 80–90 µm. Se resalta su resistencia ambiental.", "cycle": "Directo; en condiciones favorables el huevo evoluciona a huevo con L3 en 15–21 días.", "infectiveForm": "Huevo con L3.", "importance": "Alta prevalencia en animales jóvenes; las altas cargas pueden formar ovillos y causar obstrucción intestinal."},
+    "source": {"document": "Transcritos Parasitología", "pages": [16, 17], "locator": "Familia Ascarididae"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ascarididae"], ["genus", "Parascaris"], ["species", "equorum"]],
+    "fields": {"definitiveHost": "Equinos jóvenes, desde el destete hasta aproximadamente 1–1,5 años.", "location": "Intestino delgado.", "morphologyGeneral": "Tres labios y tres interlabios; el material lo señala como el único de la familia con interlabios. Puede alcanzar 45 cm.", "cycle": "Migración traqueal: L3 atraviesa pared intestinal, llega por vía porta al hígado, luego corazón derecho y pulmones; tras expectoración/deglución vuelve al aparato digestivo y al intestino delgado.", "infectiveForm": "Huevo con L3, procedente de pasturas, heno o alimentos contaminados.", "ppp": "2,5–3 meses."},
+    "source": {"document": "Transcritos Parasitología", "pages": [16, 17], "locator": "Parascaris equorum"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ascarididae"], ["genus", "Ascaris"], ["species", "suum"]],
+    "fields": {"definitiveHost": "Porcinos jóvenes.", "morphologyGeneral": "Puede alcanzar 30 cm.", "egg": "Aproximadamente 80 µm; superficie abollonada con mamelones.", "infectiveForm": "Huevo con L3.", "paratenicHost": "Lombrices de tierra.", "cycle": "Migración traqueal.", "ppp": "60–75 días."},
+    "source": {"document": "Transcritos Parasitología", "pages": [17], "locator": "Ascaris suum"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ascarididae"], ["genus", "Toxocara"]],
+    "fields": {"morphologyGeneral": "Aletas cervicales; el material diferencia las de T. catis como aspecto de punta de flecha y las de T. canis como lanceoladas. El género puede alcanzar hasta 15 cm."},
+    "source": {"document": "Transcritos Parasitología", "pages": [16], "locator": "Familia Ascarididae"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ascarididae"], ["genus", "Toxocara"], ["species", "canis"]],
+    "fields": {"definitiveHost": "Caninos.", "infectiveForm": "Huevo con L3; también L3 en hospedadores paraténicos.", "paratenicHost": "Principalmente roedores y aves.", "cycle": "Migración traqueal en caninos menores de tres meses; migración somática en animales mayores. El material describe transmisión principalmente transplacentaria y, en menor medida, transmamaria.", "ppp": "30 días por ingestión oral; 20 días por vía galactógena o por hospedador paraténico; 16–21 días por vía transplacentaria.", "importance": "Zoonótica; el material menciona larva migrans visceral y ocular en el ser humano."},
+    "source": {"document": "Transcritos Parasitología", "pages": [18], "locator": "Toxocara canis"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ascarididae"], ["genus", "Toxocara"], ["species", "catis"]],
+    "fields": {"definitiveHost": "Felinos domésticos y silvestres.", "infectiveForm": "Huevo con L3; también L3 en hospedadores paraténicos.", "cycle": "Migración traqueal en gatitos, gatos jóvenes y también adultos; puede haber migración somática. El material describe transmisión transmamaria y no transplacentaria.", "ppp": "2 meses por ingestión de huevo con L3; 19 días por leche o hospedador paraténico.", "importance": "Zoonótica; el material menciona larva migrans visceral y ocular."},
+    "source": {"document": "Transcritos Parasitología", "pages": [19], "locator": "Toxocara catis"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ascarididae"], ["genus", "Toxocara"], ["species", "vitulorum"]],
+    "fields": {"definitiveHost": "Bovinos.", "infectiveForm": "Huevo con L3.", "cycle": "Migración traqueal hasta los 3–4 meses de edad y migración somática en bovinos mayores; el material menciona transmisión transplacentaria y transmamaria."},
+    "source": {"document": "Transcritos Parasitología", "pages": [19], "locator": "Toxocara vitulorum"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Ascarididae"], ["genus", "Toxascaris"], ["species", "leonina"]],
+    "fields": {"definitiveHost": "Caninos y felinos.", "location": "Intestino delgado.", "infectiveForm": "Huevo con L3; también L3 en hospedadores paraténicos.", "cycle": "No realiza migraciones marcadas fuera del intestino delgado.", "egg": "No segmentado; membrana externa lisa y delgada, y membrana interna gruesa y rugosa; cámara de aire muy marcada."},
+    "source": {"document": "Transcritos Parasitología", "pages": [19], "locator": "Toxascaris leonina"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Oxyuridae"], ["genus", "Oxyuris"], ["species", "equi"]],
+    "fields": {"definitiveHost": "Equinos.", "location": "Adultos en intestino grueso; la hembra deposita huevos en la región perineal.", "morphologyGeneral": "Tres labios rudimentarios en el extremo anterior; se alimenta de mucosa intestinal.", "morphologyMale": "1,5–2 cm; espícula larga; sin bolsa copulatriz.", "morphologyFemale": "Aproximadamente 10 cm; marcada diferencia de tamaño respecto del macho.", "egg": "Aproximadamente 90 µm, asimétrico, operculado y embrionado al momento de la puesta; adherido al pelo perineal por sustancia cementante.", "cycle": "Directo temporal; la hembra ovipone en región perineal, los huevos caen al ambiente y evolucionan. No realiza migraciones.", "infectiveForm": "L2 o L3, por vía oral.", "ppp": "Aproximadamente 5 meses.", "importance": "La oviposición produce irritación perineal; el material asocia rascado, pérdida de pelo y lesiones cutáneas."},
+    "source": {"document": "Transcritos Parasitología", "pages": [20], "locator": "Oxyuris equi"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Onchocercidae"]],
+    "fields": {"morphologyGeneral": "Nematodes largos y delgados, con abertura bucal pequeña. Hembras ovovivíparas: suelen liberar microfilarias, con o sin vaina fina.", "location": "Microfilarias en el torrente circulatorio de los hospedadores."},
+    "source": {"document": "Transcritos Parasitología", "pages": [21], "locator": "Género Dirofilaria / familia Onchocercidae"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Onchocercidae"], ["genus", "Dirofilaria"], ["species", "immitis"]],
+    "fields": {"definitiveHost": "Caninos, felinos y hurones.", "importance": "Zoonótica."},
+    "source": {"document": "Transcritos Parasitología", "pages": [21], "locator": "Dirofilaria immitis"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Onchocercidae"], ["genus", "Dirofilaria"], ["species", "repens"]],
+    "fields": {"definitiveHost": "Caninos y felinos.", "morphologyMale": "Puede alcanzar hasta 7 cm."},
+    "source": {"document": "Transcritos Parasitología", "pages": [22], "locator": "Dirofilaria repens"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "NEMATODO"], ["family", "Trichuridae"], ["genus", "Trichuris"]],
+    "fields": {"commonName": "Gusano látigo."},
+    "source": {"document": "Transcritos Parasitología", "pages": [24], "locator": "Trichuris"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "TREMATODO"], ["family", "Fasciolidae"], ["genus", "Fasciola"], ["species", "hepatica"]],
+    "fields": {"location": "Adultos en conductos biliares y vesícula biliar.", "cycle": "Indirecto.", "importance": "Zoonótica."},
+    "source": {"document": "Guía práctica Cátedra", "pages": [39], "locator": "Trematodes: Fasciola hepatica"}
+  },
+  {
+    "path": [["granGroup", "HELMINTO"], ["group", "TREMATODO"], ["family", "Paramphistomidae"], ["genus", "Paramphistomum"]],
+    "fields": {"location": "Rumen."},
+    "source": {"document": "Guía práctica Cátedra", "pages": [39], "locator": "Trematodes: Paramphistomum spp."}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Ixodidae"]],
+    "fields": {"morphologyGeneral": "Garrapatas duras: escudo dorsal; en machos cubre toda la superficie y en hembras aproximadamente el primer tercio. Peritremas detrás de la cuarta coxa y órgano de Haller en el tarso del primer par de patas.", "cycle": "Metamorfosis incompleta. Larva, ninfa y adulto son hematófagos; entre larva/ninfa y ninfa/adulto hay mudas (metalarva y metaninfa)."},
+    "source": {"document": "Transcritos Parasitología", "pages": [60, 61], "locator": "Garrapatas / familia Ixodidae"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Ixodidae"], ["genus", "Rhipicephalus"], ["species", "sanguineus"]],
+    "fields": {"definitiveHost": "Caninos.", "morphologyGeneral": "Festones marginales posteriores; escudo marrón no ornamentado; capítulo rectangular y palpos cortos.", "location": "Oreja, cuello, cara, abdomen, región perineal y zonas de piel delgada.", "cycle": "Tres hospedadores; metalarva y metaninfa ocurren en el ambiente. Oviposición en superficies altas, paredes, grietas o escondijos.", "importance": "El material indica transmisión de Hepatozoon canis y babesia(s)."},
+    "source": {"document": "Transcritos Parasitología", "pages": [61], "locator": "Rhipicephalus sanguineus"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Ixodidae"], ["genus", "Rhipicephalus"], ["species", "microplus"]],
+    "fields": {"definitiveHost": "Bovinos; ocasionalmente otros mamíferos, incluidos equinos, caprinos y caninos.", "morphologyGeneral": "Capítulo corto y rectangular; machos con espolón posterior del escudo; escudo no ornamentado.", "location": "Piel delgada: orejas, hocico, debajo del cuello, región perineal y abdomen.", "cycle": "Un hospedador. La teliogina se desprende para oviponer en lugares bajos; desde el ascenso larval hasta su desprendimiento, el ciclo sobre el bovino dura 20–25 días. La fase de vida libre puede durar 90–185 días."},
+    "source": {"document": "Transcritos Parasitología", "pages": [62, 63], "locator": "Boophilus microplus"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Argasidae"]],
+    "fields": {"commonName": "Garrapatas blandas.", "morphologyGeneral": "Sin escudo dorsal; capítulo visible sólo desde ventral; sin dimorfismo sexual evidente.", "cycle": "Huevo, larva, 3–4 estadios ninfales y adulto. Suben y bajan del hospedador: hematofagia rápida y discontinua; las mudas ocurren en el ambiente."},
+    "source": {"document": "Transcritos Parasitología", "pages": [64], "locator": "Familia Argasidae"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Argasidae"], ["genus", "Argas"], ["species", "persicus"]],
+    "fields": {"definitiveHost": "Aves domésticas: gallinas, pavos y patos.", "cycle": "Larvas, tres estadios ninfales y adultos realizan hematofagia nocturna y luego caen al ambiente. La hembra deposita grupos de 100–120 huevos y no muere luego de la puesta."},
+    "source": {"document": "Transcritos Parasitología", "pages": [64], "locator": "Argas persicus"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Psoroptidae"]],
+    "fields": {"morphologyGeneral": "Ácaros no aradores, de cuerpo ovalado; parasitan capas superficiales de piel. Patas largas; machos con lóbulos posteriores y ventosas copulatorias. Aproximadamente 1–2 mm.", "location": "Capas superficiales de la piel.", "cycle": "Metamorfosis incompleta; larvas con tres pares de patas y ninfas/adultos con cuatro pares."},
+    "source": {"document": "Transcritos Parasitología", "pages": [66, 69], "locator": "Familia Psoroptidae"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Psoroptidae"], ["genus", "Psoroptes"]],
+    "fields": {"commonName": "Ácaros de las costras.", "morphologyGeneral": "Capítulo cónico, pedicelo largo y triarticulado; 0,4–0,8 mm.", "location": "Piel cubierta por pelo o lana y orejas.", "cycle": "Todos los estadios se desarrollan en el hospedador; duración aproximada de 10–12 días. Puede sobrevivir fuera del hospedador en latencia hasta 4 semanas.", "importance": "Responsable de sarna psoróptica."},
+    "source": {"document": "Transcritos Parasitología", "pages": [66, 67], "locator": "Género Psoroptes"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Psoroptidae"], ["genus", "Chorioptes"], ["species", "bovis"]],
+    "fields": {"morphologyFemale": "Aproximadamente 300 µm; primero, segundo y cuarto par de patas con ambulacros.", "morphologyMale": "Todos los pares de patas terminan en ambulacros.", "morphologyGeneral": "Pedicelo más corto que el de Psoroptes.", "cycle": "Similar al de Psoroptes; aproximadamente tres semanas."},
+    "source": {"document": "Transcritos Parasitología", "pages": [67], "locator": "Chorioptes bovis"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Psoroptidae"], ["genus", "Otodectes"], ["species", "cynotis"]],
+    "fields": {"definitiveHost": "Perros, gatos, zorros y hurones.", "location": "Canal auditivo externo y piel adyacente.", "morphologyMale": "Aproximadamente 275 µm; los cuatro pares de patas terminan en ambulacros.", "morphologyFemale": "Aproximadamente 350 µm; sólo los tres primeros pares de patas terminan en ambulacros.", "cycle": "Huevo adherido al oído; eclosión a los cuatro días. Incluye larva, protoninfa y deutoninfa; 18–28 días de huevo a huevo.", "importance": "Se alimenta de detritos del oído."},
+    "source": {"document": "Transcritos Parasitología", "pages": [68], "locator": "Otodectes cynotis"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Sarcoptidae"]],
+    "fields": {"morphologyGeneral": "Ácaros aradores: patas cortas, coxas hundidas y patas poco proyectadas más allá del cuerpo; vida de íntimo contacto con el hospedador.", "cycle": "La hembra excava galerías en el estrato córneo. Las larvas hexápodas emergen a los cuatro días; el ciclo de huevo a huevo dura 17–21 días."},
+    "source": {"document": "Transcritos Parasitología", "pages": [69, 70], "locator": "Familia Sarcoptidae"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Sarcoptidae"], ["genus", "Sarcoptes"], ["species", "scabiei"]],
+    "fields": {"morphologyGeneral": "Cuerpo globoso, cutícula estriada con áreas escamosas y espinosas; patas cortas y ano terminal. Pedicelos largos no segmentados.", "morphologyMale": "Aproximadamente 0,3 mm de largo y 0,1–0,2 mm de ancho; primero, segundo y cuarto par de patas con ambulacros.", "morphologyFemale": "0,3–0,6 mm de largo y 0,25–0,4 mm de ancho; primero y segundo par de patas con ambulacros.", "importance": "Causante de sarna sarcóptica y enfermedad zoonótica (escabiosis humana).", "definitiveHost": "Perros, zorros, ovejas, cabras, caballos y conejos, además del ser humano."},
+    "source": {"document": "Transcritos Parasitología", "pages": [69, 70], "locator": "Género Sarcoptes"}
+  },
+  {
+    "path": [["granGroup", "ARTRÓPODO"], ["group", "ACARINA"], ["family", "Dermanyssidae"], ["genus", "Dermanyssus"], ["species", "gallinae"]],
+    "fields": {"commonName": "Ácaro rojo.", "definitiveHost": "Aves de corral, palomas y pollos; ocasionalmente mamíferos, incluido el ser humano.", "morphologyGeneral": "Hematófago; adultos de 0,75–1 mm, patas largas, escudo dorsal estrechado posteriormente y quelíceros largos en forma de estilete.", "cycle": "Está sobre el hospedador de noche para alimentarse; el resto del tiempo permanece en grietas y recovecos. Eclosión en 2–3 días; larvas no se alimentan y siguen estadios de protoninfa, deutoninfa y adulto. Ciclo de alrededor de 17 días."},
+    "source": {"document": "Transcritos Parasitología", "pages": [73], "locator": "Dermanyssus gallinae"}
+  }
+]
