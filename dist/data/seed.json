@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "createdAt": "2026-09-21T21:05:26.666574+00:00",
+  "schemaVersion": 2,
+  "createdAt": "2026-09-23T03:38:14.812381+00:00",
   "source": {
     "workbook": "PARÁSITOS.xlsx",
     "worksheet": "TODOS",
@@ -65,6 +65,7 @@
         89,
         90
       ],
+      "fieldSources": {},
       "initialColor": "FF0B5394",
       "createdFrom": "excel",
       "scientificName": ""
@@ -135,6 +136,7 @@
         50,
         51
       ],
+      "fieldSources": {},
       "initialColor": "FFA61C00",
       "createdFrom": "excel",
       "scientificName": ""
@@ -164,6 +166,7 @@
         98,
         99
       ],
+      "fieldSources": {},
       "initialColor": "FF741B47",
       "createdFrom": "excel",
       "scientificName": ""
@@ -206,6 +209,7 @@
         68,
         69
       ],
+      "fieldSources": {},
       "initialColor": "FF235131",
       "createdFrom": "excel",
       "scientificName": ""
@@ -246,6 +250,7 @@
         89,
         90
       ],
+      "fieldSources": {},
       "initialColor": "FF378CE5",
       "createdFrom": "excel",
       "scientificName": ""
@@ -273,6 +278,7 @@
         71,
         72
       ],
+      "fieldSources": {},
       "initialColor": "",
       "createdFrom": "excel",
       "scientificName": ""
@@ -300,6 +306,16 @@
       "sourceRows": [
         73
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 73,
+            "value": "Piojos"
+          }
+        ]
+      },
       "initialColor": "FF00A6A6",
       "createdFrom": "excel",
       "scientificName": ""
@@ -327,6 +343,16 @@
       "sourceRows": [
         74
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 74,
+            "value": "Pulgas"
+          }
+        ]
+      },
       "initialColor": "FF00D7D7",
       "createdFrom": "excel",
       "scientificName": ""
@@ -352,6 +378,7 @@
       "sourceRows": [
         51
       ],
+      "fieldSources": {},
       "initialColor": "FFBF9000",
       "createdFrom": "excel",
       "scientificName": ""
@@ -385,6 +412,7 @@
         49,
         50
       ],
+      "fieldSources": {},
       "initialColor": "FFCC5B23",
       "createdFrom": "excel",
       "scientificName": ""
@@ -447,6 +475,7 @@
         38,
         39
       ],
+      "fieldSources": {},
       "initialColor": "FFCC4125",
       "createdFrom": "excel",
       "scientificName": ""
@@ -473,6 +502,7 @@
         40,
         41
       ],
+      "fieldSources": {},
       "initialColor": "FFCC0000",
       "createdFrom": "excel",
       "scientificName": ""
@@ -498,6 +528,7 @@
       "sourceRows": [
         94
       ],
+      "fieldSources": {},
       "initialColor": "FFA94774",
       "createdFrom": "excel",
       "scientificName": ""
@@ -527,6 +558,7 @@
         98,
         99
       ],
+      "fieldSources": {},
       "initialColor": "FFCB6995",
       "createdFrom": "excel",
       "scientificName": ""
@@ -553,6 +585,7 @@
         91,
         92
       ],
+      "fieldSources": {},
       "initialColor": "FF902D5B",
       "createdFrom": "excel",
       "scientificName": ""
@@ -578,6 +611,7 @@
       "sourceRows": [
         93
       ],
+      "fieldSources": {},
       "initialColor": "FF9E3968",
       "createdFrom": "excel",
       "scientificName": ""
@@ -601,7 +635,11 @@
           "name": "Argasidae"
         }
       ],
-      "fields": {},
+      "fields": {
+        "commonName": "Garrapatas blandas.",
+        "morphologyGeneral": "Sin escudo dorsal; capítulo visible sólo desde ventral; sin dimorfismo sexual evidente.",
+        "cycle": "Huevo, larva, 3–4 estadios ninfales y adulto. Suben y bajan del hospedador: hematofagia rápida y discontinua; las mudas ocurren en el ambiente."
+      },
       "tags": [],
       "notes": [],
       "sourceRows": [
@@ -609,6 +647,38 @@
         58,
         59
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              64
+            ],
+            "locator": "Familia Argasidae",
+            "value": "Garrapatas blandas."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              64
+            ],
+            "locator": "Familia Argasidae",
+            "value": "Sin escudo dorsal; capítulo visible sólo desde ventral; sin dimorfismo sexual evidente."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              64
+            ],
+            "locator": "Familia Argasidae",
+            "value": "Huevo, larva, 3–4 estadios ninfales y adulto. Suben y bajan del hospedador: hematofagia rápida y discontinua; las mudas ocurren en el ambiente."
+          }
+        ]
+      },
       "initialColor": "FF316B3E",
       "createdFrom": "excel",
       "scientificName": ""
@@ -639,6 +709,7 @@
         68,
         69
       ],
+      "fieldSources": {},
       "initialColor": "FF68B774",
       "createdFrom": "excel",
       "scientificName": ""
@@ -668,6 +739,7 @@
       "sourceRows": [
         66
       ],
+      "fieldSources": {},
       "initialColor": "FF529E61",
       "createdFrom": "excel",
       "scientificName": ""
@@ -697,6 +769,7 @@
       "sourceRows": [
         67
       ],
+      "fieldSources": {},
       "initialColor": "FF5CAA6B",
       "createdFrom": "excel",
       "scientificName": ""
@@ -726,6 +799,7 @@
       "sourceRows": [
         65
       ],
+      "fieldSources": {},
       "initialColor": "FF499156",
       "createdFrom": "excel",
       "scientificName": ""
@@ -749,7 +823,10 @@
           "name": "Ixodidae"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyGeneral": "Garrapatas duras: escudo dorsal; en machos cubre toda la superficie y en hembras aproximadamente el primer tercio. Peritremas detrás de la cuarta coxa y órgano de Haller en el tarso del primer par de patas.",
+        "cycle": "Metamorfosis incompleta. Larva, ninfa y adulto son hematófagos; entre larva/ninfa y ninfa/adulto hay mudas (metalarva y metaninfa)."
+      },
       "tags": [],
       "notes": [],
       "sourceRows": [
@@ -759,6 +836,30 @@
         55,
         56
       ],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              60,
+              61
+            ],
+            "locator": "Garrapatas / familia Ixodidae",
+            "value": "Garrapatas duras: escudo dorsal; en machos cubre toda la superficie y en hembras aproximadamente el primer tercio. Peritremas detrás de la cuarta coxa y órgano de Haller en el tarso del primer par de patas."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              60,
+              61
+            ],
+            "locator": "Garrapatas / familia Ixodidae",
+            "value": "Metamorfosis incompleta. Larva, ninfa y adulto son hematófagos; entre larva/ninfa y ninfa/adulto hay mudas (metalarva y metaninfa)."
+          }
+        ]
+      },
       "initialColor": "FF2A5F38",
       "createdFrom": "excel",
       "scientificName": ""
@@ -782,7 +883,11 @@
           "name": "Psoroptidae"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyGeneral": "Ácaros no aradores, de cuerpo ovalado; parasitan capas superficiales de piel. Patas largas; machos con lóbulos posteriores y ventosas copulatorias. Aproximadamente 1–2 mm.",
+        "location": "Capas superficiales de la piel.",
+        "cycle": "Metamorfosis incompleta; larvas con tres pares de patas y ninfas/adultos con cuatro pares."
+      },
       "tags": [],
       "notes": [],
       "sourceRows": [
@@ -790,6 +895,41 @@
         61,
         62
       ],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              66,
+              69
+            ],
+            "locator": "Familia Psoroptidae",
+            "value": "Ácaros no aradores, de cuerpo ovalado; parasitan capas superficiales de piel. Patas largas; machos con lóbulos posteriores y ventosas copulatorias. Aproximadamente 1–2 mm."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              66,
+              69
+            ],
+            "locator": "Familia Psoroptidae",
+            "value": "Capas superficiales de la piel."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              66,
+              69
+            ],
+            "locator": "Familia Psoroptidae",
+            "value": "Metamorfosis incompleta; larvas con tres pares de patas y ninfas/adultos con cuatro pares."
+          }
+        ]
+      },
       "initialColor": "FF397745",
       "createdFrom": "excel",
       "scientificName": ""
@@ -813,13 +953,40 @@
           "name": "Sarcoptidae"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyGeneral": "Ácaros aradores: patas cortas, coxas hundidas y patas poco proyectadas más allá del cuerpo; vida de íntimo contacto con el hospedador.",
+        "cycle": "La hembra excava galerías en el estrato córneo. Las larvas hexápodas emergen a los cuatro días; el ciclo de huevo a huevo dura 17–21 días."
+      },
       "tags": [],
       "notes": [],
       "sourceRows": [
         63,
         64
       ],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              69,
+              70
+            ],
+            "locator": "Familia Sarcoptidae",
+            "value": "Ácaros aradores: patas cortas, coxas hundidas y patas poco proyectadas más allá del cuerpo; vida de íntimo contacto con el hospedador."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              69,
+              70
+            ],
+            "locator": "Familia Sarcoptidae",
+            "value": "La hembra excava galerías en el estrato córneo. Las larvas hexápodas emergen a los cuatro días; el ciclo de huevo a huevo dura 17–21 días."
+          }
+        ]
+      },
       "initialColor": "FF40844E",
       "createdFrom": "excel",
       "scientificName": ""
@@ -849,6 +1016,7 @@
       "sourceRows": [
         82
       ],
+      "fieldSources": {},
       "initialColor": "FFBADBFC",
       "createdFrom": "excel",
       "scientificName": ""
@@ -885,6 +1053,7 @@
         89,
         90
       ],
+      "fieldSources": {},
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": ""
@@ -920,6 +1089,7 @@
         80,
         81
       ],
+      "fieldSources": {},
       "initialColor": "FF9FCCF9",
       "createdFrom": "excel",
       "scientificName": ""
@@ -951,6 +1121,7 @@
         71,
         72
       ],
+      "fieldSources": {},
       "initialColor": "FF53D475",
       "createdFrom": "excel",
       "scientificName": ""
@@ -980,6 +1151,7 @@
       "sourceRows": [
         51
       ],
+      "fieldSources": {},
       "initialColor": "FFF1C232",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1009,6 +1181,7 @@
       "sourceRows": [
         44
       ],
+      "fieldSources": {},
       "initialColor": "FFDE6B32",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1040,6 +1213,7 @@
         43,
         45
       ],
+      "fieldSources": {},
       "initialColor": "FFDE6B32",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1069,6 +1243,7 @@
       "sourceRows": [
         48
       ],
+      "fieldSources": {},
       "initialColor": "FFEF8B5B",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1099,6 +1274,7 @@
         49,
         50
       ],
+      "fieldSources": {},
       "initialColor": "FFF4A476",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1129,6 +1305,7 @@
         46,
         47
       ],
+      "fieldSources": {},
       "initialColor": "FFEA7A46",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1161,6 +1338,7 @@
         19,
         20
       ],
+      "fieldSources": {},
       "initialColor": "FFE7806D",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1184,7 +1362,14 @@
           "name": "Ascarididae"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyGeneral": "Nematodes grandes, filariformes, redondos y cilíndricos, con tres labios en el extremo anterior. Los adultos están sueltos en la luz del intestino delgado; los machos tienen extremo posterior incurvado, sin bolsa copulatriz y con dos espículas; las hembras terminan romas.",
+        "location": "Intestino delgado; afectan principalmente animales jóvenes. El material menciona equinos, bovinos, porcinos, caninos, felinos y seres humanos entre los hospedadores de representantes de la familia.",
+        "egg": "Ovoide, no segmentado (una blastómera), con membrana gruesa y rugosa y cámara de aire pequeña a moderada; habitualmente 80–90 µm. Se resalta su resistencia ambiental.",
+        "cycle": "Directo; en condiciones favorables el huevo evoluciona a huevo con L3 en 15–21 días.",
+        "infectiveForm": "Huevo con L3.",
+        "importance": "Alta prevalencia en animales jóvenes; las altas cargas pueden formar ovillos y causar obstrucción intestinal."
+      },
       "tags": [],
       "notes": [],
       "sourceRows": [
@@ -1195,6 +1380,74 @@
         27,
         28
       ],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Familia Ascarididae",
+            "value": "Nematodes grandes, filariformes, redondos y cilíndricos, con tres labios en el extremo anterior. Los adultos están sueltos en la luz del intestino delgado; los machos tienen extremo posterior incurvado, sin bolsa copulatriz y con dos espículas; las hembras terminan romas."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Familia Ascarididae",
+            "value": "Intestino delgado; afectan principalmente animales jóvenes. El material menciona equinos, bovinos, porcinos, caninos, felinos y seres humanos entre los hospedadores de representantes de la familia."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Familia Ascarididae",
+            "value": "Ovoide, no segmentado (una blastómera), con membrana gruesa y rugosa y cámara de aire pequeña a moderada; habitualmente 80–90 µm. Se resalta su resistencia ambiental."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Familia Ascarididae",
+            "value": "Directo; en condiciones favorables el huevo evoluciona a huevo con L3 en 15–21 días."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Familia Ascarididae",
+            "value": "Huevo con L3."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Familia Ascarididae",
+            "value": "Alta prevalencia en animales jóvenes; las altas cargas pueden formar ovillos y causar obstrucción intestinal."
+          }
+        ]
+      },
       "initialColor": "FFF1998C",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1225,6 +1478,7 @@
         11,
         12
       ],
+      "fieldSources": {},
       "initialColor": "FFD9694F",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1255,6 +1509,7 @@
         34,
         35
       ],
+      "fieldSources": {},
       "initialColor": "FFF8BAB3",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1278,7 +1533,10 @@
           "name": "Onchocercidae"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyGeneral": "Nematodes largos y delgados, con abertura bucal pequeña. Hembras ovovivíparas: suelen liberar microfilarias, con o sin vaina fina.",
+        "location": "Microfilarias en el torrente circulatorio de los hospedadores."
+      },
       "tags": [],
       "notes": [],
       "sourceRows": [
@@ -1286,6 +1544,28 @@
         32,
         33
       ],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              21
+            ],
+            "locator": "Género Dirofilaria / familia Onchocercidae",
+            "value": "Nematodes largos y delgados, con abertura bucal pequeña. Hembras ovovivíparas: suelen liberar microfilarias, con o sin vaina fina."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              21
+            ],
+            "locator": "Género Dirofilaria / familia Onchocercidae",
+            "value": "Microfilarias en el torrente circulatorio de los hospedadores."
+          }
+        ]
+      },
       "initialColor": "FFF5AEA4",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1316,6 +1596,7 @@
         29,
         30
       ],
+      "fieldSources": {},
       "initialColor": "FFF3A499",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1339,7 +1620,12 @@
           "name": "Strongylidae"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyGeneral": "Cápsula bucal globosa con gotera esofágica, doble corona radiada y dientes en el fondo.",
+        "morphologyMale": "Bolsa copulatriz con tres lóbulos, dos espículas y gubernáculo.",
+        "morphologyFemale": "Vulva en el tercio posterior; extremo posterior romo.",
+        "egg": "Ovalado, membrana fina, interior segmentado y cámara de aire evidente; aproximadamente 80 µm. El material indica cultivo de larvas para llegar al género."
+      },
       "tags": [],
       "notes": [],
       "sourceRows": [
@@ -1348,6 +1634,52 @@
         15,
         16
       ],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9,
+              10
+            ],
+            "locator": "Familia Strongylidae",
+            "value": "Cápsula bucal globosa con gotera esofágica, doble corona radiada y dientes en el fondo."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9,
+              10
+            ],
+            "locator": "Familia Strongylidae",
+            "value": "Bolsa copulatriz con tres lóbulos, dos espículas y gubernáculo."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9,
+              10
+            ],
+            "locator": "Familia Strongylidae",
+            "value": "Vulva en el tercio posterior; extremo posterior romo."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9,
+              10
+            ],
+            "locator": "Familia Strongylidae",
+            "value": "Ovalado, membrana fina, interior segmentado y cámara de aire evidente; aproximadamente 80 µm. El material indica cultivo de larvas para llegar al género."
+          }
+        ]
+      },
       "initialColor": "FFE07058",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1378,6 +1710,7 @@
         21,
         22
       ],
+      "fieldSources": {},
       "initialColor": "FFED8C7C",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1408,6 +1741,7 @@
         38,
         39
       ],
+      "fieldSources": {},
       "initialColor": "FFFBD4D1",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1432,10 +1766,28 @@
         }
       ],
       "fields": {
-        "egg": "Tamaño: 80x40 µm\nForma: ovoide\nMembrana: fina\nMórula: muy segmentada"
+        "egg": "Tamaño: 80x40 µm\nForma: ovoide\nMembrana: fina\nMórula: muy segmentada",
+        "morphologyGeneral": "Vermes filamentosos pequeños; los mayores no superan 4 cm. La cápsula bucal tiene pocas estructuras accesorias.",
+        "location": "Abomaso e intestino delgado, principalmente de rumiantes; el material menciona además equinos, aves y porcinos como hospedadores de representantes del grupo.",
+        "cycle": "Directo: los huevos salen con la materia fecal; en condiciones óptimas del ambiente evolucionan L1, L2 y L3. Luego de la ingestión, continúan a L4, L5 y adulto en el hospedador.",
+        "infectiveForm": "L3; ingresa por vía oral."
       },
       "tags": [],
-      "notes": [],
+      "notes": [
+        {
+          "type": "source-conflict",
+          "field": "egg",
+          "message": "El material aporta un valor diferente para egg; revisar las fuentes antes de consolidar.",
+          "value": "Tipo: elipsoidal, segmentado, con cámara de aire y doble membrana fina; aproximadamente 80 × 40 µm. Nematodirus y Marshallagia constituyen excepciones reconocidas en el material.",
+          "source": {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7
+            ],
+            "locator": "Superfamilia Trichostrongylideos"
+          }
+        }
+      ],
       "sourceRows": [
         2,
         3,
@@ -1447,6 +1799,64 @@
         9,
         10
       ],
+      "fieldSources": {
+        "egg": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 2,
+            "value": "Tamaño: 80x40 µm\nForma: ovoide\nMembrana: fina\nMórula: muy segmentada"
+          },
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7
+            ],
+            "locator": "Superfamilia Trichostrongylideos",
+            "value": "Tipo: elipsoidal, segmentado, con cámara de aire y doble membrana fina; aproximadamente 80 × 40 µm. Nematodirus y Marshallagia constituyen excepciones reconocidas en el material."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7
+            ],
+            "locator": "Superfamilia Trichostrongylideos",
+            "value": "Vermes filamentosos pequeños; los mayores no superan 4 cm. La cápsula bucal tiene pocas estructuras accesorias."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7
+            ],
+            "locator": "Superfamilia Trichostrongylideos",
+            "value": "Abomaso e intestino delgado, principalmente de rumiantes; el material menciona además equinos, aves y porcinos como hospedadores de representantes del grupo."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7
+            ],
+            "locator": "Superfamilia Trichostrongylideos",
+            "value": "Directo: los huevos salen con la materia fecal; en condiciones óptimas del ambiente evolucionan L1, L2 y L3. Luego de la ingestión, continúan a L4, L5 y adulto en el hospedador."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7
+            ],
+            "locator": "Superfamilia Trichostrongylideos",
+            "value": "L3; ingresa por vía oral."
+          }
+        ]
+      },
       "initialColor": "FFD55A3F",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1477,6 +1887,7 @@
         36,
         37
       ],
+      "fieldSources": {},
       "initialColor": "FFF9C8C4",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1506,6 +1917,7 @@
       "sourceRows": [
         40
       ],
+      "fieldSources": {},
       "initialColor": "FFE06666",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1535,6 +1947,7 @@
       "sourceRows": [
         41
       ],
+      "fieldSources": {},
       "initialColor": "FFEA9999",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1564,6 +1977,7 @@
       "sourceRows": [
         94
       ],
+      "fieldSources": {},
       "initialColor": "FFA94774",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1593,6 +2007,7 @@
       "sourceRows": [
         97
       ],
+      "fieldSources": {},
       "initialColor": "FFBF5D89",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1623,6 +2038,7 @@
         95,
         96
       ],
+      "fieldSources": {},
       "initialColor": "FFB3507D",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1653,6 +2069,7 @@
         98,
         99
       ],
+      "fieldSources": {},
       "initialColor": "FFCB6995",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1683,6 +2100,7 @@
         91,
         92
       ],
+      "fieldSources": {},
       "initialColor": "FF902D5B",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1712,6 +2130,7 @@
       "sourceRows": [
         93
       ],
+      "fieldSources": {},
       "initialColor": "FF9E3968",
       "createdFrom": "excel",
       "scientificName": ""
@@ -1747,6 +2166,16 @@
       "sourceRows": [
         57
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 57,
+            "value": "Garrapata de las aves"
+          }
+        ]
+      },
       "initialColor": "FF316B3E",
       "createdFrom": "excel",
       "scientificName": "Argas"
@@ -1782,6 +2211,16 @@
       "sourceRows": [
         59
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 59,
+            "value": "Garrapatas blandas"
+          }
+        ]
+      },
       "initialColor": "FF316B3E",
       "createdFrom": "excel",
       "scientificName": "Ornithodoros"
@@ -1817,6 +2256,16 @@
       "sourceRows": [
         58
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 58,
+            "value": "Garrapata espinosa del oído"
+          }
+        ]
+      },
       "initialColor": "FF316B3E",
       "createdFrom": "excel",
       "scientificName": "Otobius"
@@ -1852,6 +2301,16 @@
       "sourceRows": [
         68
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 68,
+            "value": "Caspa andante"
+          }
+        ]
+      },
       "initialColor": "FF68B774",
       "createdFrom": "excel",
       "scientificName": "Cheyletiella"
@@ -1887,6 +2346,16 @@
       "sourceRows": [
         69
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 69,
+            "value": "Ácaros de la sarna"
+          }
+        ]
+      },
       "initialColor": "FF68B774",
       "createdFrom": "excel",
       "scientificName": "Psorergates"
@@ -1922,6 +2391,16 @@
       "sourceRows": [
         66
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 66,
+            "value": "Ácaros del folículo piloso"
+          }
+        ]
+      },
       "initialColor": "FF529E61",
       "createdFrom": "excel",
       "scientificName": "Demodex"
@@ -1957,6 +2436,16 @@
       "sourceRows": [
         67
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 67,
+            "value": "Ácaros de las aves"
+          }
+        ]
+      },
       "initialColor": "FF5CAA6B",
       "createdFrom": "excel",
       "scientificName": "Dermanyssus"
@@ -1992,6 +2481,16 @@
       "sourceRows": [
         65
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 65,
+            "value": "Ácaros de la piel"
+          }
+        ]
+      },
       "initialColor": "FF499156",
       "createdFrom": "excel",
       "scientificName": "Knemidocoptes"
@@ -2027,6 +2526,16 @@
       "sourceRows": [
         54
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 54,
+            "value": "Garrapatas duras"
+          }
+        ]
+      },
       "initialColor": "FF2A5F38",
       "createdFrom": "excel",
       "scientificName": "Amblyomma"
@@ -2062,6 +2571,16 @@
       "sourceRows": [
         53
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 53,
+            "value": "Garrapata de la madera"
+          }
+        ]
+      },
       "initialColor": "FF2A5F38",
       "createdFrom": "excel",
       "scientificName": "Dermacentor"
@@ -2097,6 +2616,16 @@
       "sourceRows": [
         56
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 56,
+            "value": "Garrapatas duras"
+          }
+        ]
+      },
       "initialColor": "FF2A5F38",
       "createdFrom": "excel",
       "scientificName": "Haemaphysalis"
@@ -2132,6 +2661,16 @@
       "sourceRows": [
         55
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 55,
+            "value": "Garrapatas duras"
+          }
+        ]
+      },
       "initialColor": "FF2A5F38",
       "createdFrom": "excel",
       "scientificName": "Ixodes"
@@ -2167,6 +2706,16 @@
       "sourceRows": [
         52
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 52,
+            "value": "Garrapata del perro"
+          }
+        ]
+      },
       "initialColor": "FF2A5F38",
       "createdFrom": "excel",
       "scientificName": "Rhipicephalus"
@@ -2202,6 +2751,16 @@
       "sourceRows": [
         61
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 61,
+            "value": "Ácaros de la sarna"
+          }
+        ]
+      },
       "initialColor": "FF397745",
       "createdFrom": "excel",
       "scientificName": "Chorioptes"
@@ -2237,6 +2796,16 @@
       "sourceRows": [
         62
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 62,
+            "value": "Ácaros del oído"
+          }
+        ]
+      },
       "initialColor": "FF397745",
       "createdFrom": "excel",
       "scientificName": "Otodectes"
@@ -2265,13 +2834,95 @@
         }
       ],
       "fields": {
-        "commonName": "Ácaros de la sarna"
+        "commonName": "Ácaros de la sarna",
+        "morphologyGeneral": "Capítulo cónico, pedicelo largo y triarticulado; 0,4–0,8 mm.",
+        "location": "Piel cubierta por pelo o lana y orejas.",
+        "cycle": "Todos los estadios se desarrollan en el hospedador; duración aproximada de 10–12 días. Puede sobrevivir fuera del hospedador en latencia hasta 4 semanas.",
+        "importance": "Responsable de sarna psoróptica."
       },
       "tags": [],
-      "notes": [],
+      "notes": [
+        {
+          "type": "source-conflict",
+          "field": "commonName",
+          "message": "El material aporta un valor diferente para commonName; revisar las fuentes antes de consolidar.",
+          "value": "Ácaros de las costras.",
+          "source": {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              66,
+              67
+            ],
+            "locator": "Género Psoroptes"
+          }
+        }
+      ],
       "sourceRows": [
         60
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 60,
+            "value": "Ácaros de la sarna"
+          },
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              66,
+              67
+            ],
+            "locator": "Género Psoroptes",
+            "value": "Ácaros de las costras."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              66,
+              67
+            ],
+            "locator": "Género Psoroptes",
+            "value": "Capítulo cónico, pedicelo largo y triarticulado; 0,4–0,8 mm."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              66,
+              67
+            ],
+            "locator": "Género Psoroptes",
+            "value": "Piel cubierta por pelo o lana y orejas."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              66,
+              67
+            ],
+            "locator": "Género Psoroptes",
+            "value": "Todos los estadios se desarrollan en el hospedador; duración aproximada de 10–12 días. Puede sobrevivir fuera del hospedador en latencia hasta 4 semanas."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              66,
+              67
+            ],
+            "locator": "Género Psoroptes",
+            "value": "Responsable de sarna psoróptica."
+          }
+        ]
+      },
       "initialColor": "FF397745",
       "createdFrom": "excel",
       "scientificName": "Psoroptes"
@@ -2307,6 +2958,16 @@
       "sourceRows": [
         64
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 64,
+            "value": "Ácaros de la sarna"
+          }
+        ]
+      },
       "initialColor": "FF40844E",
       "createdFrom": "excel",
       "scientificName": "Notoedres"
@@ -2342,6 +3003,16 @@
       "sourceRows": [
         63
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 63,
+            "value": "Ácaros de la sarna"
+          }
+        ]
+      },
       "initialColor": "FF40844E",
       "createdFrom": "excel",
       "scientificName": "Sarcoptes"
@@ -2375,6 +3046,7 @@
       "sourceRows": [
         82
       ],
+      "fieldSources": {},
       "initialColor": "FFBADBFC",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2409,6 +3081,7 @@
         88,
         89
       ],
+      "fieldSources": {},
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2442,6 +3115,7 @@
       "sourceRows": [
         90
       ],
+      "fieldSources": {},
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2475,6 +3149,7 @@
       "sourceRows": [
         85
       ],
+      "fieldSources": {},
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2509,6 +3184,7 @@
         83,
         84
       ],
+      "fieldSources": {},
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2543,6 +3219,7 @@
         86,
         87
       ],
+      "fieldSources": {},
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2576,6 +3253,7 @@
       "sourceRows": [
         79
       ],
+      "fieldSources": {},
       "initialColor": "FF84BDF7",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2611,6 +3289,7 @@
         76,
         77
       ],
+      "fieldSources": {},
       "initialColor": "FF4B9BEC",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2645,6 +3324,7 @@
         80,
         81
       ],
+      "fieldSources": {},
       "initialColor": "FF9FCCF9",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2678,6 +3358,7 @@
       "sourceRows": [
         78
       ],
+      "fieldSources": {},
       "initialColor": "FF68AEF2",
       "createdFrom": "excel",
       "scientificName": ""
@@ -2714,6 +3395,24 @@
       "sourceRows": [
         72
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 72,
+            "value": "Vinchucas"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 72,
+            "value": "Vector de Trypanosoma cruzi (Enfermedad de Chagas)"
+          }
+        ]
+      },
       "initialColor": "FF53D475",
       "createdFrom": "excel",
       "scientificName": "Panstrongylus"
@@ -2750,6 +3449,24 @@
       "sourceRows": [
         71
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 71,
+            "value": "Chipo / Pito"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 71,
+            "value": "Vector de Trypanosoma cruzi (Enfermedad de Chagas)"
+          }
+        ]
+      },
       "initialColor": "FF53D475",
       "createdFrom": "excel",
       "scientificName": "Rhodnius"
@@ -2786,6 +3503,24 @@
       "sourceRows": [
         70
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 70,
+            "value": "Vinchuca"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 70,
+            "value": "Vector de Trypanosoma cruzi (Enfermedad de Chagas)"
+          }
+        ]
+      },
       "initialColor": "FF53D475",
       "createdFrom": "excel",
       "scientificName": "Triatoma"
@@ -2821,6 +3556,16 @@
       "sourceRows": [
         51
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 51,
+            "value": "Gusano de cabeza espinosa"
+          }
+        ]
+      },
       "initialColor": "FFF1C232",
       "createdFrom": "excel",
       "scientificName": "Macracanthorhynchus"
@@ -2856,6 +3601,16 @@
       "sourceRows": [
         44
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 44,
+            "value": "Tenia del caballo"
+          }
+        ]
+      },
       "initialColor": "FFDE6B32",
       "createdFrom": "excel",
       "scientificName": "Anoplocephala"
@@ -2891,6 +3646,16 @@
       "sourceRows": [
         42
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 42,
+            "value": "Tenia de los rumiantes"
+          }
+        ]
+      },
       "initialColor": "FFDE6B32",
       "createdFrom": "excel",
       "scientificName": "Moniezia"
@@ -2926,6 +3691,16 @@
       "sourceRows": [
         45
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 45,
+            "value": "Tenia del caballo"
+          }
+        ]
+      },
       "initialColor": "FFDE6B32",
       "createdFrom": "excel",
       "scientificName": "Paranoplocephala"
@@ -2961,6 +3736,16 @@
       "sourceRows": [
         43
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 43,
+            "value": "Tenia festoneada"
+          }
+        ]
+      },
       "initialColor": "FFDE6B32",
       "createdFrom": "excel",
       "scientificName": "Thysanosoma"
@@ -2996,6 +3781,16 @@
       "sourceRows": [
         48
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 48,
+            "value": "Tenia del perro"
+          }
+        ]
+      },
       "initialColor": "FFEF8B5B",
       "createdFrom": "excel",
       "scientificName": "Dipylidium"
@@ -3031,6 +3826,16 @@
       "sourceRows": [
         49
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 49,
+            "value": "Tenia del pescado"
+          }
+        ]
+      },
       "initialColor": "FFF4A476",
       "createdFrom": "excel",
       "scientificName": "Diphyllobothrium"
@@ -3066,6 +3871,16 @@
       "sourceRows": [
         50
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 50,
+            "value": "Espárganos"
+          }
+        ]
+      },
       "initialColor": "FFF4A476",
       "createdFrom": "excel",
       "scientificName": "Spirometra"
@@ -3101,6 +3916,16 @@
       "sourceRows": [
         47
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 47,
+            "value": "Gusano de la hidátide"
+          }
+        ]
+      },
       "initialColor": "FFEA7A46",
       "createdFrom": "excel",
       "scientificName": "Echinococcus"
@@ -3136,6 +3961,16 @@
       "sourceRows": [
         46
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 46,
+            "value": "Tenias"
+          }
+        ]
+      },
       "initialColor": "FFEA7A46",
       "createdFrom": "excel",
       "scientificName": "Taenia"
@@ -3170,6 +4005,7 @@
         18,
         19
       ],
+      "fieldSources": {},
       "initialColor": "FFE7806D",
       "createdFrom": "excel",
       "scientificName": ""
@@ -3203,6 +4039,7 @@
       "sourceRows": [
         20
       ],
+      "fieldSources": {},
       "initialColor": "FFE7806D",
       "createdFrom": "excel",
       "scientificName": ""
@@ -3238,6 +4075,16 @@
       "sourceRows": [
         25
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 25,
+            "value": "Lombriz intestinal"
+          }
+        ]
+      },
       "initialColor": "FFF1998C",
       "createdFrom": "excel",
       "scientificName": "Ascaris"
@@ -3273,6 +4120,16 @@
       "sourceRows": [
         28
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 28,
+            "value": "Ascáridos"
+          }
+        ]
+      },
       "initialColor": "FFF1998C",
       "createdFrom": "excel",
       "scientificName": "Lagochilascaris"
@@ -3308,6 +4165,16 @@
       "sourceRows": [
         24
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 24,
+            "value": "Lombriz del caballo"
+          }
+        ]
+      },
       "initialColor": "FFF1998C",
       "createdFrom": "excel",
       "scientificName": "Parascaris"
@@ -3343,6 +4210,16 @@
       "sourceRows": [
         27
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 27,
+            "value": "Ascáridos"
+          }
+        ]
+      },
       "initialColor": "FFF1998C",
       "createdFrom": "excel",
       "scientificName": "Toxascaris"
@@ -3371,13 +4248,34 @@
         }
       ],
       "fields": {
-        "commonName": "Gusanos redondos de perros y gatos"
+        "commonName": "Gusanos redondos de perros y gatos",
+        "morphologyGeneral": "Aletas cervicales; el material diferencia las de T. catis como aspecto de punta de flecha y las de T. canis como lanceoladas. El género puede alcanzar hasta 15 cm."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         26
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 26,
+            "value": "Gusanos redondos de perros y gatos"
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16
+            ],
+            "locator": "Familia Ascarididae",
+            "value": "Aletas cervicales; el material diferencia las de T. catis como aspecto de punta de flecha y las de T. canis como lanceoladas. El género puede alcanzar hasta 15 cm."
+          }
+        ]
+      },
       "initialColor": "FFF1998C",
       "createdFrom": "excel",
       "scientificName": "Toxocara"
@@ -3413,6 +4311,16 @@
       "sourceRows": [
         12
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 12,
+            "value": "Gusanos pulmonares"
+          }
+        ]
+      },
       "initialColor": "FFD9694F",
       "createdFrom": "excel",
       "scientificName": "Dictyocaulus"
@@ -3448,6 +4356,16 @@
       "sourceRows": [
         35
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 35,
+            "value": "Gusano gigante del riñón"
+          }
+        ]
+      },
       "initialColor": "FFF8BAB3",
       "createdFrom": "excel",
       "scientificName": "Dioctophyma"
@@ -3483,6 +4401,16 @@
       "sourceRows": [
         33
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 33,
+            "value": "Filarias"
+          }
+        ]
+      },
       "initialColor": "FFF5AEA4",
       "createdFrom": "excel",
       "scientificName": "Dipetalonema"
@@ -3518,6 +4446,16 @@
       "sourceRows": [
         32
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 32,
+            "value": "Gusano del corazón"
+          }
+        ]
+      },
       "initialColor": "FFF5AEA4",
       "createdFrom": "excel",
       "scientificName": "Dirofilaria"
@@ -3553,6 +4491,16 @@
       "sourceRows": [
         30
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 30,
+            "value": "Oxiuros"
+          }
+        ]
+      },
       "initialColor": "FFF3A499",
       "createdFrom": "excel",
       "scientificName": "Oxyuris"
@@ -3581,13 +4529,107 @@
         }
       ],
       "fields": {
-        "commonName": "Pequeños estróngilos"
+        "commonName": "Pequeños estróngilos",
+        "morphologyGeneral": "Más de 40 especies; cápsula bucal corta y cilíndrica, sin dientes ni placas; coronas radiadas externa e interna y gotera esofágica corta.",
+        "morphologyMale": "7–10 mm; bolsa copulatriz desarrollada y costilla dorsal doble ramificada.",
+        "morphologyFemale": "10–15 mm; vulva cerca del ano.",
+        "location": "Equinos, mulos y asnos; distribución mundial y alta prevalencia en animales de campo y deportivos.",
+        "ppp": "Aproximadamente 3 meses."
       },
       "tags": [],
-      "notes": [],
+      "notes": [
+        {
+          "type": "source-conflict",
+          "field": "commonName",
+          "message": "El material aporta un valor diferente para commonName; revisar las fuentes antes de consolidar.",
+          "value": "Pequeños strongylus; ciatostomas.",
+          "source": {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              10,
+              11
+            ],
+            "locator": "Subfamilia Cyathostominae"
+          }
+        }
+      ],
       "sourceRows": [
         16
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 16,
+            "value": "Pequeños estróngilos"
+          },
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              10,
+              11
+            ],
+            "locator": "Subfamilia Cyathostominae",
+            "value": "Pequeños strongylus; ciatostomas."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              10,
+              11
+            ],
+            "locator": "Subfamilia Cyathostominae",
+            "value": "Más de 40 especies; cápsula bucal corta y cilíndrica, sin dientes ni placas; coronas radiadas externa e interna y gotera esofágica corta."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              10,
+              11
+            ],
+            "locator": "Subfamilia Cyathostominae",
+            "value": "7–10 mm; bolsa copulatriz desarrollada y costilla dorsal doble ramificada."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              10,
+              11
+            ],
+            "locator": "Subfamilia Cyathostominae",
+            "value": "10–15 mm; vulva cerca del ano."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              10,
+              11
+            ],
+            "locator": "Subfamilia Cyathostominae",
+            "value": "Equinos, mulos y asnos; distribución mundial y alta prevalencia en animales de campo y deportivos."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              10,
+              11
+            ],
+            "locator": "Subfamilia Cyathostominae",
+            "value": "Aproximadamente 3 meses."
+          }
+        ]
+      },
       "initialColor": "FFE07058",
       "createdFrom": "excel",
       "scientificName": ""
@@ -3622,6 +4664,7 @@
         14,
         15
       ],
+      "fieldSources": {},
       "initialColor": "FFE07058",
       "createdFrom": "excel",
       "scientificName": ""
@@ -3650,13 +4693,59 @@
         }
       ],
       "fields": {
-        "commonName": "Gusanos del hilo"
+        "commonName": "Gusanos del hilo",
+        "morphologyGeneral": "Tiene una generación adulta de vida libre. En el hospedador, sólo las hembras integran la etapa parasitaria; presentan esófago alargado y cilíndrico. Larvas y generación libre presentan esófago rabditiforme.",
+        "cycle": "Directo; puede haber desarrollo heterogónico con adultos de vida libre. Los huevos eclosionan y la L3 filariforme es infectante. Se describe migración sanguínea-pulmonar, traqueal y deglución hacia el intestino delgado.",
+        "infectiveForm": "L3 filariforme; vía oral o cutánea."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         22
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 22,
+            "value": "Gusanos del hilo"
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              15
+            ],
+            "locator": "Género Strongyloides",
+            "value": "Tiene una generación adulta de vida libre. En el hospedador, sólo las hembras integran la etapa parasitaria; presentan esófago alargado y cilíndrico. Larvas y generación libre presentan esófago rabditiforme."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              15
+            ],
+            "locator": "Género Strongyloides",
+            "value": "Directo; puede haber desarrollo heterogónico con adultos de vida libre. Los huevos eclosionan y la L3 filariforme es infectante. Se describe migración sanguínea-pulmonar, traqueal y deglución hacia el intestino delgado."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              15
+            ],
+            "locator": "Género Strongyloides",
+            "value": "L3 filariforme; vía oral o cutánea."
+          }
+        ]
+      },
       "initialColor": "FFED8C7C",
       "createdFrom": "excel",
       "scientificName": "Strongyloides"
@@ -3692,6 +4781,16 @@
       "sourceRows": [
         39
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 39,
+            "value": "Triquina"
+          }
+        ]
+      },
       "initialColor": "FFFBD4D1",
       "createdFrom": "excel",
       "scientificName": "Trichinella"
@@ -3720,13 +4819,56 @@
         }
       ],
       "fields": {
-        "commonName": "Gusanos intestinales"
+        "commonName": "Gusanos intestinales",
+        "location": "Intestino delgado de rumiantes.",
+        "morphologyGeneral": "Dilatación cefálica con estriaciones transversales (refuerzo quitinoso) en el extremo anterior.",
+        "ppp": "21 días."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         8
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 8,
+            "value": "Gusanos intestinales"
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Cooperia",
+            "value": "Intestino delgado de rumiantes."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Cooperia",
+            "value": "Dilatación cefálica con estriaciones transversales (refuerzo quitinoso) en el extremo anterior."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Cooperia",
+            "value": "21 días."
+          }
+        ]
+      },
       "initialColor": "FFD55A3F",
       "createdFrom": "excel",
       "scientificName": "Cooperia"
@@ -3761,14 +4903,169 @@
         "definitiveHost": "Bovino; Ovino",
         "morphologyMale": "Tamaño: 1 cm; Extremo anterior: ; Extremo posterior: bolsa copulatriz con lóbulo dorsal asimétrico y costilla en forma de Y; Cuerpo: ;",
         "morphologyFemale": "Tamaño: 2 cm; Extremo anterior: ; Extremo posterior:  ; Cuerpo: aparato genital e intestino enroscados helicoidalmente;",
-        "infectiveForm": "L3"
+        "infectiveForm": "L3",
+        "morphologyGeneral": "Adultos con lancetas bucales y papilas cervicales triangulares.",
+        "ppp": "Aproximadamente 21 días.",
+        "observations": "El material indica una puesta de 5.000 a 10.000 huevos por día."
       },
       "tags": [],
-      "notes": [],
+      "notes": [
+        {
+          "type": "source-conflict",
+          "field": "location",
+          "message": "El material aporta un valor diferente para location; revisar las fuentes antes de consolidar.",
+          "value": "Rumiantes; zonas cálidas.",
+          "source": {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Haemonchus"
+          }
+        },
+        {
+          "type": "source-conflict",
+          "field": "importance",
+          "message": "El material aporta un valor diferente para importance; revisar las fuentes antes de consolidar.",
+          "value": "Altamente hematófago.",
+          "source": {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Haemonchus"
+          }
+        },
+        {
+          "type": "source-conflict",
+          "field": "morphologyFemale",
+          "message": "El material aporta un valor diferente para morphologyFemale; revisar las fuentes antes de consolidar.",
+          "value": "Intestino rojo enrollado alrededor del útero blanco, con aspecto de «palo de peluquero».",
+          "source": {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Haemonchus"
+          }
+        }
+      ],
       "sourceRows": [
         6,
         7
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 6,
+            "value": "Gusano del peluquero"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 6,
+            "value": "Hematófago"
+          },
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Haemonchus",
+            "value": "Altamente hematófago."
+          }
+        ],
+        "location": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 6,
+            "value": "Abomaso"
+          },
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Haemonchus",
+            "value": "Rumiantes; zonas cálidas."
+          }
+        ],
+        "definitiveHost": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 6,
+            "value": "Bovino; Ovino"
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 6,
+            "value": "Tamaño: 1 cm; Extremo anterior: ; Extremo posterior: bolsa copulatriz con lóbulo dorsal asimétrico y costilla en forma de Y; Cuerpo: ;"
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 6,
+            "value": "Tamaño: 2 cm; Extremo anterior: ; Extremo posterior:  ; Cuerpo: aparato genital e intestino enroscados helicoidalmente;"
+          },
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Haemonchus",
+            "value": "Intestino rojo enrollado alrededor del útero blanco, con aspecto de «palo de peluquero»."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 6,
+            "value": "L3"
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Haemonchus",
+            "value": "Adultos con lancetas bucales y papilas cervicales triangulares."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Haemonchus",
+            "value": "Aproximadamente 21 días."
+          }
+        ],
+        "observations": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Género Haemonchus",
+            "value": "El material indica una puesta de 5.000 a 10.000 huevos por día."
+          }
+        ]
+      },
       "initialColor": "FFD55A3F",
       "createdFrom": "excel",
       "scientificName": "Haemonchus"
@@ -3797,13 +5094,56 @@
         }
       ],
       "fields": {
-        "commonName": "Gusano rojo del estómago"
+        "commonName": "Gusano rojo del estómago",
+        "location": "Estómago de cerdos.",
+        "importance": "Hematófago.",
+        "ppp": "21 días."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         10
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 10,
+            "value": "Gusano rojo del estómago"
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Caso del género Hyostrongylus",
+            "value": "Estómago de cerdos."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Caso del género Hyostrongylus",
+            "value": "Hematófago."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Caso del género Hyostrongylus",
+            "value": "21 días."
+          }
+        ]
+      },
       "initialColor": "FFD55A3F",
       "createdFrom": "excel",
       "scientificName": "Hyostrongylus"
@@ -3833,13 +5173,67 @@
       ],
       "fields": {
         "commonName": "Gusano estomacal",
-        "egg": "Tamaño: 160x70 µm\nForma: cápsula de bacteria\nMembrana: fina\nMórula: algo segmentada"
+        "egg": "Tamaño: 160x70 µm\nForma: cápsula de bacteria\nMembrana: fina\nMórula: algo segmentada",
+        "location": "Ovinos y caprinos; zonas frías."
       },
       "tags": [],
-      "notes": [],
+      "notes": [
+        {
+          "type": "source-conflict",
+          "field": "egg",
+          "message": "El material aporta un valor diferente para egg; revisar las fuentes antes de consolidar.",
+          "value": "Grande (aprox. 160 × 70–100 µm), bordes paralelos y curvaturas en ambos polos; se diferencia de Ostertagia por tamaño y forma.",
+          "source": {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Marshallagia"
+          }
+        }
+      ],
       "sourceRows": [
         5
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 5,
+            "value": "Gusano estomacal"
+          }
+        ],
+        "egg": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 5,
+            "value": "Tamaño: 160x70 µm\nForma: cápsula de bacteria\nMembrana: fina\nMórula: algo segmentada"
+          },
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Marshallagia",
+            "value": "Grande (aprox. 160 × 70–100 µm), bordes paralelos y curvaturas en ambos polos; se diferencia de Ostertagia por tamaño y forma."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Marshallagia",
+            "value": "Ovinos y caprinos; zonas frías."
+          }
+        ]
+      },
       "initialColor": "FFD55A3F",
       "createdFrom": "excel",
       "scientificName": "Marshallagia"
@@ -3869,13 +5263,115 @@
       ],
       "fields": {
         "commonName": "Gusanos de cuello fino",
-        "egg": "\"Tamaño: 140x180µm\nForma: pelota de rugby\nMembrana: fina\nMórula: poco segmentada"
+        "egg": "\"Tamaño: 140x180µm\nForma: pelota de rugby\nMembrana: fina\nMórula: poco segmentada",
+        "location": "Intestino delgado de bovinos y ovinos; zonas frías.",
+        "morphologyGeneral": "Dilatación cefálica en el extremo anterior.",
+        "morphologyMale": "Espículas largas y delgadas que sobrepasan el parásito.",
+        "morphologyFemale": "Extremo generalmente truncado con pequeño espolón.",
+        "ppp": "21 días."
       },
       "tags": [],
-      "notes": [],
+      "notes": [
+        {
+          "type": "source-conflict",
+          "field": "egg",
+          "message": "El material aporta un valor diferente para egg; revisar las fuentes antes de consolidar.",
+          "value": "Forma de pelota de rugby, bordes puntiagudos y mórulas grandes en menor cantidad; 140–180 µm.",
+          "source": {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Nematodirus"
+          }
+        }
+      ],
       "sourceRows": [
         9
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 9,
+            "value": "Gusanos de cuello fino"
+          }
+        ],
+        "egg": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 9,
+            "value": "\"Tamaño: 140x180µm\nForma: pelota de rugby\nMembrana: fina\nMórula: poco segmentada"
+          },
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Nematodirus",
+            "value": "Forma de pelota de rugby, bordes puntiagudos y mórulas grandes en menor cantidad; 140–180 µm."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Nematodirus",
+            "value": "Intestino delgado de bovinos y ovinos; zonas frías."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Nematodirus",
+            "value": "Dilatación cefálica en el extremo anterior."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Nematodirus",
+            "value": "Espículas largas y delgadas que sobrepasan el parásito."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Nematodirus",
+            "value": "Extremo generalmente truncado con pequeño espolón."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              7,
+              8
+            ],
+            "locator": "Huevos y género Nematodirus",
+            "value": "21 días."
+          }
+        ]
+      },
       "initialColor": "FFD55A3F",
       "createdFrom": "excel",
       "scientificName": "Nematodirus"
@@ -3904,13 +5400,67 @@
         }
       ],
       "fields": {
-        "commonName": "Gusano marrón del estómago"
+        "commonName": "Gusano marrón del estómago",
+        "location": "Rumiantes; zonas frías.",
+        "morphologyGeneral": "Papilas cervicales pequeñas.",
+        "morphologyFemale": "Repliegue vulvar (flap vulvar) poco evidente.",
+        "ppp": "Usualmente 21 días; puede superar 6 meses por hipobiosis en la mucosa del abomaso, según las circunstancias ambientales descriptas."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         4
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 4,
+            "value": "Gusano marrón del estómago"
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Segundo género: Ostertagia",
+            "value": "Rumiantes; zonas frías."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Segundo género: Ostertagia",
+            "value": "Papilas cervicales pequeñas."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Segundo género: Ostertagia",
+            "value": "Repliegue vulvar (flap vulvar) poco evidente."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Segundo género: Ostertagia",
+            "value": "Usualmente 21 días; puede superar 6 meses por hipobiosis en la mucosa del abomaso, según las circunstancias ambientales descriptas."
+          }
+        ]
+      },
       "initialColor": "FFD55A3F",
       "createdFrom": "excel",
       "scientificName": "Ostertagia"
@@ -3939,13 +5489,67 @@
         }
       ],
       "fields": {
-        "commonName": "Tricostróngilos"
+        "commonName": "Tricostróngilos",
+        "location": "Rumiantes, equinos, aves y cerdos; zonas frías.",
+        "ppp": "Aproximadamente 21 días.",
+        "morphologyMale": "Espículas cortas y retorcidas.",
+        "observations": "El material transcripto presenta la grafía «Trinchostrongylus»; el Excel conserva «Trychostrongylus»."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         3
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 3,
+            "value": "Tricostróngilos"
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Primer género de los Trichostrongylideos",
+            "value": "Rumiantes, equinos, aves y cerdos; zonas frías."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Primer género de los Trichostrongylideos",
+            "value": "Aproximadamente 21 días."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Primer género de los Trichostrongylideos",
+            "value": "Espículas cortas y retorcidas."
+          }
+        ],
+        "observations": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              8
+            ],
+            "locator": "Primer género de los Trichostrongylideos",
+            "value": "El material transcripto presenta la grafía «Trinchostrongylus»; el Excel conserva «Trychostrongylus»."
+          }
+        ]
+      },
       "initialColor": "FFD55A3F",
       "createdFrom": "excel",
       "scientificName": "Trychostrongylus"
@@ -3977,10 +5581,42 @@
         "commonName": "Gusanos látigo"
       },
       "tags": [],
-      "notes": [],
+      "notes": [
+        {
+          "type": "source-conflict",
+          "field": "commonName",
+          "message": "El material aporta un valor diferente para commonName; revisar las fuentes antes de consolidar.",
+          "value": "Gusano látigo.",
+          "source": {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              24
+            ],
+            "locator": "Trichuris"
+          }
+        }
+      ],
       "sourceRows": [
         37
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 37,
+            "value": "Gusanos látigo"
+          },
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              24
+            ],
+            "locator": "Trichuris",
+            "value": "Gusano látigo."
+          }
+        ]
+      },
       "initialColor": "FFF9C8C4",
       "createdFrom": "excel",
       "scientificName": "Trichuris"
@@ -4016,6 +5652,16 @@
       "sourceRows": [
         40
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 40,
+            "value": "Duela hepática"
+          }
+        ]
+      },
       "initialColor": "FFE06666",
       "createdFrom": "excel",
       "scientificName": "Fasciola"
@@ -4044,13 +5690,34 @@
         }
       ],
       "fields": {
-        "commonName": "Paramfistomas"
+        "commonName": "Paramfistomas",
+        "location": "Rumen."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         41
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 41,
+            "value": "Paramfistomas"
+          }
+        ],
+        "location": [
+          {
+            "document": "Guía práctica Cátedra",
+            "pages": [
+              39
+            ],
+            "locator": "Trematodes: Paramphistomum spp.",
+            "value": "Rumen."
+          }
+        ]
+      },
       "initialColor": "FFEA9999",
       "createdFrom": "excel",
       "scientificName": "Paramphistomum"
@@ -4086,6 +5753,16 @@
       "sourceRows": [
         94
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 94,
+            "value": "Giardia"
+          }
+        ]
+      },
       "initialColor": "FFA94774",
       "createdFrom": "excel",
       "scientificName": "Giardia"
@@ -4121,6 +5798,16 @@
       "sourceRows": [
         97
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 97,
+            "value": "Criptosporidios"
+          }
+        ]
+      },
       "initialColor": "FFBF5D89",
       "createdFrom": "excel",
       "scientificName": "Cryptosporidium"
@@ -4156,6 +5843,16 @@
       "sourceRows": [
         95
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 95,
+            "value": "Coccidios"
+          }
+        ]
+      },
       "initialColor": "FFB3507D",
       "createdFrom": "excel",
       "scientificName": "Eimeria"
@@ -4191,6 +5888,16 @@
       "sourceRows": [
         96
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 96,
+            "value": "Coccidios"
+          }
+        ]
+      },
       "initialColor": "FFB3507D",
       "createdFrom": "excel",
       "scientificName": "Isospora"
@@ -4224,6 +5931,7 @@
       "sourceRows": [
         98
       ],
+      "fieldSources": {},
       "initialColor": "FFCB6995",
       "createdFrom": "excel",
       "scientificName": ""
@@ -4257,6 +5965,7 @@
       "sourceRows": [
         99
       ],
+      "fieldSources": {},
       "initialColor": "FFCB6995",
       "createdFrom": "excel",
       "scientificName": ""
@@ -4292,6 +6001,16 @@
       "sourceRows": [
         92
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 92,
+            "value": "Leishmanias"
+          }
+        ]
+      },
       "initialColor": "FF902D5B",
       "createdFrom": "excel",
       "scientificName": "Leishmania"
@@ -4327,6 +6046,16 @@
       "sourceRows": [
         91
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 91,
+            "value": "Tripanosomas"
+          }
+        ]
+      },
       "initialColor": "FF902D5B",
       "createdFrom": "excel",
       "scientificName": "Trypanosoma"
@@ -4362,9 +6091,161 @@
       "sourceRows": [
         93
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 93,
+            "value": "Tricomonas"
+          }
+        ]
+      },
       "initialColor": "FF9E3968",
       "createdFrom": "excel",
       "scientificName": "Tritrichomonas"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:argasidae/genus:argas/species:persicus",
+      "level": "species",
+      "name": "persicus",
+      "parentId": "granGroup:artropodo/group:acarina/family:argasidae/genus:argas",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Argasidae"
+        },
+        {
+          "level": "genus",
+          "name": "Argas"
+        },
+        {
+          "level": "species",
+          "name": "persicus"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Aves domésticas: gallinas, pavos y patos.",
+        "cycle": "Larvas, tres estadios ninfales y adultos realizan hematofagia nocturna y luego caen al ambiente. La hembra deposita grupos de 100–120 huevos y no muere luego de la puesta."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              64
+            ],
+            "locator": "Argas persicus",
+            "value": "Aves domésticas: gallinas, pavos y patos."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              64
+            ],
+            "locator": "Argas persicus",
+            "value": "Larvas, tres estadios ninfales y adultos realizan hematofagia nocturna y luego caen al ambiente. La hembra deposita grupos de 100–120 huevos y no muere luego de la puesta."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Argas persicus"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:dermanyssidae/genus:dermanyssus/species:gallinae",
+      "level": "species",
+      "name": "gallinae",
+      "parentId": "granGroup:artropodo/group:acarina/family:dermanyssidae/genus:dermanyssus",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Dermanyssidae"
+        },
+        {
+          "level": "genus",
+          "name": "Dermanyssus"
+        },
+        {
+          "level": "species",
+          "name": "gallinae"
+        }
+      ],
+      "fields": {
+        "commonName": "Ácaro rojo.",
+        "definitiveHost": "Aves de corral, palomas y pollos; ocasionalmente mamíferos, incluido el ser humano.",
+        "morphologyGeneral": "Hematófago; adultos de 0,75–1 mm, patas largas, escudo dorsal estrechado posteriormente y quelíceros largos en forma de estilete.",
+        "cycle": "Está sobre el hospedador de noche para alimentarse; el resto del tiempo permanece en grietas y recovecos. Eclosión en 2–3 días; larvas no se alimentan y siguen estadios de protoninfa, deutoninfa y adulto. Ciclo de alrededor de 17 días."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              73
+            ],
+            "locator": "Dermanyssus gallinae",
+            "value": "Ácaro rojo."
+          }
+        ],
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              73
+            ],
+            "locator": "Dermanyssus gallinae",
+            "value": "Aves de corral, palomas y pollos; ocasionalmente mamíferos, incluido el ser humano."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              73
+            ],
+            "locator": "Dermanyssus gallinae",
+            "value": "Hematófago; adultos de 0,75–1 mm, patas largas, escudo dorsal estrechado posteriormente y quelíceros largos en forma de estilete."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              73
+            ],
+            "locator": "Dermanyssus gallinae",
+            "value": "Está sobre el hospedador de noche para alimentarse; el resto del tiempo permanece en grietas y recovecos. Eclosión en 2–3 días; larvas no se alimentan y siguen estadios de protoninfa, deutoninfa y adulto. Ciclo de alrededor de 17 días."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Dermanyssus gallinae"
     },
     {
       "id": "granGroup:artropodo/group:acarina/family:ixodidae/genus:rhipicephalus/species:microplus",
@@ -4393,7 +6274,12 @@
           "name": "microplus"
         }
       ],
-      "fields": {},
+      "fields": {
+        "definitiveHost": "Bovinos; ocasionalmente otros mamíferos, incluidos equinos, caprinos y caninos.",
+        "morphologyGeneral": "Capítulo corto y rectangular; machos con espolón posterior del escudo; escudo no ornamentado.",
+        "location": "Piel delgada: orejas, hocico, debajo del cuello, región perineal y abdomen.",
+        "cycle": "Un hospedador. La teliogina se desprende para oviponer en lugares bajos; desde el ascenso larval hasta su desprendimiento, el ciclo sobre el bovino dura 20–25 días. La fase de vida libre puede durar 90–185 días."
+      },
       "tags": [],
       "notes": [
         {
@@ -4402,6 +6288,52 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              62,
+              63
+            ],
+            "locator": "Boophilus microplus",
+            "value": "Bovinos; ocasionalmente otros mamíferos, incluidos equinos, caprinos y caninos."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              62,
+              63
+            ],
+            "locator": "Boophilus microplus",
+            "value": "Capítulo corto y rectangular; machos con espolón posterior del escudo; escudo no ornamentado."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              62,
+              63
+            ],
+            "locator": "Boophilus microplus",
+            "value": "Piel delgada: orejas, hocico, debajo del cuello, región perineal y abdomen."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              62,
+              63
+            ],
+            "locator": "Boophilus microplus",
+            "value": "Un hospedador. La teliogina se desprende para oviponer en lugares bajos; desde el ascenso larval hasta su desprendimiento, el ciclo sobre el bovino dura 20–25 días. La fase de vida libre puede durar 90–185 días."
+          }
+        ]
+      },
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Rhipicephalus microplus"
@@ -4433,7 +6365,13 @@
           "name": "sanguineus"
         }
       ],
-      "fields": {},
+      "fields": {
+        "definitiveHost": "Caninos.",
+        "morphologyGeneral": "Festones marginales posteriores; escudo marrón no ornamentado; capítulo rectangular y palpos cortos.",
+        "location": "Oreja, cuello, cara, abdomen, región perineal y zonas de piel delgada.",
+        "cycle": "Tres hospedadores; metalarva y metaninfa ocurren en el ambiente. Oviposición en superficies altas, paredes, grietas o escondijos.",
+        "importance": "El material indica transmisión de Hepatozoon canis y babesia(s)."
+      },
       "tags": [],
       "notes": [
         {
@@ -4442,9 +6380,247 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              61
+            ],
+            "locator": "Rhipicephalus sanguineus",
+            "value": "Caninos."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              61
+            ],
+            "locator": "Rhipicephalus sanguineus",
+            "value": "Festones marginales posteriores; escudo marrón no ornamentado; capítulo rectangular y palpos cortos."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              61
+            ],
+            "locator": "Rhipicephalus sanguineus",
+            "value": "Oreja, cuello, cara, abdomen, región perineal y zonas de piel delgada."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              61
+            ],
+            "locator": "Rhipicephalus sanguineus",
+            "value": "Tres hospedadores; metalarva y metaninfa ocurren en el ambiente. Oviposición en superficies altas, paredes, grietas o escondijos."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              61
+            ],
+            "locator": "Rhipicephalus sanguineus",
+            "value": "El material indica transmisión de Hepatozoon canis y babesia(s)."
+          }
+        ]
+      },
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Rhipicephalus sanguineus"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:psoroptidae/genus:chorioptes/species:bovis",
+      "level": "species",
+      "name": "bovis",
+      "parentId": "granGroup:artropodo/group:acarina/family:psoroptidae/genus:chorioptes",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Psoroptidae"
+        },
+        {
+          "level": "genus",
+          "name": "Chorioptes"
+        },
+        {
+          "level": "species",
+          "name": "bovis"
+        }
+      ],
+      "fields": {
+        "morphologyFemale": "Aproximadamente 300 µm; primero, segundo y cuarto par de patas con ambulacros.",
+        "morphologyMale": "Todos los pares de patas terminan en ambulacros.",
+        "morphologyGeneral": "Pedicelo más corto que el de Psoroptes.",
+        "cycle": "Similar al de Psoroptes; aproximadamente tres semanas."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              67
+            ],
+            "locator": "Chorioptes bovis",
+            "value": "Aproximadamente 300 µm; primero, segundo y cuarto par de patas con ambulacros."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              67
+            ],
+            "locator": "Chorioptes bovis",
+            "value": "Todos los pares de patas terminan en ambulacros."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              67
+            ],
+            "locator": "Chorioptes bovis",
+            "value": "Pedicelo más corto que el de Psoroptes."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              67
+            ],
+            "locator": "Chorioptes bovis",
+            "value": "Similar al de Psoroptes; aproximadamente tres semanas."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Chorioptes bovis"
+    },
+    {
+      "id": "granGroup:artropodo/group:acarina/family:psoroptidae/genus:otodectes/species:cynotis",
+      "level": "species",
+      "name": "cynotis",
+      "parentId": "granGroup:artropodo/group:acarina/family:psoroptidae/genus:otodectes",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "ARTRÓPODO"
+        },
+        {
+          "level": "group",
+          "name": "ACARINA"
+        },
+        {
+          "level": "family",
+          "name": "Psoroptidae"
+        },
+        {
+          "level": "genus",
+          "name": "Otodectes"
+        },
+        {
+          "level": "species",
+          "name": "cynotis"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Perros, gatos, zorros y hurones.",
+        "location": "Canal auditivo externo y piel adyacente.",
+        "morphologyMale": "Aproximadamente 275 µm; los cuatro pares de patas terminan en ambulacros.",
+        "morphologyFemale": "Aproximadamente 350 µm; sólo los tres primeros pares de patas terminan en ambulacros.",
+        "cycle": "Huevo adherido al oído; eclosión a los cuatro días. Incluye larva, protoninfa y deutoninfa; 18–28 días de huevo a huevo.",
+        "importance": "Se alimenta de detritos del oído."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              68
+            ],
+            "locator": "Otodectes cynotis",
+            "value": "Perros, gatos, zorros y hurones."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              68
+            ],
+            "locator": "Otodectes cynotis",
+            "value": "Canal auditivo externo y piel adyacente."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              68
+            ],
+            "locator": "Otodectes cynotis",
+            "value": "Aproximadamente 275 µm; los cuatro pares de patas terminan en ambulacros."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              68
+            ],
+            "locator": "Otodectes cynotis",
+            "value": "Aproximadamente 350 µm; sólo los tres primeros pares de patas terminan en ambulacros."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              68
+            ],
+            "locator": "Otodectes cynotis",
+            "value": "Huevo adherido al oído; eclosión a los cuatro días. Incluye larva, protoninfa y deutoninfa; 18–28 días de huevo a huevo."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              68
+            ],
+            "locator": "Otodectes cynotis",
+            "value": "Se alimenta de detritos del oído."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Otodectes cynotis"
     },
     {
       "id": "granGroup:artropodo/group:acarina/family:sarcoptidae/genus:sarcoptes/species:scabiei",
@@ -4473,7 +6649,13 @@
           "name": "scabiei"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyGeneral": "Cuerpo globoso, cutícula estriada con áreas escamosas y espinosas; patas cortas y ano terminal. Pedicelos largos no segmentados.",
+        "morphologyMale": "Aproximadamente 0,3 mm de largo y 0,1–0,2 mm de ancho; primero, segundo y cuarto par de patas con ambulacros.",
+        "morphologyFemale": "0,3–0,6 mm de largo y 0,25–0,4 mm de ancho; primero y segundo par de patas con ambulacros.",
+        "importance": "Causante de sarna sarcóptica y enfermedad zoonótica (escabiosis humana).",
+        "definitiveHost": "Perros, zorros, ovejas, cabras, caballos y conejos, además del ser humano."
+      },
       "tags": [],
       "notes": [
         {
@@ -4482,6 +6664,63 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              69,
+              70
+            ],
+            "locator": "Género Sarcoptes",
+            "value": "Cuerpo globoso, cutícula estriada con áreas escamosas y espinosas; patas cortas y ano terminal. Pedicelos largos no segmentados."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              69,
+              70
+            ],
+            "locator": "Género Sarcoptes",
+            "value": "Aproximadamente 0,3 mm de largo y 0,1–0,2 mm de ancho; primero, segundo y cuarto par de patas con ambulacros."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              69,
+              70
+            ],
+            "locator": "Género Sarcoptes",
+            "value": "0,3–0,6 mm de largo y 0,25–0,4 mm de ancho; primero y segundo par de patas con ambulacros."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              69,
+              70
+            ],
+            "locator": "Género Sarcoptes",
+            "value": "Causante de sarna sarcóptica y enfermedad zoonótica (escabiosis humana)."
+          }
+        ],
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              69,
+              70
+            ],
+            "locator": "Género Sarcoptes",
+            "value": "Perros, zorros, ovejas, cabras, caballos y conejos, además del ser humano."
+          }
+        ]
+      },
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Sarcoptes scabiei"
@@ -4521,6 +6760,16 @@
       "sourceRows": [
         82
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 82,
+            "value": "Tábano"
+          }
+        ]
+      },
       "initialColor": "FFBADBFC",
       "createdFrom": "excel",
       "scientificName": "Tabanus"
@@ -4561,6 +6810,24 @@
       "sourceRows": [
         88
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 88,
+            "value": "Gusano barrenador del ganado"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 88,
+            "value": "Productorora de miasis cuatáneo-ulcerosa"
+          }
+        ]
+      },
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": "Cocholiomyia"
@@ -4601,6 +6868,24 @@
       "sourceRows": [
         89
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 89,
+            "value": "Mosca verde"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 89,
+            "value": "Productorora de miasis cuatáneo-ulcerosa"
+          }
+        ]
+      },
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": "Lucilia"
@@ -4641,6 +6926,24 @@
       "sourceRows": [
         90
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 90,
+            "value": "Gusanos del estómago"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 90,
+            "value": "Productora de miasis cavitaria;"
+          }
+        ]
+      },
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": "Gaserophilus"
@@ -4681,6 +6984,24 @@
       "sourceRows": [
         85
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 85,
+            "value": "Falsa garrapata del ovino"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 85,
+            "value": "Suctopicadora hematófaga"
+          }
+        ]
+      },
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": "Mallophagus"
@@ -4721,6 +7042,24 @@
       "sourceRows": [
         84
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 84,
+            "value": "Mosca de los cuernos"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 84,
+            "value": "Suctopicadora hematófaga; afecta a la producción"
+          }
+        ]
+      },
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": "Haematobia"
@@ -4761,6 +7100,24 @@
       "sourceRows": [
         83
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 83,
+            "value": "Mosca de los establos"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 83,
+            "value": "Suctopicadora hematófaga; vector de Trypanosoma evansi"
+          }
+        ]
+      },
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": "Stomoxys"
@@ -4801,6 +7158,24 @@
       "sourceRows": [
         86
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 86,
+            "value": "Tórsalo"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 86,
+            "value": "Zoonótica; productora de miasis forunculosa; enfermedad URA"
+          }
+        ]
+      },
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": "Dermatobia"
@@ -4841,6 +7216,24 @@
       "sourceRows": [
         87
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 87,
+            "value": "Gusano de la nariz"
+          }
+        ],
+        "importance": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 87,
+            "value": "Productora de miasis cavitaria;"
+          }
+        ]
+      },
       "initialColor": "FFD2E6FC",
       "createdFrom": "excel",
       "scientificName": "Oestrus"
@@ -4880,6 +7273,16 @@
       "sourceRows": [
         79
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 79,
+            "value": "Jejenes"
+          }
+        ]
+      },
       "initialColor": "FF84BDF7",
       "createdFrom": "excel",
       "scientificName": "Culicoides"
@@ -4919,6 +7322,16 @@
       "sourceRows": [
         77
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 77,
+            "value": "Mosquito de la fiebre amarilla / tigre"
+          }
+        ]
+      },
       "initialColor": "FF4B9BEC",
       "createdFrom": "excel",
       "scientificName": "Aedes"
@@ -4958,6 +7371,16 @@
       "sourceRows": [
         75
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 75,
+            "value": "Mosquito de la malaria"
+          }
+        ]
+      },
       "initialColor": "FF4B9BEC",
       "createdFrom": "excel",
       "scientificName": "Anopheles"
@@ -4997,6 +7420,16 @@
       "sourceRows": [
         76
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 76,
+            "value": "Mosquito común"
+          }
+        ]
+      },
       "initialColor": "FF4B9BEC",
       "createdFrom": "excel",
       "scientificName": "Culex"
@@ -5036,6 +7469,16 @@
       "sourceRows": [
         81
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 81,
+            "value": "Jejenes"
+          }
+        ]
+      },
       "initialColor": "FF9FCCF9",
       "createdFrom": "excel",
       "scientificName": "Lutzomyia"
@@ -5075,6 +7518,16 @@
       "sourceRows": [
         80
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 80,
+            "value": "Jejenes"
+          }
+        ]
+      },
       "initialColor": "FF9FCCF9",
       "createdFrom": "excel",
       "scientificName": "Phlebotomus"
@@ -5114,6 +7567,16 @@
       "sourceRows": [
         78
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 78,
+            "value": "Mosca negra"
+          }
+        ]
+      },
       "initialColor": "FF68AEF2",
       "createdFrom": "excel",
       "scientificName": "Simulium"
@@ -5154,6 +7617,7 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {},
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Macracanthorhynchus hirudinaceus"
@@ -5194,6 +7658,7 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {},
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Dipylidium caninum"
@@ -5226,13 +7691,143 @@
         }
       ],
       "fields": {
-        "commonName": "Anquilostomas"
+        "commonName": "Anquilostomas",
+        "location": "Intestino delgado.",
+        "morphologyGeneral": "Cápsula bucal bien desarrollada con dientes.",
+        "morphologyMale": "Bolsa copulatriz desarrollada, costillas y dos espículas.",
+        "morphologyFemale": "Extremo posterior recto y romo.",
+        "importance": "Hematófagos e histiófagos.",
+        "cycle": "Directo; la L3 ingresa por ingestión o penetración activa por piel. Se describe migración pulmonar y posibilidad de infección neonatal por vía galactógena.",
+        "infectiveForm": "L3.",
+        "egg": "Ovoide, con cámara de aire, segmentado, membrana fina y lisa; aproximadamente 65 µm.",
+        "ppp": "2–3 semanas por vía oral y 4–5 semanas por vía percutánea.",
+        "observations": "El material menciona zoonosis: larva migrans cutánea."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         18
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 18,
+            "value": "Anquilostomas"
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "Intestino delgado."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "Cápsula bucal bien desarrollada con dientes."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "Bolsa copulatriz desarrollada, costillas y dos espículas."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "Extremo posterior recto y romo."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "Hematófagos e histiófagos."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "Directo; la L3 ingresa por ingestión o penetración activa por piel. Se describe migración pulmonar y posibilidad de infección neonatal por vía galactógena."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "L3."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "Ovoide, con cámara de aire, segmentado, membrana fina y lisa; aproximadamente 65 µm."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "2–3 semanas por vía oral y 4–5 semanas por vía percutánea."
+          }
+        ],
+        "observations": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12,
+              13
+            ],
+            "locator": "Familia Ancylostomatidae / género Ancylostoma",
+            "value": "El material menciona zoonosis: larva migrans cutánea."
+          }
+        ]
+      },
       "initialColor": "FFE7806D",
       "createdFrom": "excel",
       "scientificName": "Ancylostoma"
@@ -5272,6 +7867,16 @@
       "sourceRows": [
         19
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 19,
+            "value": "Anquilostomas"
+          }
+        ]
+      },
       "initialColor": "FFE7806D",
       "createdFrom": "excel",
       "scientificName": "Uncinaria"
@@ -5311,9 +7916,605 @@
       "sourceRows": [
         20
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 20,
+            "value": "Anquilostomas"
+          }
+        ]
+      },
       "initialColor": "FFE7806D",
       "createdFrom": "excel",
       "scientificName": "Bunostomum"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:ascaris/species:suum",
+      "level": "species",
+      "name": "suum",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae/genus:ascaris",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Ascaris"
+        },
+        {
+          "level": "species",
+          "name": "suum"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Porcinos jóvenes.",
+        "morphologyGeneral": "Puede alcanzar 30 cm.",
+        "egg": "Aproximadamente 80 µm; superficie abollonada con mamelones.",
+        "infectiveForm": "Huevo con L3.",
+        "paratenicHost": "Lombrices de tierra.",
+        "cycle": "Migración traqueal.",
+        "ppp": "60–75 días."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              17
+            ],
+            "locator": "Ascaris suum",
+            "value": "Porcinos jóvenes."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              17
+            ],
+            "locator": "Ascaris suum",
+            "value": "Puede alcanzar 30 cm."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              17
+            ],
+            "locator": "Ascaris suum",
+            "value": "Aproximadamente 80 µm; superficie abollonada con mamelones."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              17
+            ],
+            "locator": "Ascaris suum",
+            "value": "Huevo con L3."
+          }
+        ],
+        "paratenicHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              17
+            ],
+            "locator": "Ascaris suum",
+            "value": "Lombrices de tierra."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              17
+            ],
+            "locator": "Ascaris suum",
+            "value": "Migración traqueal."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              17
+            ],
+            "locator": "Ascaris suum",
+            "value": "60–75 días."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Ascaris suum"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:parascaris/species:equorum",
+      "level": "species",
+      "name": "equorum",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae/genus:parascaris",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Parascaris"
+        },
+        {
+          "level": "species",
+          "name": "equorum"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Equinos jóvenes, desde el destete hasta aproximadamente 1–1,5 años.",
+        "location": "Intestino delgado.",
+        "morphologyGeneral": "Tres labios y tres interlabios; el material lo señala como el único de la familia con interlabios. Puede alcanzar 45 cm.",
+        "cycle": "Migración traqueal: L3 atraviesa pared intestinal, llega por vía porta al hígado, luego corazón derecho y pulmones; tras expectoración/deglución vuelve al aparato digestivo y al intestino delgado.",
+        "infectiveForm": "Huevo con L3, procedente de pasturas, heno o alimentos contaminados.",
+        "ppp": "2,5–3 meses."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Parascaris equorum",
+            "value": "Equinos jóvenes, desde el destete hasta aproximadamente 1–1,5 años."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Parascaris equorum",
+            "value": "Intestino delgado."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Parascaris equorum",
+            "value": "Tres labios y tres interlabios; el material lo señala como el único de la familia con interlabios. Puede alcanzar 45 cm."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Parascaris equorum",
+            "value": "Migración traqueal: L3 atraviesa pared intestinal, llega por vía porta al hígado, luego corazón derecho y pulmones; tras expectoración/deglución vuelve al aparato digestivo y al intestino delgado."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Parascaris equorum",
+            "value": "Huevo con L3, procedente de pasturas, heno o alimentos contaminados."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              16,
+              17
+            ],
+            "locator": "Parascaris equorum",
+            "value": "2,5–3 meses."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Parascaris equorum"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxascaris/species:leonina",
+      "level": "species",
+      "name": "leonina",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxascaris",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Toxascaris"
+        },
+        {
+          "level": "species",
+          "name": "leonina"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Caninos y felinos.",
+        "location": "Intestino delgado.",
+        "infectiveForm": "Huevo con L3; también L3 en hospedadores paraténicos.",
+        "cycle": "No realiza migraciones marcadas fuera del intestino delgado.",
+        "egg": "No segmentado; membrana externa lisa y delgada, y membrana interna gruesa y rugosa; cámara de aire muy marcada."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxascaris leonina",
+            "value": "Caninos y felinos."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxascaris leonina",
+            "value": "Intestino delgado."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxascaris leonina",
+            "value": "Huevo con L3; también L3 en hospedadores paraténicos."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxascaris leonina",
+            "value": "No realiza migraciones marcadas fuera del intestino delgado."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxascaris leonina",
+            "value": "No segmentado; membrana externa lisa y delgada, y membrana interna gruesa y rugosa; cámara de aire muy marcada."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Toxascaris leonina"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxocara/species:canis",
+      "level": "species",
+      "name": "canis",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxocara",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Toxocara"
+        },
+        {
+          "level": "species",
+          "name": "canis"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Caninos.",
+        "infectiveForm": "Huevo con L3; también L3 en hospedadores paraténicos.",
+        "paratenicHost": "Principalmente roedores y aves.",
+        "cycle": "Migración traqueal en caninos menores de tres meses; migración somática en animales mayores. El material describe transmisión principalmente transplacentaria y, en menor medida, transmamaria.",
+        "ppp": "30 días por ingestión oral; 20 días por vía galactógena o por hospedador paraténico; 16–21 días por vía transplacentaria.",
+        "importance": "Zoonótica; el material menciona larva migrans visceral y ocular en el ser humano."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              18
+            ],
+            "locator": "Toxocara canis",
+            "value": "Caninos."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              18
+            ],
+            "locator": "Toxocara canis",
+            "value": "Huevo con L3; también L3 en hospedadores paraténicos."
+          }
+        ],
+        "paratenicHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              18
+            ],
+            "locator": "Toxocara canis",
+            "value": "Principalmente roedores y aves."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              18
+            ],
+            "locator": "Toxocara canis",
+            "value": "Migración traqueal en caninos menores de tres meses; migración somática en animales mayores. El material describe transmisión principalmente transplacentaria y, en menor medida, transmamaria."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              18
+            ],
+            "locator": "Toxocara canis",
+            "value": "30 días por ingestión oral; 20 días por vía galactógena o por hospedador paraténico; 16–21 días por vía transplacentaria."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              18
+            ],
+            "locator": "Toxocara canis",
+            "value": "Zoonótica; el material menciona larva migrans visceral y ocular en el ser humano."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Toxocara canis"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxocara/species:catis",
+      "level": "species",
+      "name": "catis",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxocara",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Toxocara"
+        },
+        {
+          "level": "species",
+          "name": "catis"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Felinos domésticos y silvestres.",
+        "infectiveForm": "Huevo con L3; también L3 en hospedadores paraténicos.",
+        "cycle": "Migración traqueal en gatitos, gatos jóvenes y también adultos; puede haber migración somática. El material describe transmisión transmamaria y no transplacentaria.",
+        "ppp": "2 meses por ingestión de huevo con L3; 19 días por leche o hospedador paraténico.",
+        "importance": "Zoonótica; el material menciona larva migrans visceral y ocular."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxocara catis",
+            "value": "Felinos domésticos y silvestres."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxocara catis",
+            "value": "Huevo con L3; también L3 en hospedadores paraténicos."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxocara catis",
+            "value": "Migración traqueal en gatitos, gatos jóvenes y también adultos; puede haber migración somática. El material describe transmisión transmamaria y no transplacentaria."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxocara catis",
+            "value": "2 meses por ingestión de huevo con L3; 19 días por leche o hospedador paraténico."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxocara catis",
+            "value": "Zoonótica; el material menciona larva migrans visceral y ocular."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Toxocara catis"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxocara/species:vitulorum",
+      "level": "species",
+      "name": "vitulorum",
+      "parentId": "granGroup:helminto/group:nematodo/family:ascarididae/genus:toxocara",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ascarididae"
+        },
+        {
+          "level": "genus",
+          "name": "Toxocara"
+        },
+        {
+          "level": "species",
+          "name": "vitulorum"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Bovinos.",
+        "infectiveForm": "Huevo con L3.",
+        "cycle": "Migración traqueal hasta los 3–4 meses de edad y migración somática en bovinos mayores; el material menciona transmisión transplacentaria y transmamaria."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxocara vitulorum",
+            "value": "Bovinos."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxocara vitulorum",
+            "value": "Huevo con L3."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              19
+            ],
+            "locator": "Toxocara vitulorum",
+            "value": "Migración traqueal hasta los 3–4 meses de edad y migración somática en bovinos mayores; el material menciona transmisión transplacentaria y transmamaria."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Toxocara vitulorum"
     },
     {
       "id": "granGroup:helminto/group:nematodo/family:onchocercidae/genus:dirofilaria/species:immitis",
@@ -5342,7 +8543,10 @@
           "name": "immitis"
         }
       ],
-      "fields": {},
+      "fields": {
+        "definitiveHost": "Caninos, felinos y hurones.",
+        "importance": "Zoonótica."
+      },
       "tags": [],
       "notes": [
         {
@@ -5351,6 +8555,28 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              21
+            ],
+            "locator": "Dirofilaria immitis",
+            "value": "Caninos, felinos y hurones."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              21
+            ],
+            "locator": "Dirofilaria immitis",
+            "value": "Zoonótica."
+          }
+        ]
+      },
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Dirofilaria immitis"
@@ -5382,7 +8608,10 @@
           "name": "repens"
         }
       ],
-      "fields": {},
+      "fields": {
+        "definitiveHost": "Caninos y felinos.",
+        "morphologyMale": "Puede alcanzar hasta 7 cm."
+      },
       "tags": [],
       "notes": [
         {
@@ -5391,9 +8620,179 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              22
+            ],
+            "locator": "Dirofilaria repens",
+            "value": "Caninos y felinos."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              22
+            ],
+            "locator": "Dirofilaria repens",
+            "value": "Puede alcanzar hasta 7 cm."
+          }
+        ]
+      },
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Dirofilaria repens"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:oxyuridae/genus:oxyuris/species:equi",
+      "level": "species",
+      "name": "equi",
+      "parentId": "granGroup:helminto/group:nematodo/family:oxyuridae/genus:oxyuris",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Oxyuridae"
+        },
+        {
+          "level": "genus",
+          "name": "Oxyuris"
+        },
+        {
+          "level": "species",
+          "name": "equi"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Equinos.",
+        "location": "Adultos en intestino grueso; la hembra deposita huevos en la región perineal.",
+        "morphologyGeneral": "Tres labios rudimentarios en el extremo anterior; se alimenta de mucosa intestinal.",
+        "morphologyMale": "1,5–2 cm; espícula larga; sin bolsa copulatriz.",
+        "morphologyFemale": "Aproximadamente 10 cm; marcada diferencia de tamaño respecto del macho.",
+        "egg": "Aproximadamente 90 µm, asimétrico, operculado y embrionado al momento de la puesta; adherido al pelo perineal por sustancia cementante.",
+        "cycle": "Directo temporal; la hembra ovipone en región perineal, los huevos caen al ambiente y evolucionan. No realiza migraciones.",
+        "infectiveForm": "L2 o L3, por vía oral.",
+        "ppp": "Aproximadamente 5 meses.",
+        "importance": "La oviposición produce irritación perineal; el material asocia rascado, pérdida de pelo y lesiones cutáneas."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "Equinos."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "Adultos en intestino grueso; la hembra deposita huevos en la región perineal."
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "Tres labios rudimentarios en el extremo anterior; se alimenta de mucosa intestinal."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "1,5–2 cm; espícula larga; sin bolsa copulatriz."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "Aproximadamente 10 cm; marcada diferencia de tamaño respecto del macho."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "Aproximadamente 90 µm, asimétrico, operculado y embrionado al momento de la puesta; adherido al pelo perineal por sustancia cementante."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "Directo temporal; la hembra ovipone en región perineal, los huevos caen al ambiente y evolucionan. No realiza migraciones."
+          }
+        ],
+        "infectiveForm": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "L2 o L3, por vía oral."
+          }
+        ],
+        "ppp": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "Aproximadamente 5 meses."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              20
+            ],
+            "locator": "Oxyuris equi",
+            "value": "La oviposición produce irritación perineal; el material asocia rascado, pérdida de pelo y lesiones cutáneas."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Oxyuris equi"
     },
     {
       "id": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:strongylus",
@@ -5423,13 +8822,45 @@
         }
       ],
       "fields": {
-        "commonName": "Grandes estróngilos"
+        "commonName": "Grandes estróngilos",
+        "importance": "Las especies del género se describen como histiófagas.",
+        "location": "Ciego y colon de equinos (según el apartado de ciclos de los estrongílidos)."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         14
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 14,
+            "value": "Grandes estróngilos"
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus",
+            "value": "Las especies del género se describen como histiófagas."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus",
+            "value": "Ciego y colon de equinos (según el apartado de ciclos de los estrongílidos)."
+          }
+        ]
+      },
       "initialColor": "FFE07058",
       "createdFrom": "excel",
       "scientificName": "Strongylus"
@@ -5462,16 +8893,385 @@
         }
       ],
       "fields": {
-        "commonName": "Grandes estróngilos"
+        "commonName": "Grandes estróngilos",
+        "morphologyGeneral": "9–25 mm; cápsula bucal globosa de paredes gruesas con tres pares de dientes aserrados.",
+        "morphologyMale": "Espículas iguales, largas y delgadas, terminadas en gancho.",
+        "egg": "Segmentado, ovalado, de cubierta delgada; aproximadamente 80 µm.",
+        "location": "Ciego y colon de equinos.",
+        "cycle": "Directo. L3 infectante a los 6–7 días; permanece en pared intestinal y forma nódulos en la submucosa antes de llegar al ciego y colon. El material describe ciclos de 7 a 11 meses."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         15
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 15,
+            "value": "Grandes estróngilos"
+          }
+        ],
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Género Triodontophorus",
+            "value": "9–25 mm; cápsula bucal globosa de paredes gruesas con tres pares de dientes aserrados."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Género Triodontophorus",
+            "value": "Espículas iguales, largas y delgadas, terminadas en gancho."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Género Triodontophorus",
+            "value": "Segmentado, ovalado, de cubierta delgada; aproximadamente 80 µm."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Género Triodontophorus",
+            "value": "Ciego y colon de equinos."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Género Triodontophorus",
+            "value": "Directo. L3 infectante a los 6–7 días; permanece en pared intestinal y forma nódulos en la submucosa antes de llegar al ciego y colon. El material describe ciclos de 7 a 11 meses."
+          }
+        ]
+      },
       "initialColor": "FFE07058",
       "createdFrom": "excel",
       "scientificName": "Triodontophorus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongyloididae/genus:strongyloides/species:papillosus",
+      "level": "species",
+      "name": "papillosus",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongyloididae/genus:strongyloides",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongyloididae"
+        },
+        {
+          "level": "genus",
+          "name": "Strongyloides"
+        },
+        {
+          "level": "species",
+          "name": "papillosus"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Rumiantes, conejos y roedores.",
+        "morphologyFemale": "Aproximadamente 6 mm.",
+        "observations": "El material menciona evidencia de transmisión transmamaria en especies que afectan al ganado."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              16
+            ],
+            "locator": "Especies de importancia veterinaria / hipobiosis",
+            "value": "Rumiantes, conejos y roedores."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              16
+            ],
+            "locator": "Especies de importancia veterinaria / hipobiosis",
+            "value": "Aproximadamente 6 mm."
+          }
+        ],
+        "observations": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              16
+            ],
+            "locator": "Especies de importancia veterinaria / hipobiosis",
+            "value": "El material menciona evidencia de transmisión transmamaria en especies que afectan al ganado."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Strongyloides papillosus"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongyloididae/genus:strongyloides/species:ransomi",
+      "level": "species",
+      "name": "ransomi",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongyloididae/genus:strongyloides",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongyloididae"
+        },
+        {
+          "level": "genus",
+          "name": "Strongyloides"
+        },
+        {
+          "level": "species",
+          "name": "ransomi"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Cerdos.",
+        "morphologyFemale": "Aproximadamente 4,5 mm.",
+        "observations": "El material menciona evidencia de transmisión transmamaria en esta especie."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              16
+            ],
+            "locator": "Especies de importancia veterinaria / hipobiosis",
+            "value": "Cerdos."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              16
+            ],
+            "locator": "Especies de importancia veterinaria / hipobiosis",
+            "value": "Aproximadamente 4,5 mm."
+          }
+        ],
+        "observations": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              16
+            ],
+            "locator": "Especies de importancia veterinaria / hipobiosis",
+            "value": "El material menciona evidencia de transmisión transmamaria en esta especie."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Strongyloides ransomi"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongyloididae/genus:strongyloides/species:stercoralis",
+      "level": "species",
+      "name": "stercoralis",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongyloididae/genus:strongyloides",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongyloididae"
+        },
+        {
+          "level": "genus",
+          "name": "Strongyloides"
+        },
+        {
+          "level": "species",
+          "name": "stercoralis"
+        }
+      ],
+      "fields": {
+        "importance": "Zoonótica.",
+        "definitiveHost": "Caninos, felinos y primates.",
+        "location": "Intestino delgado; regiones tropicales y subtropicales.",
+        "morphologyFemale": "Hembra partenogenética de hasta 2,2 mm."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14
+            ],
+            "locator": "Strongyloides stercoralis",
+            "value": "Zoonótica."
+          }
+        ],
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14
+            ],
+            "locator": "Strongyloides stercoralis",
+            "value": "Caninos, felinos y primates."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14
+            ],
+            "locator": "Strongyloides stercoralis",
+            "value": "Intestino delgado; regiones tropicales y subtropicales."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14
+            ],
+            "locator": "Strongyloides stercoralis",
+            "value": "Hembra partenogenética de hasta 2,2 mm."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Strongyloides stercoralis"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:strongyloididae/genus:strongyloides/species:westeri",
+      "level": "species",
+      "name": "westeri",
+      "parentId": "granGroup:helminto/group:nematodo/family:strongyloididae/genus:strongyloides",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Strongyloididae"
+        },
+        {
+          "level": "genus",
+          "name": "Strongyloides"
+        },
+        {
+          "level": "species",
+          "name": "westeri"
+        }
+      ],
+      "fields": {
+        "definitiveHost": "Equinos.",
+        "morphologyFemale": "Aproximadamente 9 mm.",
+        "observations": "El material menciona evidencia de transmisión transmamaria."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              16
+            ],
+            "locator": "Especies de importancia veterinaria / hipobiosis",
+            "value": "Equinos."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              16
+            ],
+            "locator": "Especies de importancia veterinaria / hipobiosis",
+            "value": "Aproximadamente 9 mm."
+          }
+        ],
+        "observations": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              14,
+              16
+            ],
+            "locator": "Especies de importancia veterinaria / hipobiosis",
+            "value": "El material menciona evidencia de transmisión transmamaria."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Strongyloides westeri"
     },
     {
       "id": "granGroup:helminto/group:nematodo/family:trichostrongylidae/genus:haemonchus/species:contortus",
@@ -5501,13 +9301,35 @@
         }
       ],
       "fields": {
-        "commonName": "Gusano del peluquero"
+        "commonName": "Gusano del peluquero",
+        "morphologyFemale": "Presenta flap vulvar; el intestino y el aparato genital se observan enrollados helicoidalmente, con el patrón rojo-blanco señalado en la guía."
       },
       "tags": [],
       "notes": [],
       "sourceRows": [
         7
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 7,
+            "value": "Gusano del peluquero"
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Guía práctica Cátedra",
+            "pages": [
+              2,
+              3
+            ],
+            "locator": "Preparado C: hembra de Haemonchus contortus",
+            "value": "Presenta flap vulvar; el intestino y el aparato genital se observan enrollados helicoidalmente, con el patrón rojo-blanco señalado en la guía."
+          }
+        ]
+      },
       "initialColor": "FFD55A3F",
       "createdFrom": "excel",
       "scientificName": "Haemonchus contortus"
@@ -5539,7 +9361,11 @@
           "name": "hepatica"
         }
       ],
-      "fields": {},
+      "fields": {
+        "location": "Adultos en conductos biliares y vesícula biliar.",
+        "cycle": "Indirecto.",
+        "importance": "Zoonótica."
+      },
       "tags": [],
       "notes": [
         {
@@ -5548,6 +9374,38 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {
+        "location": [
+          {
+            "document": "Guía práctica Cátedra",
+            "pages": [
+              39
+            ],
+            "locator": "Trematodes: Fasciola hepatica",
+            "value": "Adultos en conductos biliares y vesícula biliar."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Guía práctica Cátedra",
+            "pages": [
+              39
+            ],
+            "locator": "Trematodes: Fasciola hepatica",
+            "value": "Indirecto."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Guía práctica Cátedra",
+            "pages": [
+              39
+            ],
+            "locator": "Trematodes: Fasciola hepatica",
+            "value": "Zoonótica."
+          }
+        ]
+      },
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Fasciola hepatica"
@@ -5587,6 +9445,16 @@
       "sourceRows": [
         98
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 98,
+            "value": "Sarcocistis"
+          }
+        ]
+      },
       "initialColor": "FFCB6995",
       "createdFrom": "excel",
       "scientificName": "Sarcocystis"
@@ -5626,9 +9494,354 @@
       "sourceRows": [
         99
       ],
+      "fieldSources": {
+        "commonName": [
+          {
+            "document": "PARÁSITOS.xlsx",
+            "worksheet": "TODOS",
+            "row": 99,
+            "value": "Toxoplasma"
+          }
+        ]
+      },
       "initialColor": "FFCB6995",
       "createdFrom": "excel",
       "scientificName": "Toxoplasma"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae/genus:ancylostoma/species:braziliense",
+      "level": "species",
+      "name": "braziliense",
+      "parentId": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae/genus:ancylostoma",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ancylostomatidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Ancylostominae"
+        },
+        {
+          "level": "genus",
+          "name": "Ancylostoma"
+        },
+        {
+          "level": "species",
+          "name": "braziliense"
+        }
+      ],
+      "fields": {
+        "morphologyGeneral": "Cápsula bucal larga, con dos pares de dientes medianos a grandes.",
+        "morphologyMale": "Aproximadamente 8 mm; espículas delgadas.",
+        "morphologyFemale": "9–10 mm.",
+        "egg": "75–90 µm.",
+        "definitiveHost": "Perros y gatos.",
+        "location": "Intestino delgado."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma braziliense",
+            "value": "Cápsula bucal larga, con dos pares de dientes medianos a grandes."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma braziliense",
+            "value": "Aproximadamente 8 mm; espículas delgadas."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma braziliense",
+            "value": "9–10 mm."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma braziliense",
+            "value": "75–90 µm."
+          }
+        ],
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma braziliense",
+            "value": "Perros y gatos."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma braziliense",
+            "value": "Intestino delgado."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Ancylostoma braziliense"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae/genus:ancylostoma/species:caninum",
+      "level": "species",
+      "name": "caninum",
+      "parentId": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae/genus:ancylostoma",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ancylostomatidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Ancylostominae"
+        },
+        {
+          "level": "genus",
+          "name": "Ancylostoma"
+        },
+        {
+          "level": "species",
+          "name": "caninum"
+        }
+      ],
+      "fields": {
+        "morphologyGeneral": "Tres pares de dientes ventrales y dos dientes en el fondo de la cápsula bucal.",
+        "morphologyMale": "11–13 mm; con espículas.",
+        "morphologyFemale": "14–21 mm.",
+        "egg": "55–70 µm.",
+        "definitiveHost": "Perros, zorros, lobos, gatos y otros cánidos silvestres.",
+        "location": "Intestino delgado."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma caninum",
+            "value": "Tres pares de dientes ventrales y dos dientes en el fondo de la cápsula bucal."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma caninum",
+            "value": "11–13 mm; con espículas."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma caninum",
+            "value": "14–21 mm."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma caninum",
+            "value": "55–70 µm."
+          }
+        ],
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma caninum",
+            "value": "Perros, zorros, lobos, gatos y otros cánidos silvestres."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma caninum",
+            "value": "Intestino delgado."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Ancylostoma caninum"
+    },
+    {
+      "id": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae/genus:ancylostoma/species:tubaeforme",
+      "level": "species",
+      "name": "tubaeforme",
+      "parentId": "granGroup:helminto/group:nematodo/family:ancylostomatidae/subfamily:ancylostominae/genus:ancylostoma",
+      "path": [
+        {
+          "level": "granGroup",
+          "name": "HELMINTO"
+        },
+        {
+          "level": "group",
+          "name": "NEMATODO"
+        },
+        {
+          "level": "family",
+          "name": "Ancylostomatidae"
+        },
+        {
+          "level": "subfamily",
+          "name": "Ancylostominae"
+        },
+        {
+          "level": "genus",
+          "name": "Ancylostoma"
+        },
+        {
+          "level": "species",
+          "name": "tubaeforme"
+        }
+      ],
+      "fields": {
+        "morphologyGeneral": "Similar a A. caninum, de menor tamaño.",
+        "morphologyMale": "9–10 mm.",
+        "morphologyFemale": "12–15 mm.",
+        "egg": "55–70 µm.",
+        "definitiveHost": "Gato.",
+        "location": "Intestino delgado.",
+        "importance": "Descripto como el más común del gato."
+      },
+      "tags": [],
+      "notes": [],
+      "sourceRows": [],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma tubaeforme",
+            "value": "Similar a A. caninum, de menor tamaño."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma tubaeforme",
+            "value": "9–10 mm."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma tubaeforme",
+            "value": "12–15 mm."
+          }
+        ],
+        "egg": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma tubaeforme",
+            "value": "55–70 µm."
+          }
+        ],
+        "definitiveHost": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma tubaeforme",
+            "value": "Gato."
+          }
+        ],
+        "location": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma tubaeforme",
+            "value": "Intestino delgado."
+          }
+        ],
+        "importance": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              12
+            ],
+            "locator": "Ancylostoma tubaeforme",
+            "value": "Descripto como el más común del gato."
+          }
+        ]
+      },
+      "initialColor": "",
+      "createdFrom": "course-material",
+      "scientificName": "Ancylostoma tubaeforme"
     },
     {
       "id": "granGroup:helminto/group:nematodo/family:strongylidae/subfamily:strongylinae/genus:strongylus/species:edentatus",
@@ -5661,7 +9874,12 @@
           "name": "edentatus"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyGeneral": "Cápsula bucal en forma de copa; sin dientes.",
+        "morphologyMale": "23–28 mm.",
+        "morphologyFemale": "33–44 mm.",
+        "cycle": "Migración por vía portal al hígado y luego por el ligamento hepático al peritoneo."
+      },
       "tags": [],
       "notes": [
         {
@@ -5670,6 +9888,48 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {
+        "morphologyGeneral": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus edentatus",
+            "value": "Cápsula bucal en forma de copa; sin dientes."
+          }
+        ],
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus edentatus",
+            "value": "23–28 mm."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus edentatus",
+            "value": "33–44 mm."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus edentatus",
+            "value": "Migración por vía portal al hígado y luego por el ligamento hepático al peritoneo."
+          }
+        ]
+      },
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Strongylus edentatus"
@@ -5705,7 +9965,11 @@
           "name": "equinus"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyMale": "26–35 mm; cuatro dientes en el fondo de la cápsula bucal.",
+        "morphologyFemale": "38–47 mm.",
+        "cycle": "Migración por peritoneo hacia hígado y páncreas."
+      },
       "tags": [],
       "notes": [
         {
@@ -5714,6 +9978,38 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus equinus",
+            "value": "26–35 mm; cuatro dientes en el fondo de la cápsula bucal."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus equinus",
+            "value": "38–47 mm."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus equinus",
+            "value": "Migración por peritoneo hacia hígado y páncreas."
+          }
+        ]
+      },
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Strongylus equinus"
@@ -5749,7 +10045,11 @@
           "name": "vulgaris"
         }
       ],
-      "fields": {},
+      "fields": {
+        "morphologyMale": "14–16 mm; dos dientes redondeados en forma de orejas de ratón en el fondo de la cápsula bucal.",
+        "morphologyFemale": "20–24 mm.",
+        "cycle": "Migración por sangre hacia arterias mesentérica anterior, ilíaca y cecocólica."
+      },
       "tags": [],
       "notes": [
         {
@@ -5758,6 +10058,38 @@
         }
       ],
       "sourceRows": [],
+      "fieldSources": {
+        "morphologyMale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus vulgaris",
+            "value": "14–16 mm; dos dientes redondeados en forma de orejas de ratón en el fondo de la cápsula bucal."
+          }
+        ],
+        "morphologyFemale": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus vulgaris",
+            "value": "20–24 mm."
+          }
+        ],
+        "cycle": [
+          {
+            "document": "Transcritos Parasitología",
+            "pages": [
+              9
+            ],
+            "locator": "Strongylus vulgaris",
+            "value": "Migración por sangre hacia arterias mesentérica anterior, ilíaca y cecocólica."
+          }
+        ]
+      },
       "initialColor": "",
       "createdFrom": "course-material",
       "scientificName": "Strongylus vulgaris"
@@ -5799,6 +10131,7 @@
   ],
   "importSummary": {
     "excelRows": 98,
+    "courseFactRecords": 52,
     "supplementalNameOnlyRecords": 11,
     "noFactsInferred": true
   }
