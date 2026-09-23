@@ -10,6 +10,7 @@ from openpyxl import load_workbook
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / "upload" / "PARÁSITOS.xlsx"
 OUT = ROOT / "dist" / "data" / "seed.json"
+COURSE_FACTS = ROOT / "tools" / "course_facts.json"
 
 FIELDS = [
     "granGroup", "group", "subgroup", "family", "subfamily", "genus", "species",
@@ -65,7 +66,7 @@ for row_no, row in enumerate(ws.iter_rows(min_row=2, max_col=len(FIELDS)), 2):
             nodes[node_id] = {
                 "id": node_id, "level": level, "name": value, "parentId": parent_id,
                 "path": list(ancestry), "fields": {}, "tags": [], "notes": [],
-                "sourceRows": [], "initialColor": cell_color(row[FIELDS.index(field)]),
+                "sourceRows": [], "fieldSources": {}, "initialColor": cell_color(row[FIELDS.index(field)]),
                 "createdFrom": "excel",
             }
         node = nodes[node_id]
@@ -83,6 +84,46 @@ for row_no, row in enumerate(ws.iter_rows(min_row=2, max_col=len(FIELDS)), 2):
                 deepest["notes"].append({"type":"import-conflict", "message":f"Fila {row_no}: valor adicional importado para {field}.", "value":values[field]})
             elif not current:
                 deepest["fields"][field] = values[field]
+            deepest["fieldSources"].setdefault(field, []).append({
+                "document": "PARÁSITOS.xlsx", "worksheet": "TODOS", "row": row_no,
+                "value": values[field],
+            })
+
+def ensure_path(path_pairs, created_from="course-material"):
+    """Create exactly the named hierarchy from a source; never infer a taxon."""
+    ancestry, parent_id = [], None
+    for level, name in path_pairs:
+        ancestry.append({"level": level, "name": name})
+        node_id = "/".join(f"{part['level']}:{slug(part['name'])}" for part in ancestry)
+        if node_id not in nodes:
+            nodes[node_id] = {
+                "id": node_id, "level": level, "name": name, "parentId": parent_id,
+                "path": list(ancestry), "fields": {}, "tags": [], "notes": [],
+                "sourceRows": [], "fieldSources": {}, "initialColor": "",
+                "createdFrom": created_from,
+            }
+        parent_id = node_id
+    return nodes[parent_id]
+
+material_facts = json.loads(COURSE_FACTS.read_text(encoding="utf-8"))
+for fact in material_facts:
+    node = ensure_path([(level, name) for level, name in fact["path"]])
+    source = dict(fact["source"])
+    for field, value in fact.get("fields", {}).items():
+        source_with_value = {**source, "value": value}
+        node["fieldSources"].setdefault(field, []).append(source_with_value)
+        current = node["fields"].get(field, "")
+        if not current:
+            node["fields"][field] = value
+        elif current != value:
+            # Preserve both explicit source values; do not choose a winner automatically.
+            node["notes"].append({
+                "type": "source-conflict",
+                "field": field,
+                "message": f"El material aporta un valor diferente para {field}; revisar las fuentes antes de consolidar.",
+                "value": value,
+                "source": source,
+            })
 
 # Curated name-only records explicitly mentioned in the supplied study material.
 # They are deliberately left without inferred traits; their provenance remains visible in the UI.
@@ -105,7 +146,7 @@ for path_pairs, source_name in supplemental:
         ancestry.append({'level':level,'name':name})
         node_id='/'.join(f"{p['level']}:{slug(p['name'])}" for p in ancestry)
         if node_id not in nodes:
-            nodes[node_id] = {"id":node_id,"level":level,"name":name,"parentId":parent_id,"path":list(ancestry),"fields":{},"tags":[],"notes":[],"sourceRows":[],"initialColor":"","createdFrom":"course-material"}
+            nodes[node_id] = {"id":node_id,"level":level,"name":name,"parentId":parent_id,"path":list(ancestry),"fields":{},"tags":[],"notes":[],"sourceRows":[],"fieldSources":{},"initialColor":"","createdFrom":"course-material"}
         parent_id=node_id
     nodes[parent_id]["notes"].append({"type":"source-mention","message":f"Nombre mencionado en {source_name}; sin atributos inferidos."})
 
@@ -124,12 +165,17 @@ for node in nodes.values():
     node['scientificName'] = scientific_name(node) if node['level'] in ('genus','species') else ''
 
 payload = {
-    "schemaVersion": 1,
+    "schemaVersion": 2,
     "createdAt": datetime.now(timezone.utc).isoformat(),
     "source": {"workbook":"PARÁSITOS.xlsx", "worksheet":"TODOS", "courseMaterials":["Guía práctica Cátedra 2025", "Transcritos Parasitología"]},
     "nodes": sorted(nodes.values(), key=lambda n:(len(n['path']),n['id'])),
     "issues": issues,
-    "importSummary": {"excelRows":98, "supplementalNameOnlyRecords":len(supplemental), "noFactsInferred": True}
+    "importSummary": {
+        "excelRows": 98,
+        "courseFactRecords": len(material_facts),
+        "supplementalNameOnlyRecords": len(supplemental),
+        "noFactsInferred": True,
+    }
 }
 OUT.parent.mkdir(parents=True, exist_ok=True)
 OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
