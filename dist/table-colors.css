@@ -7,12 +7,13 @@
 #table .table-wrap::-webkit-scrollbar-thumb{background:#b7a58d;border:2px solid transparent;background-clip:padding-box;border-radius:10px}
 #table .table-wrap::-webkit-scrollbar-thumb:hover{background:#92765c;border:2px solid transparent;background-clip:padding-box}
 #table .taxonomy-table th{padding:6px 7px;line-height:1.18}
+#table .taxonomy-table th.table-head-taxon{padding:6px 7px;text-align:center;vertical-align:middle}
 #table .taxonomy-table td{padding:4px 7px;line-height:1.28;vertical-align:middle;border-bottom:0}
 #table .taxonomy-table tr.genus-break td{border-top:1px solid #d9cfc2}
 #table .taxonomy-table tr:hover,.taxonomy-table tr.selected{background:#fff8ea}
 #table .taxonomy-table td.table-center{text-align:center}
 #table .taxonomy-table td.table-left{text-align:left}
-#table .taxonomy-table td.taxon-cell{padding:0;background:var(--taxon-bg);color:var(--taxon-ink);text-align:center;min-width:94px}
+#table .taxonomy-table td.taxon-cell{padding:0;background:var(--taxon-bg);color:var(--taxon-ink);text-align:center;vertical-align:middle;min-width:94px}
 .taxon-cell-content{min-height:29px;display:flex;align-items:center;justify-content:center;padding:3px 5px}
 .taxon-link{display:block;width:100%;border:0;padding:1px 3px;margin:0;background:transparent;color:inherit;font:inherit;text-align:center;cursor:pointer;text-decoration:none}
 .taxon-link:hover{color:inherit;background:rgba(255,255,255,.16);text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:3px}
