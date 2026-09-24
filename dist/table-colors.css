@@ -1,0 +1,24 @@
+/* Tabla taxonómica: color por nodo, no por fila. */
+#table .toolbar{margin:8px 0 10px;gap:7px}
+#table .title-row .subtitle{margin-top:3px}
+#table .table-wrap{max-height:430px;border-radius:7px;scrollbar-width:thin;scrollbar-color:#b7a58d transparent}
+#table .table-wrap::-webkit-scrollbar{width:7px;height:7px}
+#table .table-wrap::-webkit-scrollbar-track{background:transparent}
+#table .table-wrap::-webkit-scrollbar-thumb{background:#b7a58d;border:2px solid transparent;background-clip:padding-box;border-radius:10px}
+#table .table-wrap::-webkit-scrollbar-thumb:hover{background:#92765c;border:2px solid transparent;background-clip:padding-box}
+#table .taxonomy-table th{padding:6px 7px;line-height:1.18}
+#table .taxonomy-table td{padding:4px 7px;line-height:1.28;vertical-align:middle;border-bottom:0}
+#table .taxonomy-table tr.genus-break td{border-top:1px solid #d9cfc2}
+#table .taxonomy-table tr:hover,.taxonomy-table tr.selected{background:#fff8ea}
+#table .taxonomy-table td.table-center{text-align:center}
+#table .taxonomy-table td.table-left{text-align:left}
+#table .taxonomy-table td.taxon-cell{padding:0;background:var(--taxon-bg);color:var(--taxon-ink);text-align:center;min-width:94px}
+.taxon-cell-content{min-height:29px;display:flex;align-items:center;justify-content:center;gap:4px;padding:3px 5px}
+.taxon-link{display:block;width:100%;border:0;padding:1px 3px;margin:0;background:transparent;color:inherit;font:inherit;text-align:center;cursor:pointer;text-decoration:none}
+.taxon-link:hover{color:inherit;background:rgba(255,255,255,.16);text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:3px}
+.taxon-color-action{border:1px solid currentColor;border-radius:4px;background:rgba(255,255,255,.22);color:inherit;font:600 10px/1 "DM Sans",sans-serif;padding:4px 5px;cursor:pointer;white-space:nowrap}
+.taxon-color-action:hover{background:rgba(255,255,255,.42)}
+.quick-view{margin-top:12px}.quick-head{padding-bottom:9px;margin-bottom:10px}
+.quick-title-open{display:inline;padding:0;border:0;background:transparent;color:var(--wine);font:700 25px "Libre Baskerville",serif;cursor:pointer;text-align:left}
+.quick-title-open:hover{color:#6d4323;text-decoration:underline;text-decoration-color:#c9ad86;text-underline-offset:4px}
+.color-manager{display:grid;gap:14px}.color-manager select{width:100%;max-width:100%}.color-editor{display:flex;align-items:end;gap:10px}.color-editor label{flex:1}.color-preview{width:42px;height:34px;border:1px solid #cfc5bb;border-radius:5px}.color-editor output{font:12px "DM Sans",sans-serif;color:#655b53;min-width:68px}.color-library{display:grid;gap:6px}.color-library h3{font:700 14px "Libre Baskerville",serif;color:var(--wine);margin:5px 0 0}.color-swatch{width:30px;height:30px;padding:0;border:1px solid #cfc5bb;border-radius:5px;cursor:pointer}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
