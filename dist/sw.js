@@ -1,5 +1,5 @@
-const CACHE='atlas-parasitologia-v22';
-const CORE=['./','./index.html','./styles.css','./table-colors.css','./image-gallery.css','./app-v5.js?core=22','./data/seed-v2.json','./favicon.svg'];
+const CACHE='atlas-parasitologia-v23';
+const CORE=['./','./index.html','./styles.css','./table-colors.css','./image-gallery.css','./app-v5.js?core=23','./data/seed-v2.json','./favicon.svg'];
 const CRITICAL=['/index.html','/app-v5.js','/app.js','/styles.css','/table-colors.css','/image-gallery.css','/data/seed-v2.json'];
 self.addEventListener('install',event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).catch(()=>{}))});
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('atlas-parasitologia-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
