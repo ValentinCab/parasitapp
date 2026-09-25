@@ -7,6 +7,8 @@
 #table .table-wrap::-webkit-scrollbar-thumb{background:#b7a58d;border:2px solid transparent;background-clip:padding-box;border-radius:10px}
 #table .table-wrap::-webkit-scrollbar-thumb:hover{background:#92765c;border:2px solid transparent;background-clip:padding-box}
 #table .taxonomy-table th{padding:6px 7px;line-height:1.18}
+#table .sort-indicator{display:inline-block;margin-left:3px;color:#7b6e61;font:600 10px "DM Sans",sans-serif;white-space:nowrap}
+.table-sort-summary{margin:0 0 7px;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #table .taxonomy-table th.table-head-taxon{padding:6px 7px;text-align:center;vertical-align:middle}
 #table .taxonomy-table td{padding:4px 7px;line-height:1.28;vertical-align:middle;border-bottom:0}
 #table .taxonomy-table tr.genus-break td{border-top:1px solid #d9cfc2}
