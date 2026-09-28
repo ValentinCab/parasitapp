@@ -6,6 +6,7 @@ const COLUMNS=[['granGroup','Gran grupo'],['group','Grupo'],['subgroup','Subgrup
 const DEFAULT_TABLE_COLUMNS=[...TAXON_FIELDS];
 const TAXONOMIC_SORT_KEYS=[...TAXON_FIELDS];
 const EXPORT_COLUMNS=[['level','Nivel'],['granGroup','Gran grupo'],['group','Grupo'],['subgroup','Subgrupo'],['family','Familia'],['subfamily','Subfamilia'],['genus','Género'],['species','Especie'],...Object.entries(FIELD_LABELS),['sourceTrace','Trazabilidad de fuentes']];
+const FIREBASE_CONFIG={apiKey:'AIzaSyDgSOHrxLla7K2L6VJUkypNGAXClKFpu6w',authDomain:'atlasparasitologia-85ed5.firebaseapp.com',projectId:'atlasparasitologia-85ed5',storageBucket:'atlasparasitologia-85ed5.firebasestorage.app',messagingSenderId:'325583951743',appId:'1:325583951743:web:b9b5d5fc6578ba5661ec4a'};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 let state, seed, currentId=null, currentView='table', quickId=null, quickOpen=false, tableScroll={top:0,left:0}, sortCriteria=TAXONOMIC_SORT_KEYS.map(key=>({key,dir:1})), filters={tableSearch:'',group:'all',level:'all',galleryType:'all'}, cloud=null, firebaseAuth=null, firebaseReady=null, modalCleanup=null;
 
@@ -41,7 +42,7 @@ function storedState(){return {...state,editMode:false}}
 async function initialise(){seed=await fetch('./data/seed-v2.json').then(r=>r.json());state=await dbGet('state');if(!state){state={nodes:seed.nodes,tags:[],colors:{},recentColors:[],favoriteColors:[],images:[],history:[],idAliases:{},settings:{visibleColumns:[...DEFAULT_TABLE_COLUMNS],tableColumnsVersion:2},seedSchemaVersion:seed.schemaVersion,editMode:false};await persist(false)}else if(state.seedSchemaVersion!==seed.schemaVersion){const added=mergeInitialSeed();await persist(false);setTimeout(()=>toast(`Base inicial actualizada: ${added} fichas nuevas; tus ediciones locales se conservaron.`),250)}state.settings=state.settings||{};if(state.settings.tableColumnsVersion!==2){state.settings.visibleColumns=[...DEFAULT_TABLE_COLUMNS];state.settings.tableColumnsVersion=2;await persist(false)}state.settings.visibleColumns=(Array.isArray(state.settings.visibleColumns)?state.settings.visibleColumns:DEFAULT_TABLE_COLUMNS).filter(key=>COLUMNS.some(([column])=>column===key));if(!state.settings.visibleColumns.length)state.settings.visibleColumns=[...DEFAULT_TABLE_COLUMNS];state.idAliases=state.idAliases||{};forceConsultation();await dbPut('state',storedState());currentId=null;quickId=null;quickOpen=false;currentView='table';$('#sidebarCount').textContent=String(state.nodes.length);bindShell();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(registration=>registration.update()).catch(()=>{});await initialiseAuthentication()}
 async function persist(){state.updatedAt=now();await dbPut('state',storedState())}
 async function initialiseAuthentication(){
-  const cfg=window.ATLAS_FIREBASE_CONFIG;
+  const cfg=FIREBASE_CONFIG;
   if(!cfg?.projectId){showAuthGate('Falta la configuración de Firebase.');return}
   try{
     const [{initializeApp,getApps},{getAuth,GoogleAuthProvider,browserLocalPersistence,setPersistence,onAuthStateChanged,signInWithPopup,signOut},{getFirestore,doc,collection,setDoc,getDoc,deleteDoc}]=await Promise.all([
