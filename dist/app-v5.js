@@ -61,8 +61,8 @@ async function initialiseAuthentication(){
     });
   }catch(error){console.error('Firebase no pudo inicializarse',error);showAuthGate('No se pudo iniciar Firebase. Verificá la configuración de la app web.')}
 }
-function showAuthGate(message=''){document.body.classList.add('auth-required');$('#authGate').classList.remove('hidden');$('#authMessage').textContent=message;$('#signInGoogle').onclick=signInWithGoogle}
-function showAtlas(user){document.body.classList.remove('auth-required');$('#authGate').classList.add('hidden');render()}
+function showAuthGate(message=''){document.body.classList.remove('auth-pending');document.body.classList.add('auth-required');$('#authGate').classList.remove('hidden');$('#authMessage').textContent=message;$('#signInGoogle').onclick=signInWithGoogle}
+function showAtlas(user){document.body.classList.remove('auth-pending','auth-required');$('#authGate').classList.add('hidden');render()}
 async function signInWithGoogle(){if(!firebaseAuth||!firebaseReady)return;try{await firebaseReady.signInWithPopup(firebaseAuth,cloud.provider)}catch(error){console.error('No se pudo ingresar con Google',error);const code=error?.code||'sin código',message=error?.message||'sin mensaje';$('#authMessage').textContent=`${code} · ${message} · host: ${window.location.hostname} · origin: ${window.location.origin}`}}
 async function signOutGoogle(){if(!firebaseAuth||!firebaseReady)return;await firebaseReady.signOut(firebaseAuth)}
 function userFirestorePaths(uid=cloud?.user?.uid){if(!uid)return null;return {user:cloud.doc(cloud.db,'users',uid),fichas:cloud.collection(cloud.db,'users',uid,'fichas'),settings:cloud.doc(cloud.db,'users',uid,'settings','preferences'),tags:cloud.collection(cloud.db,'users',uid,'tags')}}
