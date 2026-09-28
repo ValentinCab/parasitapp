@@ -1,9 +1,18 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Requiere inicio de sesión. No usar reglas abiertas en una publicación pública.
-    match /atlas/{document=**} {
-      allow read, write: if request.auth != null;
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+
+    // Cada cuenta sólo puede acceder a su propio espacio. No existen reglas
+    // públicas ni acceso al esquema heredado atlas/shared.
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    match /users/{userId}/{document=**} {
+      allow read, write: if isOwner(userId);
     }
   }
 }
