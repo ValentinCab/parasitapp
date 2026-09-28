@@ -6,7 +6,7 @@ const COLUMNS=[['granGroup','Gran grupo'],['group','Grupo'],['subgroup','Subgrup
 const DEFAULT_TABLE_COLUMNS=[...TAXON_FIELDS];
 const TAXONOMIC_SORT_KEYS=[...TAXON_FIELDS];
 const EXPORT_COLUMNS=[['level','Nivel'],['granGroup','Gran grupo'],['group','Grupo'],['subgroup','Subgrupo'],['family','Familia'],['subfamily','Subfamilia'],['genus','Género'],['species','Especie'],...Object.entries(FIELD_LABELS),['sourceTrace','Trazabilidad de fuentes']];
-const FIREBASE_CONFIG={apiKey:'AIzaSyDgSOHrxLla7K2L6VJUkypNGAXClKFpu6w',authDomain:'atlasparasitologia-85ed5.firebaseapp.com',projectId:'atlasparasitologia-85ed5',storageBucket:'atlasparasitologia-85ed5.firebasestorage.app',messagingSenderId:'325583951743',appId:'1:325583951743:web:b9b5d5fc6578ba5661ec4a'};
+const FIREBASE_CONFIG={apiKey:'AIzaSyDgSOHrxlLa7K2L6VJUkvpNGAXClKFpU6w',authDomain:'atlasparasitologia-85ed5.firebaseapp.com',projectId:'atlasparasitologia-85ed5',storageBucket:'atlasparasitologia-85ed5.firebasestorage.app',messagingSenderId:'325583951743',appId:'1:325583951743:web:b9b5d5fc6578ba5661ec4a'};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 let state, seed, currentId=null, currentView='table', quickId=null, quickOpen=false, tableScroll={top:0,left:0}, sortCriteria=TAXONOMIC_SORT_KEYS.map(key=>({key,dir:1})), filters={tableSearch:'',group:'all',level:'all',galleryType:'all'}, cloud=null, firebaseAuth=null, firebaseReady=null, modalCleanup=null;
 
