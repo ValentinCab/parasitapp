@@ -81,8 +81,8 @@ async function analyzeLocalMigration(){
   try{
     const paths=userFirestorePaths();
     const [fichas,tags,settings,user]=await Promise.all([cloud.getDocs(paths.fichas),cloud.getDocs(paths.tags),cloud.getDoc(paths.settings),cloud.getDoc(paths.user)]);
-    const remote={fichas:fichas.size,tags:tags.size,settings:settings.exists(),marker:user.exists()?user.data()?.initialMigration||null:null};
-    return {local,remote,occupied:remote.fichas>0||remote.tags>0||remote.settings||!!remote.marker};
+    const remote={fichas:fichas.size,tags:tags.size,settings:settings.exists(),userDocument:user.exists(),marker:user.exists()?user.data()?.initialMigration||null:null};
+    return {local,remote,occupied:remote.fichas>0||remote.tags>0||remote.settings||remote.userDocument};
   }catch(error){console.error('No se pudo analizar Firestore',error);return {local,error:error?.message||'No se pudo leer Firestore.'}}
 }
 function migrationSummaryHtml(report){
