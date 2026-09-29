@@ -8,7 +8,7 @@ const TAXONOMIC_SORT_KEYS=[...TAXON_FIELDS];
 const EXPORT_COLUMNS=[['level','Nivel'],['granGroup','Gran grupo'],['group','Grupo'],['subgroup','Subgrupo'],['family','Familia'],['subfamily','Subfamilia'],['genus','Género'],['species','Especie'],...Object.entries(FIELD_LABELS),['sourceTrace','Trazabilidad de fuentes']];
 const FIREBASE_CONFIG={apiKey:'AIzaSyDgSOHrxlLa7K2L6VJUkvpNGAXClKFpU6w',authDomain:'atlasparasitologia-85ed5.firebaseapp.com',projectId:'atlasparasitologia-85ed5',storageBucket:'atlasparasitologia-85ed5.firebasestorage.app',messagingSenderId:'325583951743',appId:'1:325583951743:web:b9b5d5fc6578ba5661ec4a'};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-let state, seed, currentId=null, currentView='table', quickId=null, quickOpen=false, tableScroll={top:0,left:0}, sortCriteria=TAXONOMIC_SORT_KEYS.map(key=>({key,dir:1})), filters={tableSearch:'',group:'all',level:'all',galleryType:'all'}, cloud=null, firebaseAuth=null, firebaseReady=null, modalCleanup=null;
+let state, seed, currentId=null, currentView='table', quickId=null, quickOpen=false, tableScroll={top:0,left:0}, sortCriteria=TAXONOMIC_SORT_KEYS.map(key=>({key,dir:1})), filters={tableSearch:'',group:'all',level:'all',galleryType:'all'}, cloud=null, firebaseAuth=null, firebaseReady=null, modalCleanup=null, migrationAnalysis=null;
 
 const escapeHtml=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
 const slug=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
@@ -45,7 +45,7 @@ async function initialiseAuthentication(){
   const cfg=FIREBASE_CONFIG;
   if(!cfg?.projectId){showAuthGate('Falta la configuración de Firebase.');return}
   try{
-    const [{initializeApp,getApps},{getAuth,GoogleAuthProvider,browserLocalPersistence,setPersistence,onAuthStateChanged,signInWithPopup,signOut},{getFirestore,doc,collection,setDoc,getDoc,deleteDoc}]=await Promise.all([
+    const [{initializeApp,getApps},{getAuth,GoogleAuthProvider,browserLocalPersistence,setPersistence,onAuthStateChanged,signInWithPopup,signOut},{getFirestore,doc,collection,setDoc,getDoc,deleteDoc,getDocs,writeBatch}]=await Promise.all([
       import('https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js'),
       import('https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js'),
       import('https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js')
@@ -53,7 +53,7 @@ async function initialiseAuthentication(){
     const app=getApps().find(existing=>existing.options.projectId===cfg.projectId)||initializeApp(cfg,'atlas-parasitologia');
     firebaseAuth=getAuth(app);
     await setPersistence(firebaseAuth,browserLocalPersistence);
-    cloud={db:getFirestore(app),doc,collection,setDoc,getDoc,deleteDoc,provider:new GoogleAuthProvider(),user:null};
+    cloud={db:getFirestore(app),doc,collection,setDoc,getDoc,deleteDoc,getDocs,writeBatch,provider:new GoogleAuthProvider(),user:null};
     firebaseReady={signInWithPopup,signOut};
     onAuthStateChanged(firebaseAuth,user=>{
       cloud.user=user||null;
@@ -66,12 +66,76 @@ function showAtlas(user){document.body.classList.remove('auth-pending','auth-req
 async function signInWithGoogle(){if(!firebaseAuth||!firebaseReady)return;try{await firebaseReady.signInWithPopup(firebaseAuth,cloud.provider)}catch(error){console.error('No se pudo ingresar con Google',error);const code=error?.code||'sin código',message=error?.message||'sin mensaje';$('#authMessage').textContent=`${code} · ${message} · host: ${window.location.hostname} · origin: ${window.location.origin}`}}
 async function signOutGoogle(){if(!firebaseAuth||!firebaseReady)return;await firebaseReady.signOut(firebaseAuth)}
 function userFirestorePaths(uid=cloud?.user?.uid){if(!uid)return null;return {user:cloud.doc(cloud.db,'users',uid),fichas:cloud.collection(cloud.db,'users',uid,'fichas'),settings:cloud.doc(cloud.db,'users',uid,'settings','preferences'),tags:cloud.collection(cloud.db,'users',uid,'tags')}}
-function fichaFirestoreRef(fichaId){const paths=userFirestorePaths();return paths&&cloud.doc(paths.fichas,fichaId)}
-function tagFirestoreRef(tagId){const paths=userFirestorePaths();return paths&&cloud.doc(paths.tags,tagId)}
+function firestoreDocumentId(id){return encodeURIComponent(String(id))}
+function fichaFirestoreRef(fichaId){const paths=userFirestorePaths();return paths&&cloud.doc(paths.fichas,firestoreDocumentId(fichaId))}
+function tagFirestoreRef(tagId){const paths=userFirestorePaths();return paths&&cloud.doc(paths.tags,firestoreDocumentId(tagId))}
 // Estas operaciones quedan listas para la futura migración explícita. No se
 // invocan durante esta etapa: IndexedDB conserva toda la información real.
 async function saveFichaToFirestore(ficha){const ref=fichaFirestoreRef(ficha.id);if(!ref)throw new Error('No hay sesión Firebase activa');return cloud.setDoc(ref,{...ficha,updatedAt:now()},{merge:true})}
 async function saveSettingsToFirestore(settings){const paths=userFirestorePaths();if(!paths)throw new Error('No hay sesión Firebase activa');return cloud.setDoc(paths.settings,{...settings,updatedAt:now()},{merge:true})}
+function firestoreData(value){if(Array.isArray(value))return value.map(firestoreData).filter(item=>item!==undefined);if(value&&typeof value==='object'){return Object.fromEntries(Object.entries(value).filter(([,item])=>item!==undefined).map(([key,item])=>[key,firestoreData(item)]))}return value}
+function localMigrationSummary(){return {fichas:state.nodes.length,tags:state.tags.length,configuracion:Object.keys(state.settings||{}).length+Object.keys(state.colors||{}).length+Object.keys(state.idAliases||{}).length}}
+async function analyzeLocalMigration(){
+  const local=localMigrationSummary();
+  if(!cloud?.user)return {local,error:'Iniciá sesión con Google para analizar la migración.'};
+  try{
+    const paths=userFirestorePaths();
+    const [fichas,tags,settings,user]=await Promise.all([cloud.getDocs(paths.fichas),cloud.getDocs(paths.tags),cloud.getDoc(paths.settings),cloud.getDoc(paths.user)]);
+    const remote={fichas:fichas.size,tags:tags.size,settings:settings.exists(),marker:user.exists()?user.data()?.initialMigration||null:null};
+    return {local,remote,occupied:remote.fichas>0||remote.tags>0||remote.settings||!!remote.marker};
+  }catch(error){console.error('No se pudo analizar Firestore',error);return {local,error:error?.message||'No se pudo leer Firestore.'}}
+}
+function migrationSummaryHtml(report){
+  if(report.error)return `<div class="notice"><strong>No se pudo analizar la nube.</strong><br>${escapeHtml(report.error)}</div>`;
+  const remoteConfig=report.remote.settings?'cargada':'vacía';
+  const status=report.occupied?'<p class="notice"><strong>Ya existen datos en Firestore.</strong> No se realizará ninguna migración automática.</p>':`<p class="notice">Firestore está vacío. Se copiarán los datos locales a la nube. <strong>IndexedDB permanecerá intacto.</strong></p><button id="startMigration" class="button primary">Migrar datos locales a Firestore</button>`;
+  return `<div class="migration-summary"><p><strong>Fichas locales:</strong> ${report.local.fichas}<br><strong>Fichas remotas:</strong> ${report.remote.fichas}<br><strong>Tags locales:</strong> ${report.local.tags}<br><strong>Tags remotos:</strong> ${report.remote.tags}<br><strong>Configuración remota:</strong> ${remoteConfig}</p>${status}</div>`;
+}
+async function showMigrationAnalysis(){
+  const target=$('#migrationResult');if(!target)return;
+  target.innerHTML='<p class="subtitle">Analizando datos locales y estado de Firestore…</p>';
+  migrationAnalysis=await analyzeLocalMigration();
+  target.innerHTML=migrationSummaryHtml(migrationAnalysis);
+  $('#startMigration')?.addEventListener('click',()=>confirmInitialMigration(migrationAnalysis));
+}
+function confirmInitialMigration(report){
+  if(report?.occupied||report?.error)return;
+  modal(`<h2>Migrar datos locales a Firestore</h2><p>Se copiarán <strong>${report.local.fichas} fichas</strong>, ${report.local.tags} etiquetas y la configuración del Atlas a tu espacio privado de Firestore.</p><p class="notice"><strong>IndexedDB no se borra ni se reemplaza.</strong> Las imágenes y sus blobs permanecen solamente en este navegador.</p><div id="migrationProgress"></div><div class="modal-actions"><button class="button" data-close-modal>Cancelar</button><button id="confirmInitialMigration" class="button primary">Confirmar migración</button></div>`);
+  $('#confirmInitialMigration').onclick=()=>runInitialMigration();
+}
+function migrationProgress(html){const target=$('#migrationProgress');if(target)target.innerHTML=html}
+async function runInitialMigration(){
+  const confirmButton=$('#confirmInitialMigration');if(confirmButton)confirmButton.disabled=true;
+  migrationProgress('<p class="subtitle">Verificando nuevamente que Firestore esté vacío…</p>');
+  const report=await analyzeLocalMigration();
+  if(report.error){migrationProgress(migrationSummaryHtml(report));return}
+  if(report.occupied){migrationProgress('<p class="notice"><strong>La migración fue cancelada.</strong> Ya existen datos remotos; no se sobrescribió nada.</p>');return}
+  const paths=userFirestorePaths(),batchSize=35;
+  let fichasMigradas=0,tagsMigrados=0;
+  try{
+    for(let start=0;start<state.nodes.length;start+=batchSize){
+      const group=state.nodes.slice(start,start+batchSize),batch=cloud.writeBatch(cloud.db);
+      group.forEach(node=>batch.set(cloud.doc(paths.fichas,firestoreDocumentId(node.id)),firestoreData(node)));
+      migrationProgress(`<p><strong>Migrando ${fichasMigradas} / ${state.nodes.length} fichas</strong></p>`);
+      await batch.commit();fichasMigradas+=group.length;
+      migrationProgress(`<p><strong>Migrando ${fichasMigradas} / ${state.nodes.length} fichas</strong></p>`);
+    }
+    for(let start=0;start<state.tags.length;start+=batchSize){
+      const group=state.tags.slice(start,start+batchSize),batch=cloud.writeBatch(cloud.db);
+      group.forEach(tag=>batch.set(cloud.doc(paths.tags,firestoreDocumentId(tag.id)),firestoreData(tag)));
+      await batch.commit();tagsMigrados+=group.length;
+      migrationProgress(`<p><strong>Fichas: ${fichasMigradas} / ${state.nodes.length}</strong><br>Migrando ${tagsMigrados} / ${state.tags.length} etiquetas</p>`);
+    }
+    const preferences=firestoreData({settings:state.settings||{},colors:state.colors||{},recentColors:state.recentColors||[],favoriteColors:state.favoriteColors||[],idAliases:state.idAliases||{},seedSchemaVersion:state.seedSchemaVersion||null});
+    await cloud.setDoc(paths.settings,preferences);
+    await cloud.setDoc(paths.user,{initialMigration:{completedAt:now(),source:'indexeddb',fichas:fichasMigradas,tags:tagsMigrados,imagesMigrated:false}});
+    migrationProgress(`<p class="notice"><strong>Migración completada.</strong><br>Fichas migradas: ${fichasMigradas}<br>Tags migrados: ${tagsMigrados}<br>Configuración migrada: sí<br><strong>Los datos locales de IndexedDB no fueron eliminados.</strong></p>`);
+    migrationAnalysis=await analyzeLocalMigration();
+  }catch(error){
+    console.error('La migración inicial falló',error);
+    migrationProgress(`<p class="notice"><strong>Migración incompleta.</strong><br>Fichas que llegaron a Firestore: ${fichasMigradas}<br>Tags que llegaron a Firestore: ${tagsMigrados}<br>Error: ${escapeHtml(error?.message||'desconocido')}<br><strong>IndexedDB no fue modificado.</strong></p>`);
+  }
+}
 function remember(change){state.history.unshift({...change,at:now()});state.history=state.history.slice(0,40)}
 async function mutate(change){remember(change);await persist();render()}
 
@@ -178,9 +242,9 @@ function renderSettings(){
   const host=$('#settings');
   const recent=[...new Set([...(state.recentColors||[]),...(state.favoriteColors||[])])];
   const user=cloud?.user;
-  host.innerHTML=`<h1 class="table-title">Configuración y respaldo</h1><div class="settings-grid"><article class="card"><h2>Cuenta</h2><p><strong>${escapeHtml(user?.displayName||user?.email||'Sin sesión')}</strong><br><span class="subtitle">${escapeHtml(user?.email||'')}</span></p><button id="signOutBtn" class="button">Cerrar sesión</button></article><article class="card"><h2>Datos y backups</h2><p>Exportá los datos, la configuración y las imágenes locales. El backup se restaura en otro navegador o equipo.</p><div class="toolbar"><button id="backupBtn" class="primary">Crear backup .zip</button><button id="exportJson">Exportar JSON</button><button id="importBtn">Importar / restaurar</button></div><p class="subtitle">La importación XLSX suma atributos sin sobrescribir ediciones ya realizadas.</p></article><article class="card"><h2>Exportación XLSX</h2><p>La planilla preserva encabezados y usa colores por categoría; los bordes separan principalmente géneros.</p><button id="xlsxBtn" class="button primary">Exportar XLSX</button></article><article class="card"><h2>Colores</h2><p>Color de la ficha actual: <strong>${escapeHtml(displayName(nodeById(currentId)||state.nodes[0]))}</strong></p><div class="color-row"><input type="color" id="quickColor" value="${colorOf(nodeById(currentId)||state.nodes[0])}"><button id="favoriteColor">Guardar como favorito</button></div><div class="recent-colors">${recent.map(c=>`<button class="swatch" data-swatch="${c}" style="background:${c}" title="${c}"></button>`).join('')||'<small>Los colores usados aparecerán aquí.</small>'}</div></article><article class="card"><h2>Firestore</h2><p>Tu cuenta está identificada y la estructura privada por usuario ya está preparada. En esta etapa el Atlas sigue usando exclusivamente tus datos locales.</p><p class="subtitle">La migración a Firestore se realizará después, sólo cuando la confirmes.</p></article><article class="card"><h2>Historial reciente</h2><p>${state.history.length?`${state.history.length} cambios locales disponibles. El último puede deshacerse con Ctrl+Z en modo edición.`:'Sin cambios locales todavía.'}</p><button id="undoBtn" class="button">Deshacer último cambio</button></article></div>`;
+  host.innerHTML=`<h1 class="table-title">Configuración y respaldo</h1><div class="settings-grid"><article class="card"><h2>Cuenta</h2><p><strong>${escapeHtml(user?.displayName||user?.email||'Sin sesión')}</strong><br><span class="subtitle">${escapeHtml(user?.email||'')}</span></p><button id="signOutBtn" class="button">Cerrar sesión</button></article><article class="card"><h2>Datos y backups</h2><p>Exportá los datos, la configuración y las imágenes locales. El backup se restaura en otro navegador o equipo.</p><div class="toolbar"><button id="backupBtn" class="primary">Crear backup .zip</button><button id="exportJson">Exportar JSON</button><button id="importBtn">Importar / restaurar</button></div><p class="subtitle">La importación XLSX suma atributos sin sobrescribir ediciones ya realizadas.</p></article><article class="card"><h2>Exportación XLSX</h2><p>La planilla preserva encabezados y usa colores por categoría; los bordes separan principalmente géneros.</p><button id="xlsxBtn" class="button primary">Exportar XLSX</button></article><article class="card"><h2>Colores</h2><p>Color de la ficha actual: <strong>${escapeHtml(displayName(nodeById(currentId)||state.nodes[0]))}</strong></p><div class="color-row"><input type="color" id="quickColor" value="${colorOf(nodeById(currentId)||state.nodes[0])}"><button id="favoriteColor">Guardar como favorito</button></div><div class="recent-colors">${recent.map(c=>`<button class="swatch" data-swatch="${c}" style="background:${c}" title="${c}"></button>`).join('')||'<small>Los colores usados aparecerán aquí.</small>'}</div></article><article class="card"><h2>Firestore</h2><p>Tu cuenta está identificada y la estructura privada por usuario ya está preparada. El Atlas continúa cargando exclusivamente desde IndexedDB.</p></article><article class="card"><h2>Migración a la nube</h2><p>Analizá tus datos locales y el estado de Firestore. La copia sólo se habilita si el destino está vacío.</p><button id="analyzeMigration" class="button primary">Analizar datos locales</button><div id="migrationResult" aria-live="polite"></div></article><article class="card"><h2>Historial reciente</h2><p>${state.history.length?`${state.history.length} cambios locales disponibles. El último puede deshacerse con Ctrl+Z en modo edición.`:'Sin cambios locales todavía.'}</p><button id="undoBtn" class="button">Deshacer último cambio</button></article></div>`;
   $('#signOutBtn').onclick=signOutGoogle;$('#backupBtn').onclick=backupZip;$('#exportJson').onclick=exportJson;$('#importBtn').onclick=()=>$('#importPicker').click();$('#xlsxBtn').onclick=exportXlsx;
-  $('#quickColor').onchange=e=>setColor(e.target.value);$('#favoriteColor').onclick=()=>{const c=colorOf(nodeById(currentId)||state.nodes[0]);state.favoriteColors=[...new Set([...state.favoriteColors,c])];persist();renderSettings();toast('Color favorito guardado')};$$('[data-swatch]',host).forEach(b=>b.onclick=()=>setColor(b.dataset.swatch));$('#undoBtn').onclick=undoLast
+  $('#quickColor').onchange=e=>setColor(e.target.value);$('#favoriteColor').onclick=()=>{const c=colorOf(nodeById(currentId)||state.nodes[0]);state.favoriteColors=[...new Set([...state.favoriteColors,c])];persist();renderSettings();toast('Color favorito guardado')};$$('[data-swatch]',host).forEach(b=>b.onclick=()=>setColor(b.dataset.swatch));$('#undoBtn').onclick=undoLast;$('#analyzeMigration').onclick=showMigrationAnalysis
 }
 function colorLevelLabel(level){return ({granGroup:'Gran grupo',group:'Grupo',subgroup:'Subgrupo',family:'Familia',subfamily:'Subfamilia',genus:'Género',species:'Especie'})[level]||level}
 function colorNodes(){const levelOrder=Object.fromEntries(TAXON_FIELDS.map((level,index)=>[level,index]));return state.nodes.filter(node=>TAXON_FIELDS.includes(node.level)).sort((a,b)=>(levelOrder[a.level]-levelOrder[b.level])||displayName(a).localeCompare(displayName(b),'es'))}
