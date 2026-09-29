@@ -8,7 +8,7 @@ const TAXONOMIC_SORT_KEYS=[...TAXON_FIELDS];
 const EXPORT_COLUMNS=[['level','Nivel'],['granGroup','Gran grupo'],['group','Grupo'],['subgroup','Subgrupo'],['family','Familia'],['subfamily','Subfamilia'],['genus','Género'],['species','Especie'],...Object.entries(FIELD_LABELS),['sourceTrace','Trazabilidad de fuentes']];
 const FIREBASE_CONFIG={apiKey:'AIzaSyDgSOHrxlLa7K2L6VJUkvpNGAXClKFpU6w',authDomain:'atlasparasitologia-85ed5.firebaseapp.com',projectId:'atlasparasitologia-85ed5',storageBucket:'atlasparasitologia-85ed5.firebasestorage.app',messagingSenderId:'325583951743',appId:'1:325583951743:web:b9b5d5fc6578ba5661ec4a'};
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-let state, seed, currentId=null, currentView='table', quickId=null, quickOpen=false, tableScroll={top:0,left:0}, sortCriteria=TAXONOMIC_SORT_KEYS.map(key=>({key,dir:1})), filters={tableSearch:'',group:'all',level:'all',galleryType:'all'}, cloud=null, firebaseAuth=null, firebaseReady=null, modalCleanup=null, migrationAnalysis=null;
+let state, seed, currentId=null, currentView='table', quickId=null, quickOpen=false, tableScroll={top:0,left:0}, sortCriteria=TAXONOMIC_SORT_KEYS.map(key=>({key,dir:1})), filters={tableSearch:'',group:'all',level:'all',galleryType:'all'}, cloud=null, firebaseAuth=null, firebaseReady=null, modalCleanup=null, migrationAnalysis=null, localStateWasValid=false, cloudDataStatus=null;
 
 const escapeHtml=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
 const slug=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
@@ -39,7 +39,30 @@ async function allBlobs(){const db=await openDb();return new Promise((resolve,re
 function mergeInitialSeed(){let added=0;const byId=new Map(state.nodes.map(n=>[n.id,n]));for(const incoming of seed.nodes){const current=byId.get(incoming.id);if(!current){state.nodes.push(incoming);byId.set(incoming.id,incoming);added++;continue}current.fields={...(incoming.fields||{}),...(current.fields||{})};current.fieldSources=Object.fromEntries([...new Set([...Object.keys(incoming.fieldSources||{}),...Object.keys(current.fieldSources||{})])].map(k=>[k,[...(incoming.fieldSources?.[k]||[]),...(current.fieldSources?.[k]||[])]].filter((v,i,a)=>i===a.findIndex(x=>JSON.stringify(x)===JSON.stringify(v)))));current.notes=[...(incoming.notes||[]),...(current.notes||[])].filter((v,i,a)=>i===a.findIndex(x=>JSON.stringify(x)===JSON.stringify(v)));current.sourceRows=[...new Set([...(incoming.sourceRows||[]),...(current.sourceRows||[])])];if(!current.initialColor)current.initialColor=incoming.initialColor}state.seedSchemaVersion=seed.schemaVersion;return added}
 function forceConsultation(){if(state)state.editMode=false}
 function storedState(){return {...state,editMode:false}}
-async function initialise(){seed=await fetch('./data/seed-v2.json').then(r=>r.json());state=await dbGet('state');if(!state){state={nodes:seed.nodes,tags:[],colors:{},recentColors:[],favoriteColors:[],images:[],history:[],idAliases:{},settings:{visibleColumns:[...DEFAULT_TABLE_COLUMNS],tableColumnsVersion:2},seedSchemaVersion:seed.schemaVersion,editMode:false};await persist(false)}else if(state.seedSchemaVersion!==seed.schemaVersion){const added=mergeInitialSeed();await persist(false);setTimeout(()=>toast(`Base inicial actualizada: ${added} fichas nuevas; tus ediciones locales se conservaron.`),250)}state.settings=state.settings||{};if(state.settings.tableColumnsVersion!==2){state.settings.visibleColumns=[...DEFAULT_TABLE_COLUMNS];state.settings.tableColumnsVersion=2;await persist(false)}state.settings.visibleColumns=(Array.isArray(state.settings.visibleColumns)?state.settings.visibleColumns:DEFAULT_TABLE_COLUMNS).filter(key=>COLUMNS.some(([column])=>column===key));if(!state.settings.visibleColumns.length)state.settings.visibleColumns=[...DEFAULT_TABLE_COLUMNS];state.idAliases=state.idAliases||{};forceConsultation();await dbPut('state',storedState());currentId=null;quickId=null;quickOpen=false;currentView='table';$('#sidebarCount').textContent=String(state.nodes.length);bindShell();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(registration=>registration.update()).catch(()=>{});await initialiseAuthentication()}
+function hasValidLocalAtlas(candidate=state){return !!candidate&&Array.isArray(candidate.nodes)&&candidate.nodes.length>0}
+async function prepareLocalAtlas(){
+  if(!hasValidLocalAtlas())return false;
+  if(state.seedSchemaVersion!==seed.schemaVersion){const added=mergeInitialSeed();await persist();setTimeout(()=>toast('Base inicial actualizada: '+added+' fichas nuevas; tus ediciones locales se conservaron.'),250)}
+  state.settings=state.settings||{};
+  if(state.settings.tableColumnsVersion!==2){state.settings.visibleColumns=[...DEFAULT_TABLE_COLUMNS];state.settings.tableColumnsVersion=2}
+  state.settings.visibleColumns=(Array.isArray(state.settings.visibleColumns)?state.settings.visibleColumns:DEFAULT_TABLE_COLUMNS).filter(key=>COLUMNS.some(([column])=>column===key));
+  if(!state.settings.visibleColumns.length)state.settings.visibleColumns=[...DEFAULT_TABLE_COLUMNS];
+  state.idAliases=state.idAliases||{};
+  forceConsultation();
+  await dbPut('state',storedState());
+  currentId=null;quickId=null;quickOpen=false;currentView='table';
+  $('#sidebarCount').textContent=String(state.nodes.length);
+  if(!prepareLocalAtlas.shellBound){bindShell();prepareLocalAtlas.shellBound=true}
+  return true;
+}
+async function initialise(){
+  seed=await fetch('./data/seed-v2.json').then(r=>r.json());
+  state=await dbGet('state');
+  localStateWasValid=hasValidLocalAtlas();
+  if(localStateWasValid)await prepareLocalAtlas();
+  if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(registration=>registration.update()).catch(()=>{});
+  await initialiseAuthentication();
+}
 async function persist(){state.updatedAt=now();await dbPut('state',storedState())}
 async function initialiseAuthentication(){
   const cfg=FIREBASE_CONFIG;
@@ -55,16 +78,77 @@ async function initialiseAuthentication(){
     await setPersistence(firebaseAuth,browserLocalPersistence);
     cloud={db:getFirestore(app),doc,collection,setDoc,getDoc,deleteDoc,getDocs,writeBatch,provider:new GoogleAuthProvider(),user:null};
     firebaseReady={signInWithPopup,signOut};
-    onAuthStateChanged(firebaseAuth,user=>{
-      cloud.user=user||null;
-      if(user)showAtlas(user);else showAuthGate();
-    });
+    onAuthStateChanged(firebaseAuth,user=>{void handleAuthenticatedUser(user)});
   }catch(error){console.error('Firebase no pudo inicializarse',error);showAuthGate('No se pudo iniciar Firebase. Verificá la configuración de la app web.')}
 }
-function showAuthGate(message=''){document.body.classList.remove('auth-pending');document.body.classList.add('auth-required');$('#authGate').classList.remove('hidden');$('#authMessage').textContent=message;$('#signInGoogle').onclick=signInWithGoogle}
+async function handleAuthenticatedUser(user){
+  cloud.user=user||null;
+  if(!user){showAuthGate();return}
+  if(hasValidLocalAtlas()){showAtlas(user);void refreshCloudStatus();return}
+  const remote=await remoteAtlasInventory();
+  cloudDataStatus=remote;
+  if(remote.error){showCloudDataGate('No se pudieron consultar los datos remotos. '+remote.error);return}
+  if(remote.fichas>0){showCloudRestoreGate(remote);return}
+  showCloudDataGate('No hay datos disponibles para restaurar en este navegador ni en la nube.');
+}
+function authCard(title,description,actions,message=''){return '<div class="auth-card"><p class="auth-kicker">Atlas de Parasitología</p><h1>'+escapeHtml(title)+'</h1><p>'+escapeHtml(description)+'</p>'+actions+'<p id="authMessage" class="auth-message" role="status" aria-live="polite">'+escapeHtml(message)+'</p></div>'}
+function showAuthGate(message=''){
+  document.body.classList.remove('auth-pending');document.body.classList.add('auth-required');
+  const gate=$('#authGate');gate.classList.remove('hidden');
+  gate.innerHTML=authCard('Ingresar al Atlas','Usá tu cuenta de Google para acceder a tu espacio personal de estudio.','<button id="signInGoogle" class="button primary auth-google">Ingresar con Google</button>',message);
+  $('#signInGoogle').onclick=signInWithGoogle;
+}
+function showCloudDataGate(message){
+  document.body.classList.remove('auth-pending');document.body.classList.add('auth-required');
+  const gate=$('#authGate');gate.classList.remove('hidden');
+  gate.innerHTML=authCard('Sin datos del Atlas',message,'<button id="cloudSignOut" class="button">Cerrar sesión</button>');
+  $('#cloudSignOut').onclick=signOutGoogle;
+}
+function showCloudRestoreGate(remote){
+  document.body.classList.remove('auth-pending');document.body.classList.add('auth-required');
+  const gate=$('#authGate');gate.classList.remove('hidden');
+  gate.innerHTML=authCard('Datos del Atlas encontrados en la nube','Se encontraron '+remote.fichas+' fichas asociadas a tu cuenta.','<button id="restoreCloudAtlas" class="button primary auth-google">Restaurar Atlas en este navegador</button><br><button id="cloudSignOut" class="button" style="margin-top:12px">Cerrar sesión</button>');
+  $('#restoreCloudAtlas').onclick=restoreAtlasFromCloud;
+  $('#cloudSignOut').onclick=signOutGoogle;
+}
 function showAtlas(user){document.body.classList.remove('auth-pending','auth-required');$('#authGate').classList.add('hidden');render()}
-async function signInWithGoogle(){if(!firebaseAuth||!firebaseReady)return;try{await firebaseReady.signInWithPopup(firebaseAuth,cloud.provider)}catch(error){console.error('No se pudo ingresar con Google',error);const code=error?.code||'sin código',message=error?.message||'sin mensaje';$('#authMessage').textContent=`${code} · ${message} · host: ${window.location.hostname} · origin: ${window.location.origin}`}}
+async function signInWithGoogle(){if(!firebaseAuth||!firebaseReady)return;try{await firebaseReady.signInWithPopup(firebaseAuth,cloud.provider)}catch(error){console.error('No se pudo ingresar con Google',error);const code=error?.code||'sin código',message=error?.message||'sin mensaje';const target=$('#authMessage');if(target)target.textContent=code+' · '+message+' · host: '+window.location.hostname+' · origin: '+window.location.origin}}
 async function signOutGoogle(){if(!firebaseAuth||!firebaseReady)return;await firebaseReady.signOut(firebaseAuth)}
+async function remoteAtlasInventory(){
+  if(!cloud?.user)return {fichas:0,tags:0,settings:false,error:'No hay sesión activa.'};
+  try{
+    const paths=userFirestorePaths();
+    const [fichas,tags,settings]=await Promise.all([cloud.getDocs(paths.fichas),cloud.getDocs(paths.tags),cloud.getDoc(paths.settings)]);
+    return {fichas:fichas.size,tags:tags.size,settings:settings.exists(),error:null};
+  }catch(error){console.error('No se pudo consultar la nube',error);return {fichas:0,tags:0,settings:false,error:error?.message||'Error de Firestore.'}}
+}
+async function refreshCloudStatus(){
+  cloudDataStatus=await remoteAtlasInventory();
+  if(currentView==='settings'&&hasValidLocalAtlas())renderSettings();
+}
+function originalRemoteId(snapshot){try{return snapshot.data()?.id||decodeURIComponent(snapshot.id)}catch{return snapshot.data()?.id||snapshot.id}}
+async function restoreAtlasFromCloud(){
+  const button=$('#restoreCloudAtlas');if(button){button.disabled=true;button.textContent='Restaurando datos…'}
+  try{
+    const paths=userFirestorePaths();
+    const [fichas,tags,preferences]=await Promise.all([cloud.getDocs(paths.fichas),cloud.getDocs(paths.tags),cloud.getDoc(paths.settings)]);
+    if(!fichas.size){showCloudDataGate('No hay fichas remotas para restaurar.');return}
+    const previous=state||{};
+    const restoredNodes=fichas.docs.map(snapshot=>({...snapshot.data(),id:originalRemoteId(snapshot)}));
+    if(!hasValidLocalAtlas({nodes:restoredNodes}))throw new Error('Las fichas remotas no son válidas.');
+    const savedPreferences=preferences.exists()?preferences.data():{};
+    state={nodes:restoredNodes,tags:tags.docs.map(snapshot=>({...snapshot.data(),id:originalRemoteId(snapshot)})),colors:savedPreferences.colors||{},recentColors:savedPreferences.recentColors||[],favoriteColors:savedPreferences.favoriteColors||[],images:Array.isArray(previous.images)?previous.images:[],history:Array.isArray(previous.history)?previous.history:[],idAliases:savedPreferences.idAliases||{},settings:{...(savedPreferences.settings||{}),restoredFromFirestoreAt:now()},seedSchemaVersion:savedPreferences.seedSchemaVersion||seed.schemaVersion,editMode:false};
+    localStateWasValid=true;
+    await prepareLocalAtlas();
+    cloudDataStatus={fichas:fichas.size,tags:tags.size,settings:preferences.exists(),error:null};
+    showAtlas(cloud.user);
+    toast('Atlas restaurado desde Firestore. Las imágenes siguen locales en cada navegador.');
+  }catch(error){
+    console.error('No se pudo restaurar el Atlas',error);
+    const message=$('#authMessage');if(message)message.textContent='No se pudo restaurar: '+(error?.message||'error desconocido');
+    const retry=$('#restoreCloudAtlas');if(retry){retry.disabled=false;retry.textContent='Restaurar Atlas en este navegador'}
+  }
+}
 function userFirestorePaths(uid=cloud?.user?.uid){if(!uid)return null;return {user:cloud.doc(cloud.db,'users',uid),fichas:cloud.collection(cloud.db,'users',uid,'fichas'),settings:cloud.doc(cloud.db,'users',uid,'settings','preferences'),tags:cloud.collection(cloud.db,'users',uid,'tags')}}
 function firestoreDocumentId(id){return encodeURIComponent(String(id))}
 function fichaFirestoreRef(fichaId){const paths=userFirestorePaths();return paths&&cloud.doc(paths.fichas,firestoreDocumentId(fichaId))}
@@ -242,7 +326,7 @@ function renderSettings(){
   const host=$('#settings');
   const recent=[...new Set([...(state.recentColors||[]),...(state.favoriteColors||[])])];
   const user=cloud?.user;
-  host.innerHTML=`<h1 class="table-title">Configuración y respaldo</h1><div class="settings-grid"><article class="card"><h2>Cuenta</h2><p><strong>${escapeHtml(user?.displayName||user?.email||'Sin sesión')}</strong><br><span class="subtitle">${escapeHtml(user?.email||'')}</span></p><button id="signOutBtn" class="button">Cerrar sesión</button></article><article class="card"><h2>Datos y backups</h2><p>Exportá los datos, la configuración y las imágenes locales. El backup se restaura en otro navegador o equipo.</p><div class="toolbar"><button id="backupBtn" class="primary">Crear backup .zip</button><button id="exportJson">Exportar JSON</button><button id="importBtn">Importar / restaurar</button></div><p class="subtitle">La importación XLSX suma atributos sin sobrescribir ediciones ya realizadas.</p></article><article class="card"><h2>Exportación XLSX</h2><p>La planilla preserva encabezados y usa colores por categoría; los bordes separan principalmente géneros.</p><button id="xlsxBtn" class="button primary">Exportar XLSX</button></article><article class="card"><h2>Colores</h2><p>Color de la ficha actual: <strong>${escapeHtml(displayName(nodeById(currentId)||state.nodes[0]))}</strong></p><div class="color-row"><input type="color" id="quickColor" value="${colorOf(nodeById(currentId)||state.nodes[0])}"><button id="favoriteColor">Guardar como favorito</button></div><div class="recent-colors">${recent.map(c=>`<button class="swatch" data-swatch="${c}" style="background:${c}" title="${c}"></button>`).join('')||'<small>Los colores usados aparecerán aquí.</small>'}</div></article><article class="card"><h2>Firestore</h2><p>Tu cuenta está identificada y la estructura privada por usuario ya está preparada. El Atlas continúa cargando exclusivamente desde IndexedDB.</p></article><article class="card"><h2>Migración a la nube</h2><p>Analizá tus datos locales y el estado de Firestore. La copia sólo se habilita si el destino está vacío.</p><button id="analyzeMigration" class="button primary">Analizar datos locales</button><div id="migrationResult" aria-live="polite"></div></article><article class="card"><h2>Historial reciente</h2><p>${state.history.length?`${state.history.length} cambios locales disponibles. El último puede deshacerse con Ctrl+Z en modo edición.`:'Sin cambios locales todavía.'}</p><button id="undoBtn" class="button">Deshacer último cambio</button></article></div>`;
+  host.innerHTML=`<h1 class="table-title">Configuración y respaldo</h1><div class="settings-grid"><article class="card"><h2>Cuenta</h2><p><strong>${escapeHtml(user?.displayName||user?.email||'Sin sesión')}</strong><br><span class="subtitle">${escapeHtml(user?.email||'')}</span></p><button id="signOutBtn" class="button">Cerrar sesión</button></article><article class="card"><h2>Datos y backups</h2><p>Exportá los datos, la configuración y las imágenes locales. El backup se restaura en otro navegador o equipo.</p><div class="toolbar"><button id="backupBtn" class="primary">Crear backup .zip</button><button id="exportJson">Exportar JSON</button><button id="importBtn">Importar / restaurar</button></div><p class="subtitle">La importación XLSX suma atributos sin sobrescribir ediciones ya realizadas.</p></article><article class="card"><h2>Exportación XLSX</h2><p>La planilla preserva encabezados y usa colores por categoría; los bordes separan principalmente géneros.</p><button id="xlsxBtn" class="button primary">Exportar XLSX</button></article><article class="card"><h2>Colores</h2><p>Color de la ficha actual: <strong>${escapeHtml(displayName(nodeById(currentId)||state.nodes[0]))}</strong></p><div class="color-row"><input type="color" id="quickColor" value="${colorOf(nodeById(currentId)||state.nodes[0])}"><button id="favoriteColor">Guardar como favorito</button></div><div class="recent-colors">${recent.map(c=>`<button class="swatch" data-swatch="${c}" style="background:${c}" title="${c}"></button>`).join('')||'<small>Los colores usados aparecerán aquí.</small>'}</div></article><article class="card"><h2>Estado de datos</h2><p><strong>Datos locales:</strong> ${state.nodes.length} fichas<br><strong>Datos en la nube:</strong> ${cloudDataStatus?.error?'no disponibles':(cloudDataStatus?cloudDataStatus.fichas+' fichas':'verificando…')}<br><span class="subtitle">${state.settings?.restoredFromFirestoreAt?'Restaurado desde Firestore en este navegador.':'Este navegador está usando IndexedDB.'}</span></p></article><article class="card"><h2>Firestore</h2><p>Tu cuenta está identificada y la estructura privada por usuario ya está preparada. El Atlas continúa cargando exclusivamente desde IndexedDB.</p></article><article class="card"><h2>Migración a la nube</h2><p>Analizá tus datos locales y el estado de Firestore. La copia sólo se habilita si el destino está vacío.</p><button id="analyzeMigration" class="button primary">Analizar datos locales</button><div id="migrationResult" aria-live="polite"></div></article><article class="card"><h2>Historial reciente</h2><p>${state.history.length?`${state.history.length} cambios locales disponibles. El último puede deshacerse con Ctrl+Z en modo edición.`:'Sin cambios locales todavía.'}</p><button id="undoBtn" class="button">Deshacer último cambio</button></article></div>`;
   $('#signOutBtn').onclick=signOutGoogle;$('#backupBtn').onclick=backupZip;$('#exportJson').onclick=exportJson;$('#importBtn').onclick=()=>$('#importPicker').click();$('#xlsxBtn').onclick=exportXlsx;
   $('#quickColor').onchange=e=>setColor(e.target.value);$('#favoriteColor').onclick=()=>{const c=colorOf(nodeById(currentId)||state.nodes[0]);state.favoriteColors=[...new Set([...state.favoriteColors,c])];persist();renderSettings();toast('Color favorito guardado')};$$('[data-swatch]',host).forEach(b=>b.onclick=()=>setColor(b.dataset.swatch));$('#undoBtn').onclick=undoLast;$('#analyzeMigration').onclick=showMigrationAnalysis
 }
