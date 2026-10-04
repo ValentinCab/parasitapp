@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="table-colors.css">
   <link rel="stylesheet" href="image-gallery.css">
   <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="mobile.css">
 </head>
 <body class="auth-pending">
   <section id="authGate" class="auth-gate">
@@ -26,7 +27,7 @@
       <p id="authMessage" class="auth-message" role="status" aria-live="polite"></p>
     </div>
   </section>
-  <aside class="sidebar">
+  <aside id="sidebar" class="sidebar">
     <div class="brand"><span>Atlas de<br><strong>Parasitología</strong></span></div>
     <nav aria-label="Secciones principales">
       <button class="nav-link" data-view="atlas">⌂ <span>Ficha completa</span></button>
@@ -37,8 +38,10 @@
     </nav>
     <div class="sidebar-foot">Datos de cátedra<br><span id="sidebarCount">—</span> fichas</div>
   </aside>
+  <button id="mobileNavBackdrop" class="mobile-nav-backdrop" aria-label="Cerrar menú"></button>
   <main class="app-shell">
     <header class="topbar">
+      <button id="mobileMenu" class="mobile-menu-toggle" aria-label="Abrir menú" aria-controls="sidebar">☰</button>
       <label class="global-search"><span>⌕</span><input id="globalSearch" placeholder="Buscar parásitos, hospedadores, morfología, ciclo…" autocomplete="off"><kbd>Ctrl K</kbd></label>
       <div class="mode-control"><span id="modeLabel">Modo consulta</span><label class="switch"><input id="editMode" type="checkbox"><span></span></label></div>
     </header>
