@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Atlas de Parasitología">
+  <rect width="128" height="128" rx="30" fill="#4b1016"/>
+  <path d="M27 86c4-30 22-51 44-47 18 4 25 24 14 36-8 9-21 3-19-7 2-9 12-8 17-3" fill="none" stroke="#e6c17d" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M41 55c5 3 9 7 12 12M34 70c5 2 9 5 13 9" fill="none" stroke="#f7e8c9" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="94" cy="35" r="5" fill="#e6c17d"/>
+</svg>
