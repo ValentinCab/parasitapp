@@ -1,6 +1,6 @@
-const CACHE='atlas-parasitologia-v28';
-const CORE=['./','./index.html','./styles.css','./table-colors.css','./image-gallery.css','./auth.css','./app-v5.js?core=28','./data/seed-v2.json','./favicon.svg'];
-const CRITICAL=['/index.html','/app-v5.js','/app.js','/styles.css','/table-colors.css','/image-gallery.css','/auth.css','/data/seed-v2.json'];
+const CACHE='atlas-parasitologia-v29';
+const CORE=['./','./index.html','./styles.css','./table-colors.css','./image-gallery.css','./auth.css','./mobile.css','./manifest.webmanifest','./app-v5.js?core=29','./data/seed-v2.json','./atlas-mark.svg'];
+const CRITICAL=['/index.html','/app-v5.js','/app.js','/styles.css','/table-colors.css','/image-gallery.css','/auth.css','/mobile.css','/manifest.webmanifest','/data/seed-v2.json','/atlas-mark.svg'];
 self.addEventListener('install',event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).catch(()=>{}))});
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('atlas-parasitologia-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{
