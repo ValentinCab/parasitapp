@@ -9,6 +9,12 @@ service cloud.firestore {
       return signedIn() && request.auth.uid == userId;
     }
 
+    // Permite comprobar sólo el destino determinístico de la migración inicial
+    // de la propia cuenta, incluso antes de que exista el documento.
+    function ownInitialAtlasId(atlasId) {
+      return signedIn() && atlasId == 'atlas-' + request.auth.uid;
+    }
+
     function owner(atlasId) {
       return signedIn() && get(/databases/$(database)/documents/atlases/$(atlasId)).data.ownerUid == request.auth.uid;
     }
@@ -27,7 +33,7 @@ service cloud.firestore {
     }
 
     match /atlases/{atlasId} {
-      allow get: if signedIn() && (resource.data.ownerUid == request.auth.uid || invited(atlasId));
+      allow get: if ownInitialAtlasId(atlasId) || (signedIn() && (resource.data.ownerUid == request.auth.uid || invited(atlasId)));
       allow create: if signedIn() && request.resource.data.ownerUid == request.auth.uid;
       allow update: if owner(atlasId);
       allow delete: if false;
