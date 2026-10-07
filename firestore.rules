@@ -1,18 +1,68 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    function isOwner(userId) {
-      return request.auth != null && request.auth.uid == userId;
+    function signedIn() {
+      return request.auth != null && request.auth.token.email != null;
     }
 
-    // Cada cuenta sólo puede acceder a su propio espacio. No existen reglas
-    // públicas ni acceso al esquema heredado atlas/shared.
-    match /users/{userId} {
-      allow read, write: if isOwner(userId);
+    function ownLegacySpace(userId) {
+      return signedIn() && request.auth.uid == userId;
     }
 
+    function owner(atlasId) {
+      return signedIn() && get(/databases/$(database)/documents/atlases/$(atlasId)).data.ownerUid == request.auth.uid;
+    }
+
+    function invited(atlasId) {
+      return signedIn() && exists(/databases/$(database)/documents/atlases/$(atlasId)/members/$(request.auth.token.email));
+    }
+
+    function member(atlasId) {
+      return owner(atlasId) || invited(atlasId);
+    }
+
+    // Esquema heredado: se conserva sólo para la copia segura inicial.
     match /users/{userId}/{document=**} {
-      allow read, write: if isOwner(userId);
+      allow read, write: if ownLegacySpace(userId);
+    }
+
+    match /atlases/{atlasId} {
+      allow get: if signedIn() && (resource.data.ownerUid == request.auth.uid || invited(atlasId));
+      allow create: if signedIn() && request.resource.data.ownerUid == request.auth.uid;
+      allow update: if owner(atlasId);
+      allow delete: if false;
+
+      match /fichas/{fichaId} {
+        allow read, write: if member(atlasId);
+      }
+
+      match /tags/{tagId} {
+        allow read, write: if member(atlasId);
+      }
+
+      match /settings/{settingId} {
+        allow read, write: if member(atlasId);
+      }
+
+      match /members/{email} {
+        allow get: if owner(atlasId) || (signedIn() && email == request.auth.token.email);
+        allow list: if owner(atlasId);
+        allow create, delete: if owner(atlasId);
+        allow update: if owner(atlasId) || (
+          signedIn() && email == request.auth.token.email &&
+          resource.data.email == request.auth.token.email &&
+          request.resource.data.email == resource.data.email &&
+          request.resource.data.role == resource.data.role &&
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['uid', 'boundAt']) &&
+          request.resource.data.uid == request.auth.uid
+        );
+      }
+    }
+
+    // Índice privado por correo para localizar invitaciones sin exponer Atlas ajenos.
+    match /atlasInvites/{email}/atlases/{atlasId} {
+      allow read: if signedIn() && email == request.auth.token.email;
+      allow create, update, delete: if owner(atlasId);
     }
   }
 }
